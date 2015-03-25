@@ -1,0 +1,30 @@
+TEAM "LOQUAT"
+----------------------
+LOQUAT MEGA TECH STORE
+----------------------
+
+
+### DEADLINE 08 APRIL 2015 ##
+########################
+Legend: [R] - to be Reviewed/Requested
+		[A] - Approved
+		[C] - Completed/Coded /coded in project/
+#######################
+
+++++++++++ IDEAS SECTION ++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++
+
+TODO:
+--------
+Store
+Categories
+Products
+
+User
+Customer - differs from user by purchase
+Admin
+Shopping cart
+Orders
+Shipping info
+Order details
