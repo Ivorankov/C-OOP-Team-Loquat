@@ -1,12 +1,11 @@
-﻿using LoquatMegaStore.Structures;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using LoquatMegaStore.Interfaces;
-using System.Collections;
+using LoquatMegaStore.Structures;
 
-namespace LoquatMegaStore
+namespace LoquatMegaStore.Items
 {
     public abstract class Item : ICartAddable
     {
@@ -14,6 +13,7 @@ namespace LoquatMegaStore
         private string model;
         private decimal price;
         private decimal weight;
+        private int powerConsumption;
         private int ammountInStock;
         private Dimentions dimentions;
 
@@ -77,21 +77,36 @@ namespace LoquatMegaStore
                 this.ammountInStock = value;
             }
         }
-        public Item(string manufacturer, string model, decimal price, decimal weight, int amountInStock, Dimentions dimentions)
+        public int PowerConsumption
+        {
+            get { return this.powerConsumption; }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentOutOfRangeException("Apliances cannot consume negative or 0 amount of energy");
+                }
+                this.powerConsumption = value;
+            }
+        }
+        public Item() //MAKES THE PROGRAM BUILD ( TO BE DELETED )
+        {
+
+        }
+        public Item(string manufacturer, string model, decimal price,decimal weight,int powerConsumption, int amountInStock,Dimentions dimentions)
         {
             this.Manufacturer = manufacturer;
             this.Model = model;
             this.Price = price;
             this.Weight = weight;
+            this.PowerConsumption = powerConsumption;
             this.AmountInStock = ammountInStock;
             this.dimentions = dimentions;
         }
+
         public void AddToCart()
         {
             throw new NotImplementedException();
         }
-
-
-
     }
 }
