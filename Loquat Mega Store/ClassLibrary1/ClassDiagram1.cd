@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="LoquatMegaStore.Item">
-    <Position X="5" Y="0.75" Width="1.5" />
+    <Position X="6.25" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAgAAAAAAQAAAAAAAABAAAAAAAAAAAAAAAgAAAAAACA=</HashCode>
       <FileName>Item.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="LoquatMegaStore.VideoAppliance">
     <Position X="4.5" Y="2.75" Width="1.5" />
@@ -56,26 +57,13 @@
       <FileName>Projector.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LoquatMegaStore.DeskTop">
-    <Position X="7.25" Y="4.25" Width="1.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>DeskTop.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="LoquatMegaStore.LapTop">
-    <Position X="8.75" Y="4.25" Width="1.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>LapTop.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="LoquatMegaStore.HomePhone">
     <Position X="10.5" Y="4.25" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>HomePhone.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="LoquatMegaStore.CommunicationAppliance">
     <Position X="11.5" Y="2.75" Width="1.5" />
@@ -90,6 +78,42 @@
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>MobilePhone.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
+  <Class Name="LoquatMegaStore.Desktop">
+    <Position X="7.25" Y="4.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Desktop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoquatMegaStore.Laptop">
+    <Position X="8.75" Y="4.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Laptop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="LoquatMegaStore.VideoFormat">
+    <Position X="13.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enumerators\VideoFormat.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="LoquatMegaStore.DisplayType">
+    <Position X="15" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enumerators\DisplayType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="LoquatMegaStore.BatteryType">
+    <Position X="16.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enumerators\BatteryType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

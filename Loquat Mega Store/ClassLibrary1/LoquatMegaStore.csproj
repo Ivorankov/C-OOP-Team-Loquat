@@ -40,9 +40,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AudioAppliance.cs" />
+    <Compile Include="Enumerators\BatteryType.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="CommunicationAppliance.cs" />
     <Compile Include="ComputerAppliance.cs" />
+    <Compile Include="Enumerators\DisplayType.cs" />
     <Compile Include="HomePhone.cs" />
     <Compile Include="ICartAddable.cs" />
     <Compile Include="ICommunicational.cs" />
@@ -68,6 +70,7 @@
     <Compile Include="Speaker.cs" />
     <Compile Include="TV.cs" />
     <Compile Include="VideoAppliance.cs" />
+    <Compile Include="Enumerators\VideoFormat.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
