@@ -64,7 +64,7 @@
     <Compile Include="ShoppingSystem\Customer.cs" />
     <Compile Include="ShoppingSystem\Order.cs" />
     <Compile Include="ShoppingSystem\Payment.cs" />
-    <Compile Include="ShoppingSystem\SecurityCheck.cs" />
+    <Compile Include="ShoppingSystem\Hashing.cs" />
     <Compile Include="ShoppingSystem\ShippingInfo.cs" />
     <Compile Include="ShoppingSystem\User.cs" />
     <Compile Include="Item\SoundPlayer.cs" />

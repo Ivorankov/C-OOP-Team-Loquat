@@ -13,22 +13,19 @@ namespace LoquatMegaStore.ShoppingSystem
         public static void LoginUser(User user)
         {
             bool checkUser = false;
-            using (StreamReader read = new StreamReader("../../DB/UsersDB.txt"))
+            var path = GetPath(user);
+            using (StreamReader read = new StreamReader(path))
             {
                 String line = read.ReadLine();
                 do
                 {
-                    string[] arrayLine = line.Split(new string[] {" "}, StringSplitOptions.RemoveEmptyEntries);
+                    string[] arrayLine = line.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
                     if (user.UserId.Equals(arrayLine[0]))
                     {
                         checkUser = true;
-                        string test = SecurityCheck.GenerateSaltedHash(user.Password, arrayLine[3]);
-                        //string salt = String.Empty;
-                        //for (int i = test.Length; i < arrayLine[1].Length; i++)
-                        //{
-                        //    salt += arrayLine[1];
-                        //}
-                        if (SecurityCheck.CheckHash(test, arrayLine[1]))
+                        string hashedPass = Hashing.GenerateSaltedHash(user.Password, arrayLine[3]);
+
+                        if (Hashing.CheckHash(hashedPass, arrayLine[1]))
                         {
                             Console.WriteLine("Login successful");
                             checkUser = true;
@@ -50,10 +47,13 @@ namespace LoquatMegaStore.ShoppingSystem
             }
         }
 
+        
+
         public static void CreateUser(User user)
         {
             bool checkUser = false;
-            using (StreamReader read = new StreamReader("../../DB/UsersDB.txt"))
+            string path = GetPath(user);
+            using (StreamReader read = new StreamReader(path))
             {
                 String line = read.ReadLine();
                 while (line != null)
@@ -61,7 +61,7 @@ namespace LoquatMegaStore.ShoppingSystem
                     string[] arrayLine = line.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
                     if (user.UserId.Equals(arrayLine[0]) || user.Email.Equals(arrayLine[2]))
                     {
-                        Console.WriteLine("There is already a user with that username or email"  );
+                        Console.WriteLine("There is already a user with that username or email");
                         checkUser = true;
                     }
                     line = read.ReadLine();
@@ -69,29 +69,37 @@ namespace LoquatMegaStore.ShoppingSystem
             }
             if (!checkUser)
             {
-
-
-                //using (StreamWriter write = new StreamWriter("../../DB/UsersDB.txt",append:true))
-                //{
-
-                    string[] str = new string[4];
-                    string[] salt = DateTime.Now.ToString().Split(new string[]{" "},StringSplitOptions.RemoveEmptyEntries);
-                    string test = SecurityCheck.GenerateSaltedHash(user.Password, String.Join("",salt));
-
-                    str[0] = user.UserId;
-                    str[1] = test;
-                    str[2] = user.Email;
-                    str[3] = String.Join("",salt);
-                    
-
-                    Console.WriteLine("User created successfully");
-                    //write.WriteLine(String.Join(" ", str));
-
-                    File.AppendAllText("../../DB/UsersDB.txt",String.Join(" ",str)+Environment.NewLine);
-
-                //}
+                string[] str = CreateDBInput(user);
+                Console.WriteLine("User created successfully");
+                
+                File.AppendAllText("../../DB/UsersDB.txt", String.Join(" ", str) + Environment.NewLine);
             }
+        }
 
+        private static string GetPath(User user)
+        {
+            string path = String.Empty;
+            if (user.GetType().Name == "Administrator")
+            {
+                path = "../../DB/AdminsDB.txt";
+            }
+            else
+            {
+                path = "../../DB/UsersDB.txt";
+            }
+            return path;
+        }
+        private static string[] CreateDBInput(User user)
+        {
+            string[] strArray = new string[4];
+            string[] salt = DateTime.Now.ToString().Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
+            string test = Hashing.GenerateSaltedHash(user.Password, String.Join("", salt));
+
+            strArray[0] = user.UserId;
+            strArray[1] = test;
+            strArray[2] = user.Email;
+            strArray[3] = String.Join("", salt);
+            return strArray;
         }
     }
 }

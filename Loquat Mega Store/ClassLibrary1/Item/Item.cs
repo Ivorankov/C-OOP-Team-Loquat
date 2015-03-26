@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using LoquatMegaStore.Interfaces;
+using System.Collections;
 
 namespace LoquatMegaStore
 {
-    public abstract class Item: ICartAddable
+    public abstract class Item : ICartAddable
     {
         private string manufacturer;
         private string model;
@@ -76,7 +77,7 @@ namespace LoquatMegaStore
                 this.ammountInStock = value;
             }
         }
-        public Item(string manufacturer, string model, decimal price,decimal weight, int amountInStock,Dimentions dimentions)
+        public Item(string manufacturer, string model, decimal price, decimal weight, int amountInStock, Dimentions dimentions)
         {
             this.Manufacturer = manufacturer;
             this.Model = model;
@@ -89,5 +90,8 @@ namespace LoquatMegaStore
         {
             throw new NotImplementedException();
         }
+
+
+
     }
 }

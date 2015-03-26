@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace LoquatMegaStore.ShoppingSystem
 {
-    public class Customer:User
+    public class Customer : User
     {
-        public Customer(string userId, string password, string email) : base(userId, password, email)
+        public Cart UserCart { get; set; }//TODO: Validation
+        public Customer(string userId, string password, string email)
+            : base(userId, password, email)
         {
+            this.UserCart = new Cart();
             
         }
+
+        
     }
 }

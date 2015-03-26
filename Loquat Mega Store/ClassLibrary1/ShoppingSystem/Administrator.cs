@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace LoquatMegaStore.ShoppingSystem
 {
-    class Administrator
+    public class Administrator : User
     {
+        public Administrator(string userId, string password)
+            : base(userId, password, null)
+        {
+
+        }
     }
 }

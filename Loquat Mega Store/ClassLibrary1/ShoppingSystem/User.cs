@@ -13,6 +13,7 @@ namespace LoquatMegaStore.ShoppingSystem
         private string userId;
         private string password;
         private string email;
+        
 
         protected User(string userId, string password, string email)
         {
@@ -21,6 +22,8 @@ namespace LoquatMegaStore.ShoppingSystem
             this.Email = email;
         }
 
+
+        //TODO Validation of the properties
         public string UserId
         {
             get { return userId; }

@@ -13,13 +13,19 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            User user = new Customer("pesho4","ivan","az4@abv.bg");
+            Customer user = new Customer("pesho5","","az5@abv.bg");
 
             Authentication.CreateUser(user);
             DateTime date = DateTime.Now;
             //Console.WriteLine(date.Ticks);
 
             //Authentication.LoginUser(user);
+
+            Administrator admin = new Administrator("a","a");
+
+            //user.UserCart.Items.Add() //Here we add Items to the cart of the user
+            
+
            
         }
     }
