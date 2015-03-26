@@ -39,22 +39,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AudioAppliance.cs" />
+    <Compile Include="Item\AudioAppliance.cs" />
     <Compile Include="Enumerators\BatteryType.cs" />
     <Compile Include="Class1.cs" />
-    <Compile Include="CommunicationAppliance.cs" />
-    <Compile Include="ComputerAppliance.cs" />
+    <Compile Include="Item\CommunicationAppliance.cs" />
+    <Compile Include="Item\ComputerAppliance.cs" />
     <Compile Include="Enumerators\DisplayType.cs" />
-    <Compile Include="HomePhone.cs" />
-    <Compile Include="ICartAddable.cs" />
-    <Compile Include="ICommunicational.cs" />
-    <Compile Include="ISoundable.cs" />
-    <Compile Include="Item.cs" />
-    <Compile Include="IVideoPlayable.cs" />
-    <Compile Include="Laptop.cs" />
-    <Compile Include="Desktop.cs" />
-    <Compile Include="MobilePhone.cs" />
-    <Compile Include="Projector.cs" />
+    <Compile Include="Item\HomePhone.cs" />
+    <Compile Include="Interfaces\ICartAddable.cs" />
+    <Compile Include="Interfaces\ICommunicational.cs" />
+    <Compile Include="Interfaces\ISoundable.cs" />
+    <Compile Include="Item\Item.cs" />
+    <Compile Include="Interfaces\IVideoPlayable.cs" />
+    <Compile Include="Item\Laptop.cs" />
+    <Compile Include="Item\Desktop.cs" />
+    <Compile Include="Item\MobilePhone.cs" />
+    <Compile Include="Item\Projector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShoppingSystem\Administrator.cs" />
     <Compile Include="ShoppingSystem\Cart.cs" />
@@ -66,10 +66,10 @@
     <Compile Include="ShoppingSystem\Payment.cs" />
     <Compile Include="ShoppingSystem\ShippingInfo.cs" />
     <Compile Include="ShoppingSystem\User.cs" />
-    <Compile Include="SoundPlayer.cs" />
-    <Compile Include="Speaker.cs" />
-    <Compile Include="TV.cs" />
-    <Compile Include="VideoAppliance.cs" />
+    <Compile Include="Item\SoundPlayer.cs" />
+    <Compile Include="Item\Speaker.cs" />
+    <Compile Include="Item\TV.cs" />
+    <Compile Include="Item\VideoAppliance.cs" />
     <Compile Include="Enumerators\VideoFormat.cs" />
   </ItemGroup>
   <ItemGroup>
