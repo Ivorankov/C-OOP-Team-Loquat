@@ -14,10 +14,20 @@ namespace LoquatMegaStore.Items
             set { this.color = value; }
         }
         public Laptop(string manufacturer, string model, decimal weight, decimal price, int powerConsumption,
-        int amountInStock, Dimentions dimentions, Processor processor, int ramMemory, int diskMemoery, Color color)
-            : base(manufacturer, model, price, weight, powerConsumption, amountInStock, dimentions, processor, ramMemory, diskMemoery)
+        int amountInStock, Dimensions dimensions, Processor processor, int ramMemory, int diskMemoery, Color color)
+            : base(manufacturer, model, price, weight, powerConsumption, amountInStock, dimensions, processor, ramMemory, diskMemoery)
         {
             this.Color = color;
+        }
+
+        public void PlaySound()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void PlayVideo()
+        {
+            throw new NotImplementedException();
         }
     }
 }

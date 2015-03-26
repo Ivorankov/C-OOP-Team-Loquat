@@ -15,7 +15,7 @@ namespace LoquatMegaStore.Items
         private decimal weight;
         private int powerConsumption;
         private int ammountInStock;
-        private Dimentions dimentions;
+        private Dimensions dimensions;
 
         public string Manufacturer
         {
@@ -93,7 +93,7 @@ namespace LoquatMegaStore.Items
         {
 
         }
-        public Item(string manufacturer, string model, decimal price,decimal weight,int powerConsumption, int amountInStock,Dimentions dimentions)
+        public Item(string manufacturer, string model, decimal price,decimal weight,int powerConsumption, int amountInStock,Dimensions dimensions)
         {
             this.Manufacturer = manufacturer;
             this.Model = model;
@@ -101,7 +101,7 @@ namespace LoquatMegaStore.Items
             this.Weight = weight;
             this.PowerConsumption = powerConsumption;
             this.AmountInStock = ammountInStock;
-            this.dimentions = dimentions;
+            this.dimensions = dimensions;
         }
 
         public void AddToCart()

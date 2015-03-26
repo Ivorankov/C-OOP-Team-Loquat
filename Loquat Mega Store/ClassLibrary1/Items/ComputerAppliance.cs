@@ -40,8 +40,8 @@ namespace LoquatMegaStore.Items
             }
         }
         public ComputerAppliance(string manufacturer,string model,decimal price, decimal weight,
-            int powerConsumption, int amountInStock, Dimentions dimentions, Processor processor, int ramMemory, int diskMemoery)
-            :base(manufacturer,model,price,weight,powerConsumption,amountInStock,dimentions)
+            int powerConsumption, int amountInStock, Dimensions dimensions, Processor processor, int ramMemory, int diskMemoery)
+            :base(manufacturer,model,price,weight,powerConsumption,amountInStock,dimensions)
         {
             this.Processor = processor;
             this.RamMemory = ramMemory;

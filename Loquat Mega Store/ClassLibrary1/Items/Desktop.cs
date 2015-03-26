@@ -13,8 +13,8 @@ namespace LoquatMegaStore.Items
             set { this.color = value; }
         }
         public Desktop(string manufacturer, string model, decimal weight, decimal price, int powerConsumption,
-            int amountInStock, Dimentions dimentions, Processor processor, int ramMemory, int diskMemoery, Color color)
-            :base(manufacturer,model,price,weight,powerConsumption,amountInStock,dimentions,processor, ramMemory,diskMemoery) 
+            int amountInStock, Dimensions dimensions, Processor processor, int ramMemory, int diskMemoery, Color color)
+            :base(manufacturer,model,price,weight,powerConsumption,amountInStock,dimensions,processor, ramMemory,diskMemoery) 
         {
             this.Color = color;
         }

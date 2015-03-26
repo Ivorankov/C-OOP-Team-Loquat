@@ -1,10 +1,6 @@
-<<<<<<< HEAD
 ﻿using System;
 using System.Collections;
-=======
 ﻿using LoquatMegaStore.Items;
-using System;
->>>>>>> 1d86a22999340726f1d6f805c460c1272edf17c2
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
