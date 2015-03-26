@@ -25,6 +25,7 @@
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
       <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
       <HashCode>AAQAAAAQAAAAAAAAAAAAAAAQAAAQAAAAEAAAAAAEAAA=</HashCode>
@@ -89,19 +90,20 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="LoquatMegaStore.Items.Desktop">
+  <Class Name="LoquatMegaStore.Items.Desktop" Collapsed="true">
     <Position X="7.25" Y="5.75" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAA=</HashCode>
       <FileName>Items\Desktop.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LoquatMegaStore.Items.Laptop">
+  <Class Name="LoquatMegaStore.Items.Laptop" Collapsed="true">
     <Position X="8.75" Y="5.75" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAA=</HashCode>
       <FileName>Items\Laptop.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="1.05" />
   </Class>
   <Enum Name="LoquatMegaStore.VideoFormat">
     <Position X="13.5" Y="1.75" Width="1.5" />

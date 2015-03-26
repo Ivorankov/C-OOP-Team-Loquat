@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using LoquatMegaStore.Enumerators;
 using LoquatMegaStore.Structures;
+using LoquatMegaStore.Interfaces;
 
 namespace LoquatMegaStore.Items
 {
-    public class Laptop : ComputerAppliance
+    public class Laptop : ComputerAppliance,IVideoPlayable,ISoundable
     {
         private Color color;
         public Color Color

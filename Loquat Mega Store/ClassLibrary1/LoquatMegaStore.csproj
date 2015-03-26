@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Enumerators\AudioFormat.cs" />
     <Compile Include="Enumerators\Colors.cs" />
+    <Compile Include="Enumerators\DisplayResolutioncs.cs" />
     <Compile Include="Items\AudioAppliance.cs" />
     <Compile Include="Enumerators\BatteryType.cs" />
     <Compile Include="Items\CommunicationAppliance.cs" />
@@ -76,6 +77,7 @@
     <Compile Include="Enumerators\VideoFormat.cs" />
     <Compile Include="ShoppingSystem\UserState.cs" />
     <Compile Include="Structures\Dimentions.cs" />
+    <Compile Include="Structures\Display.cs" />
     <Compile Include="Structures\Processor.cs" />
   </ItemGroup>
   <ItemGroup>
