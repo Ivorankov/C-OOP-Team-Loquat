@@ -6,7 +6,7 @@ using LoquatMegaStore.Interfaces;
 
 namespace LoquatMegaStore.Items
 {
-    public class HomePhone : CommunicationAppliance, ICommunicational
+    public class RadioStation : CommunicationAppliance, ICommunicational
     {
     }
 }

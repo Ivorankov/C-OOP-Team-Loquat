@@ -66,7 +66,7 @@
       <FileName>Items\Projector.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LoquatMegaStore.Items.HomePhone">
+  <Class Name="LoquatMegaStore.Items.RadioStation">
     <Position X="10.5" Y="4.25" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
@@ -82,7 +82,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="LoquatMegaStore.Items.MobilePhone">
-    <Position X="12" Y="4.25" Width="1.25" />
+    <Position X="12.5" Y="4.25" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Items\MobilePhone.cs</FileName>
@@ -92,36 +92,50 @@
   <Class Name="LoquatMegaStore.Items.Desktop">
     <Position X="7.25" Y="5.75" Width="1.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAA=</HashCode>
       <FileName>Items\Desktop.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LoquatMegaStore.Items.Laptop">
     <Position X="8.75" Y="5.75" Width="1.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAA=</HashCode>
       <FileName>Items\Laptop.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="LoquatMegaStore.VideoFormat">
     <Position X="13.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAABCAAAAAAAABAAAAAAAAAEAAEACAAAAAAA=</HashCode>
       <FileName>Enumerators\VideoFormat.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="LoquatMegaStore.DisplayType">
     <Position X="15" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>QAAAAAAAAAAAAgACAAAAAAEAAAAgAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Enumerators\DisplayType.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="LoquatMegaStore.BatteryType">
     <Position X="16.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAQ=</HashCode>
       <FileName>Enumerators\BatteryType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="LoquatMegaStore.Enumerators.AudioFormat">
+    <Position X="18" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAABAAABAAIAAAAAAAACAAAAAAgAAA=</HashCode>
+      <FileName>Enumerators\AudioFormat.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="LoquatMegaStore.Enumerators.Color">
+    <Position X="19.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGAARAAAAAAhAAABAAAAAABAAAAAAAAAAAADAAAAA=</HashCode>
+      <FileName>Enumerators\Colors.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />

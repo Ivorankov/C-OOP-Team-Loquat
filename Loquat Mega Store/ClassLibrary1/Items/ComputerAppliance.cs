@@ -42,10 +42,10 @@ namespace LoquatMegaStore.Items
                 this.diskMemory = value;
             }
         }
-        public ComputerAppliance() // MAKES THE PROGRAM BUILD ( TO BE DELETED )
-        {
+        //public ComputerAppliance() // MAKES THE PROGRAM BUILD ( TO BE DELETED )
+        //{
 
-        }
+        //}
         public ComputerAppliance(string manufacturer,string model,decimal price, decimal weight,
             int powerConsumption, int amountInStock, Dimentions dimentions, Processor processor, int ramMemory, int diskMemoery)
             :base(manufacturer,model,price,weight,powerConsumption,amountInStock,dimentions)
