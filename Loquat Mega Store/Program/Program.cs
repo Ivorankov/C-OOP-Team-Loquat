@@ -13,10 +13,12 @@ namespace Program
     {
         static void Main(string[] args)
         {
-            User user = new Customer("pesho2","ivan","az2@abv.bg");
+            User user = new Customer("pesho4","ivan","az4@abv.bg");
 
             Authentication.CreateUser(user);
-
+            DateTime date = DateTime.Now;
+            //Console.WriteLine(date.Ticks);
+            
             //Authentication.LoginUser(user);
            
         }

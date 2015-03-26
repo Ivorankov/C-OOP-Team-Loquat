@@ -66,8 +66,8 @@ namespace LoquatMegaStore.ShoppingSystem
             {
 
 
-                using (StreamWriter write = new StreamWriter("../../DB/UsersDB.txt"))
-                {
+                //using (StreamWriter write = new StreamWriter("../../DB/UsersDB.txt",append:true))
+                //{
 
                     string[] str = new string[4];
                     string test = SecurityCheck.GenerateSaltedHash(user.Password, "");
@@ -78,9 +78,11 @@ namespace LoquatMegaStore.ShoppingSystem
                     str[3] = "";
 
                     Console.WriteLine("User created successfully");
-                    write.WriteLine(String.Join(" ", str));
+                    //write.WriteLine(String.Join(" ", str));
 
-                }
+                    File.AppendAllText("../../DB/UsersDB.txt",String.Join(" ",str));
+
+                //}
             }
 
         }
