@@ -1,3 +1,3 @@
-pesho1 zQuUUvw3b8TDWmAIezZvcNiD/JAVJNrx8SL70xk4T2o= az1@abv.bg 
-pesho2 zQuUUvw3b8TDWmAIezZvcNiD/JAVJNrx8SL70xk4T2o= az2@abv.bg 
-pesho4 zQuUUvw3b8TDWmAIezZvcNiD/JAVJNrx8SL70xk4T2o= az4@abv.bg 
+USER PASS EMAIL SALT
+pesho3 YVEau3mXpUawLI9DDgr2fGAPASxZ3QIjTtLmCvTV5ps= az3@abv.bg 26.3.2015г.16:46:51ч.
+pesho4 qH7YJna4ylJcdcNXhBgi0sF1F26G+/pKpERHgwbKRvo= az4@abv.bg 26.3.2015г.16:54:14ч.

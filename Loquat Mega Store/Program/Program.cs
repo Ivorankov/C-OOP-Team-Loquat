@@ -18,7 +18,7 @@ namespace Program
             Authentication.CreateUser(user);
             DateTime date = DateTime.Now;
             //Console.WriteLine(date.Ticks);
-            
+
             //Authentication.LoginUser(user);
            
         }

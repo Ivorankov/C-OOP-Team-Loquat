@@ -16,13 +16,18 @@ namespace LoquatMegaStore.ShoppingSystem
             using (StreamReader read = new StreamReader("../../DB/UsersDB.txt"))
             {
                 String line = read.ReadLine();
-                while (line != null)
+                do
                 {
-                    string[] arrayLine = line.Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
+                    string[] arrayLine = line.Split(new string[] {" "}, StringSplitOptions.RemoveEmptyEntries);
                     if (user.UserId.Equals(arrayLine[0]))
                     {
                         checkUser = true;
-                        string test = SecurityCheck.GenerateSaltedHash(user.Password, "");
+                        string test = SecurityCheck.GenerateSaltedHash(user.Password, arrayLine[3]);
+                        //string salt = String.Empty;
+                        //for (int i = test.Length; i < arrayLine[1].Length; i++)
+                        //{
+                        //    salt += arrayLine[1];
+                        //}
                         if (SecurityCheck.CheckHash(test, arrayLine[1]))
                         {
                             Console.WriteLine("Login successful");
@@ -37,7 +42,7 @@ namespace LoquatMegaStore.ShoppingSystem
 
                     line = read.ReadLine();
 
-                }
+                } while ((line != null));
                 if (checkUser == false)
                 {
                     Console.WriteLine("There is no user with these credentials");
@@ -70,17 +75,19 @@ namespace LoquatMegaStore.ShoppingSystem
                 //{
 
                     string[] str = new string[4];
-                    string test = SecurityCheck.GenerateSaltedHash(user.Password, "");
+                    string[] salt = DateTime.Now.ToString().Split(new string[]{" "},StringSplitOptions.RemoveEmptyEntries);
+                    string test = SecurityCheck.GenerateSaltedHash(user.Password, String.Join("",salt));
 
                     str[0] = user.UserId;
                     str[1] = test;
                     str[2] = user.Email;
-                    str[3] = "";
+                    str[3] = String.Join("",salt);
+                    
 
                     Console.WriteLine("User created successfully");
                     //write.WriteLine(String.Join(" ", str));
 
-                    File.AppendAllText("../../DB/UsersDB.txt",String.Join(" ",str));
+                    File.AppendAllText("../../DB/UsersDB.txt",String.Join(" ",str)+Environment.NewLine);
 
                 //}
             }
