@@ -2,8 +2,12 @@
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="LoquatMegaStore.Item">
     <Position X="6.25" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
     <TypeIdentifier>
-      <HashCode>AAgBAAAIAQAAAAAAAABAAAAAAAAAAAAEAAgAAAAIACA=</HashCode>
+      <HashCode>AAgBAAAIAQAAAAAAAgBAAAAAACAAAAAkAAgAAAAIACA=</HashCode>
       <FileName>Item\Item.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />

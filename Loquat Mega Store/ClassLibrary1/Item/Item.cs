@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LoquatMegaStore.Structures;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,12 +11,14 @@ namespace LoquatMegaStore
         private string manufacturer;
         private string model;
         private decimal price;
+        private decimal weight;
         private int ammountInStock;
+        private Dimentions dimentions;
 
         public string Manufacturer
         {
             get { return this.manufacturer; }
-            private set
+            set
             {
                 if (value.Length == null || value.Length < 2)
                 {
@@ -27,7 +30,7 @@ namespace LoquatMegaStore
         public string Model
         {
             get { return this.model; }
-            private set
+            set
             {
                 if (value.Length == null || value.Length < 2)
                 {
@@ -39,7 +42,7 @@ namespace LoquatMegaStore
         public decimal Price
         {
             get { return this.price; }
-            private set
+            set
             {
                 if (value < 0)
                 {
@@ -48,10 +51,22 @@ namespace LoquatMegaStore
                 this.price = value;
             }
         }
+        public decimal Weight
+        {
+            get { return this.weight; }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentOutOfRangeException("Weight cannot be a negative or 0 value");
+                }
+                this.weight = value;
+            }
+        }
         public int AmountInStock
         {
             get { return this.ammountInStock; }
-            private set
+            set
             {
                 if (value < 0)
                 {
@@ -59,6 +74,15 @@ namespace LoquatMegaStore
                 }
                 this.ammountInStock = value;
             }
+        }
+        public Item(string manufacturer, string model, decimal price,decimal weight, int amountInStock,Dimentions dimentions)
+        {
+            this.Manufacturer = manufacturer;
+            this.Model = model;
+            this.Price = price;
+            this.Weight = weight;
+            this.AmountInStock = ammountInStock;
+            this.dimentions = dimentions;
         }
         public void AddToCart()
         {

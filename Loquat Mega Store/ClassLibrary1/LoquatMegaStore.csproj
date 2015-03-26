@@ -71,6 +71,7 @@
     <Compile Include="Item\TV.cs" />
     <Compile Include="Item\VideoAppliance.cs" />
     <Compile Include="Enumerators\VideoFormat.cs" />
+    <Compile Include="Structures\Dimentions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
