@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace LoquatMegaStore.ShoppingSystem
 {
-    class Customer:User
+    public enum UserState
     {
+        New,
+        Active,
+        Blocked,
+        Banned
     }
 }

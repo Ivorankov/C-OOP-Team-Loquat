@@ -8,6 +8,6 @@ namespace LoquatMegaStore.ShoppingSystem
 {
     class Order
     {
-        private void MakeOrder();
+        
     }
 }

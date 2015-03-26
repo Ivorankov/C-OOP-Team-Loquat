@@ -6,7 +6,27 @@ using System.Threading.Tasks;
 
 namespace LoquatMegaStore.ShoppingSystem
 {
-    class Cart
+    public class Cart
     {
+        public IEnumerable<Item> Items { get; set; }
+
+        public void AddCartItem()
+        {
+
+        }
+
+        public void RemoveCartItem()
+        {
+
+        }
+
+        public void ViewCartDetails()
+        {
+
+        }
+        public void CheckOut()
+        {
+
+        }
     }
 }

@@ -55,6 +55,7 @@
     <Compile Include="Projector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShoppingSystem\Administrator.cs" />
+    <Compile Include="ShoppingSystem\Authentication.cs" />
     <Compile Include="ShoppingSystem\Cart.cs" />
     <Compile Include="ShoppingSystem\IOrderable.cs" />
     <Compile Include="ShoppingSystem\IPayable.cs" />
@@ -62,8 +63,10 @@
     <Compile Include="ShoppingSystem\Customer.cs" />
     <Compile Include="ShoppingSystem\Order.cs" />
     <Compile Include="ShoppingSystem\Payment.cs" />
+    <Compile Include="ShoppingSystem\SecurityCheck.cs" />
     <Compile Include="ShoppingSystem\ShippingInfo.cs" />
     <Compile Include="ShoppingSystem\User.cs" />
+    <Compile Include="ShoppingSystem\UserState.cs" />
     <Compile Include="SoundPlayer.cs" />
     <Compile Include="Speaker.cs" />
     <Compile Include="TV.cs" />
