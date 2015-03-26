@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace LoquatMegaStore.ShoppingSystem
 {
-    public enum OrderStatus
+    public interface IPayable
     {
-        New,
-        OnHold,
-        Shipped,
-        Delivered,
-        Closed
+        void MakePayment();
     }
 }

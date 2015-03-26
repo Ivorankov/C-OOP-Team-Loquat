@@ -5,7 +5,7 @@ using System.Text;
 
 namespace LoquatMegaStore
 {
-    public class HomePhone : CommunicationAppliance
+    public class HomePhone : CommunicationAppliance, ICommunicational
     {
     }
 }

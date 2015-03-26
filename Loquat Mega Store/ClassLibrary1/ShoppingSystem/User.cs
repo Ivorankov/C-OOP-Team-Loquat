@@ -4,9 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LoquatMegaStore.Shopping_System
+namespace LoquatMegaStore.ShoppingSystem
 {
-    public abstract class User
+    public abstract class User: IPayable, IOrderable
     {
+        public void MakePayment()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void MakeOrder()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

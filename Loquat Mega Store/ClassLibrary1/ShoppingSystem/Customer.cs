@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LoquatMegaStore.Shopping_System
+namespace LoquatMegaStore.ShoppingSystem
 {
-    class Customer:User
+    class Customer:User, IPayable, IOrderable
     {
     }
 }

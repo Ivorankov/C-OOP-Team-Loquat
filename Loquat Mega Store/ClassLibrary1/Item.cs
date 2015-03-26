@@ -5,7 +5,11 @@ using System.Text;
 
 namespace LoquatMegaStore
 {
-    public abstract class Item
+    public abstract class Item: ICartAddable
     {
+        public void AddToCart()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
