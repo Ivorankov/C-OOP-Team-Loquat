@@ -5,7 +5,7 @@ using System.Text;
 
 namespace LoquatMegaStore
 {
-    public class DeskTop : ComputerAppliance
+    public class Desktop : ComputerAppliance
     {
     }
 }

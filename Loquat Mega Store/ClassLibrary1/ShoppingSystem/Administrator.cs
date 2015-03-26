@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace LoquatMegaStore
+namespace LoquatMegaStore.Shopping_System
 {
-    public class Laptop : ComputerAppliance
+    class Administrator:User
     {
     }
 }
