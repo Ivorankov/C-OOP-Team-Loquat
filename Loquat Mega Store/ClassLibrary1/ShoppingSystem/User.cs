@@ -12,6 +12,14 @@ namespace LoquatMegaStore.ShoppingSystem
     {
         private string userId;
         private string password;
+        private string email;
+
+        protected User(string userId, string password, string email)
+        {
+            this.UserId = userId;
+            this.Password = password;
+            this.Email = email;
+        }
 
         public string UserId
         {
@@ -21,8 +29,14 @@ namespace LoquatMegaStore.ShoppingSystem
 
         public string Password
         {
-            
+            internal get { return password; }
             set { password = value; }
+        }
+
+        public string Email
+        {
+            get { return email; }
+            set { email = value; }
         }
 
         public void MakePayment()

@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using 
 
-namespace LoquatMegaStore.ShoppingSystem
+namespace ConsoleApplication1
 {
-    class Administrator
+    class Program
     {
+        static void Main(string[] args)
+        {
+        }
     }
 }

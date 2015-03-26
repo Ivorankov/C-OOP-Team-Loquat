@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace LoquatMegaStore.ShoppingSystem
 {
-    class Customer:User
+    public class Customer:User
     {
+        public Customer(string userId, string password, string email) : base(userId, password, email)
+        {
+            
+        }
     }
 }

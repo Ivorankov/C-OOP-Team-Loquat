@@ -6,7 +6,7 @@ using LoquatMegaStore.Interfaces;
 
 namespace LoquatMegaStore
 {
-    public abstract class AudioAppliance : Item
+    public abstract class AudioAppliance
     {
     }
 }

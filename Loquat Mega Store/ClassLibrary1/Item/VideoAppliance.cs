@@ -5,7 +5,7 @@ using System.Text;
 
 namespace LoquatMegaStore
 {
-    public abstract class VideoAppliance : Item
+    public abstract class VideoAppliance
     {
     }
 }

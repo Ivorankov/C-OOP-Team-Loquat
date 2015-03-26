@@ -6,7 +6,7 @@ using LoquatMegaStore.Interfaces;
 
 namespace LoquatMegaStore
 {
-    public abstract class ComputerAppliance : Item
+    public abstract class ComputerAppliance
     {
     }
 }

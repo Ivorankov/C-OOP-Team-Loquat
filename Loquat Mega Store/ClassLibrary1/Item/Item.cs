@@ -21,7 +21,7 @@ namespace LoquatMegaStore
             get { return this.manufacturer; }
             set
             {
-                if (value.Length == null || value.Length < 2)
+                if (value.Length == 0 || value.Length < 2)
                 {
                     throw new ArgumentOutOfRangeException("Manufacturer name must contain at least 2 symbols");
                 }
@@ -33,7 +33,7 @@ namespace LoquatMegaStore
             get { return this.model; }
             set
             {
-                if (value.Length == null || value.Length < 2)
+                if (value.Length == 0 || value.Length < 2)
                 {
                     throw new ArgumentOutOfRangeException("Model name must contain at least 2 symbols");
                 }

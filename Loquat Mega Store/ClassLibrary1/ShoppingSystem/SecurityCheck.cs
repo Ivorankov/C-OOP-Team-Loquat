@@ -10,7 +10,7 @@ namespace LoquatMegaStore.ShoppingSystem
     public static class SecurityCheck
     {
 
-        static string GenerateSaltedHash(string plainText, string salt)
+        public static string GenerateSaltedHash(string plainText, string salt)
         {
             HashAlgorithm algorithm = new SHA256Managed();
 
