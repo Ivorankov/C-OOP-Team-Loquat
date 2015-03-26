@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace LoquatMegaStore.Enumerators
 {
-    class AudioFormat
+    public enum AudioFormat
     {
+        МP3, AACLC, LPCM, WMA, AVC, WMV, MPEG4
     }
 }
