@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using LoquatMegaStore.Interfaces;
+using System.Threading.Tasks;
 
-namespace LoquatMegaStore
+namespace LoquatMegaStore.Enumerators
 {
-    public abstract class ComputerAppliance
+    class AudioFormat
     {
     }
 }

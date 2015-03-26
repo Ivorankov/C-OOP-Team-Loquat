@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using LoquatMegaStore.Interfaces;
 
-namespace LoquatMegaStore
+namespace LoquatMegaStore.Items
 {
-    public abstract class CommunicationAppliance
+    public class MobilePhone : CommunicationAppliance, ICommunicational
     {
     }
 }

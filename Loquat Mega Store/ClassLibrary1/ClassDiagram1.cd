@@ -1,101 +1,106 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="LoquatMegaStore.Item">
-    <Position X="6.25" Y="0.75" Width="1.5" />
+  <Class Name="LoquatMegaStore.Items.Item">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAgBAAAIAQAAAAAAAgBAAAAAACAABAAkAAgAAAAIACA=</HashCode>
+      <FileName>Items\Item.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="LoquatMegaStore.Items.VideoAppliance">
+    <Position X="4.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\VideoAppliance.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoquatMegaStore.Items.ComputerAppliance">
+    <Position X="8" Y="2.75" Width="1.5" />
     <Compartments>
       <Compartment Name="Fields" Collapsed="true" />
       <Compartment Name="Properties" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAgBAAAIAQAAAAAAAgBAAAAAACAAAAAkAAgAAAAIACA=</HashCode>
-      <FileName>Item\Item.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" />
-  </Class>
-  <Class Name="LoquatMegaStore.VideoAppliance">
-    <Position X="4.5" Y="2.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Item\VideoAppliance.cs</FileName>
+      <HashCode>AAQAAAAQAAAAAAAAAAAAAAAQAAAQAAAAEAAAAAAEAAA=</HashCode>
+      <FileName>Items\ComputerAppliance.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LoquatMegaStore.ComputerAppliance">
-    <Position X="8" Y="2.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Item\ComputerAppliance.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="LoquatMegaStore.AudioAppliance">
+  <Class Name="LoquatMegaStore.Items.AudioAppliance">
     <Position X="0.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Item\AudioAppliance.cs</FileName>
+      <FileName>Items\AudioAppliance.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LoquatMegaStore.Speaker">
-    <Position X="0.5" Y="4.25" Width="1.25" />
+  <Class Name="LoquatMegaStore.Items.Speaker">
+    <Position X="0.5" Y="5.75" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Item\Speaker.cs</FileName>
+      <FileName>Items\Speaker.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LoquatMegaStore.SoundPlayer">
-    <Position X="2" Y="4.25" Width="1.25" />
+  <Class Name="LoquatMegaStore.Items.SoundPlayer">
+    <Position X="2" Y="5.75" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Item\SoundPlayer.cs</FileName>
+      <FileName>Items\SoundPlayer.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LoquatMegaStore.TV">
-    <Position X="3.75" Y="4.25" Width="1.25" />
+  <Class Name="LoquatMegaStore.Items.TV">
+    <Position X="3.75" Y="5.75" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Item\TV.cs</FileName>
+      <FileName>Items\TV.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LoquatMegaStore.Projector">
-    <Position X="5.5" Y="4.25" Width="1.25" />
+  <Class Name="LoquatMegaStore.Items.Projector">
+    <Position X="5.5" Y="5.75" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Item\Projector.cs</FileName>
+      <FileName>Items\Projector.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LoquatMegaStore.HomePhone">
+  <Class Name="LoquatMegaStore.Items.HomePhone">
     <Position X="10.5" Y="4.25" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Item\HomePhone.cs</FileName>
+      <FileName>Items\HomePhone.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="LoquatMegaStore.CommunicationAppliance">
+  <Class Name="LoquatMegaStore.Items.CommunicationAppliance">
     <Position X="11.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Item\CommunicationAppliance.cs</FileName>
+      <FileName>Items\CommunicationAppliance.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LoquatMegaStore.MobilePhone">
+  <Class Name="LoquatMegaStore.Items.MobilePhone">
     <Position X="12" Y="4.25" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Item\MobilePhone.cs</FileName>
+      <FileName>Items\MobilePhone.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="LoquatMegaStore.Desktop">
-    <Position X="7.25" Y="4.25" Width="1.25" />
+  <Class Name="LoquatMegaStore.Items.Desktop">
+    <Position X="7.25" Y="5.75" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Item\Desktop.cs</FileName>
+      <FileName>Items\Desktop.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LoquatMegaStore.Laptop">
-    <Position X="8.75" Y="4.25" Width="1.25" />
+  <Class Name="LoquatMegaStore.Items.Laptop">
+    <Position X="8.75" Y="5.75" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Item\Laptop.cs</FileName>
+      <FileName>Items\Laptop.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="LoquatMegaStore.VideoFormat">

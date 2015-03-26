@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace LoquatMegaStore
+namespace LoquatMegaStore.Items
 {
-    public class TV : VideoAppliance
+    public class Speaker : AudioAppliance
     {
     }
 }
