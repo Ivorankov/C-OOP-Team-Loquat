@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using LoquatMegaStore.Interfaces;
 
 namespace LoquatMegaStore
 {
-    interface ICommunicational
+    public class HomePhone : CommunicationAppliance, ICommunicational
     {
     }
 }

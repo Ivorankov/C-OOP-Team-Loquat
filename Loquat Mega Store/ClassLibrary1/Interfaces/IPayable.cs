@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LoquatMegaStore
+namespace LoquatMegaStore.Interfaces
 {
-    interface IVideoPlayable
+    public interface IPayable
     {
+        void MakePayment();
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace LoquatMegaStore
 {
-    public abstract class AudioAppliance : Item
+    public enum BatteryType
     {
     }
 }

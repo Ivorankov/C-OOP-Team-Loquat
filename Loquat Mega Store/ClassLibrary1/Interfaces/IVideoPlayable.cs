@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace LoquatMegaStore
+namespace LoquatMegaStore.Interfaces
 {
-    public abstract class ComputerAppliance : Item
+    interface IVideoPlayable
     {
     }
 }
