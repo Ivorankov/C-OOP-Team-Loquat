@@ -19,7 +19,7 @@ namespace LoquatMegaStore.Structures
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentOutOfRangeException("Objects cannot have dimentions that are less then or equat to 0");
+                    throw new ArgumentOutOfRangeException("Objects cannot have dimensions that are less than or equal to 0.");
                 }
                 this.x = value;
             }
@@ -31,7 +31,7 @@ namespace LoquatMegaStore.Structures
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentOutOfRangeException("Objects cannot have dimentions that are less then or equat to 0");
+                    throw new ArgumentOutOfRangeException("Objects cannot have dimensions that are less than or equal to 0.");
                 }
                 this.y = value;
             }
@@ -43,7 +43,7 @@ namespace LoquatMegaStore.Structures
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentOutOfRangeException("Objects cannot have dimentions that are less then or equat to 0");
+                    throw new ArgumentOutOfRangeException("Objects cannot have dimensions that are less than or equal to 0.");
                 }
                 this.z = value;
             }

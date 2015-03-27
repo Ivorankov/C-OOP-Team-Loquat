@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LoquatMegaStore.ShoppingSystem
 {
-    class Order //Не съм сигурен че ни трябва. 
+    class Order //Не съм сигурен че ни трябва. ОООооО не не ! :Р
     {
         
     }
