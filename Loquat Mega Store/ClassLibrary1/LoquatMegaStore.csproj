@@ -74,7 +74,6 @@
     <Compile Include="Items\Speaker.cs" />
     <Compile Include="Items\TV.cs" />
     <Compile Include="Items\VideoAppliance.cs" />
-    <Compile Include="Enumerators\VideoFormat.cs" />
     <Compile Include="ShoppingSystem\UserState.cs" />
     <Compile Include="Structures\Dimensions.cs" />
     <Compile Include="Structures\Display.cs" />
