@@ -49,7 +49,7 @@ namespace LoquatMegaStore.ShoppingSystem
 
         
 
-        public static void CreateUser(User user)
+        public static void CreateUser(Customer user)
         {
             bool checkUser = false;
             string path = GetPath(user);
