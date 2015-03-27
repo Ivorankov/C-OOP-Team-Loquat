@@ -4,6 +4,6 @@ namespace LoquatMegaStore
 {
     public enum BatteryType
     {
-        LiPol,LiIon
+        LiPoly, LiIon, SlimBattery, StandardBattery, ExtendedBattery, NiCD, NiMH
     }
 }
