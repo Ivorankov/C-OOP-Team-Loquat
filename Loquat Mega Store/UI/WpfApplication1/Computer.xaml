@@ -1,0 +1,9 @@
+﻿<Window x:Class="WpfApplication1.Computer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Computer" Height="300" Width="300" Background="Ivory">
+    <Grid>
+        <Button Content="Desktop" HorizontalAlignment="Left" VerticalAlignment="Top" Width="123" Background="Orange" Margin="10,10,0,0" FontSize="16" FontFamily="Lucida Calligraphy" Height="30"/>
+        <Button Content="Laptop" HorizontalAlignment="Left" VerticalAlignment="Top" Width="123" Background="Orange" Margin="10,40,0,0" FontSize="16" FontFamily="Lucida Calligraphy" Height="30"/>
+    </Grid>
+</Window>

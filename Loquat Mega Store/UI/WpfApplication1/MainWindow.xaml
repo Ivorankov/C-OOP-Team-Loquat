@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="400" Width="490" Background="Ivory">
+    <Grid>
+        <Button Content="Home" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="10,10,0,0" Height="30" FontSize="16" Background="Orange" FontFamily="Lucida Calligraphy"/>
+        <Button Content="About Us" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="10,58,0,0" FontSize="16" Background="Orange" FontFamily="Lucida Calligraphy" Height="30"/>
+        <Button Content="Log in/Register" HorizontalAlignment="Left" VerticalAlignment="Top" Width="141" Margin="10,163,0,0" FontSize="16" Background="Orange" FontFamily="Lucida Calligraphy" Height="30"/>
+        <Button Content="Category" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="10,110,0,0" Click="Button_Click" Height="30" FontSize="16" Background="Orange" FontFamily="Lucida Calligraphy">
+            <Button.ContextMenu>
+                <ContextMenu >
+                    <MenuItem Header="Audio" FontFamily="Lucida Calligraphy" Background="Orange">
+                        <Button Content="Loud Speaker" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Background="Orange" Margin="10,10,0,0" FontSize="12" FontFamily="Lucida Calligraphy"/>
+                        <Button Content="Audio player" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Background="Orange" Margin="10,40,0,0" FontSize="12" FontFamily="Lucida Calligraphy"/>
+
+                    </MenuItem>
+                    <MenuItem Header="Video" FontFamily="Lucida Calligraphy" Background="Orange">
+                        <Button Content="TV" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Background="Orange" Margin="10,10,0,0" FontSize="12" FontFamily="Lucida Calligraphy"/>
+                        <Button Content="Projector" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Background="Orange" Margin="10,40,0,0" FontSize="12" FontFamily="Lucida Calligraphy"/>
+                    </MenuItem>
+                    <MenuItem Header="Computer" FontFamily="Lucida Calligraphy" Background="Orange">
+                        <Button Content="Desktop" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Background="Orange" Margin="10,10,0,0" FontSize="12" FontFamily="Lucida Calligraphy"/>
+                        <Button Content="Laptop" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Background="Orange" Margin="10,40,0,0" FontSize="12" FontFamily="Lucida Calligraphy"/>
+                    </MenuItem>
+                    <MenuItem Header="Comunication" FontFamily="Lucida Calligraphy" Background="Orange">
+                        <Button Content="GSM" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Background="Orange" Margin="10,10,0,0" FontSize="12" FontFamily="Lucida Calligraphy"/>
+                        <Button Content="Radio station" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="30" Background="Orange" Margin="10,40,0,0" FontSize="12" FontFamily="Lucida Calligraphy"/>
+                    </MenuItem>
+                </ContextMenu>
+            </Button.ContextMenu>
+            </Button>
+        <Calendar HorizontalAlignment="Left" Margin="257,10,0,0" VerticalAlignment="Top" Background="Orange" BorderBrush="Black">
+
+        </Calendar>
+
+
+    </Grid>
+</Window>
