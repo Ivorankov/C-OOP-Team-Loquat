@@ -1,4 +1,4 @@
-﻿namespace LoquatMegaStore
+﻿namespace LoquatMegaStore.Enumerators
 {
     public enum BatteryType
     {

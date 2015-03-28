@@ -42,6 +42,7 @@
     <Compile Include="Enumerators\AudioFormat.cs" />
     <Compile Include="Enumerators\Colors.cs" />
     <Compile Include="Enumerators\DisplayResolutioncs.cs" />
+    <Compile Include="Enumerators\ProjectorType.cs" />
     <Compile Include="Items\AudioAppliance.cs" />
     <Compile Include="Enumerators\BatteryType.cs" />
     <Compile Include="Items\CommunicationAppliance.cs" />
