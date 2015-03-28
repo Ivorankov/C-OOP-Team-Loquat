@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace LoquatMegaStore
+﻿namespace LoquatMegaStore
 {
     public enum BatteryType
     {

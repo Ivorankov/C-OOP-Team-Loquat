@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace LoquatMegaStore.Interfaces
+﻿namespace LoquatMegaStore.Interfaces
 {
     interface ISoundable
     {

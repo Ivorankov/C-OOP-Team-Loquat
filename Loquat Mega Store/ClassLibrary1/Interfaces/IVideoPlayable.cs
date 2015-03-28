@@ -1,8 +1,7 @@
-﻿using System;
-using LoquatMegaStore.Structures;
-
-namespace LoquatMegaStore.Interfaces
+﻿namespace LoquatMegaStore.Interfaces
 {
+    using LoquatMegaStore.Structures;
+
     interface IVideoPlayable
     {
         Display Display { get; set; }

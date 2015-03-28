@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace LoquatMegaStore.Enumerators
+﻿namespace LoquatMegaStore.Enumerators
 {
     public enum AudioFormat
     {

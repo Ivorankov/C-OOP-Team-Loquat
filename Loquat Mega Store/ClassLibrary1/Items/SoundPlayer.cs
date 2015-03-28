@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace LoquatMegaStore.Items
+﻿namespace LoquatMegaStore.Items
 {
+    using System;
+    using System.Linq;
+
     public class SoundPlayer : AudioAppliance
     {
     }

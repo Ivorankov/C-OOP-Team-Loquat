@@ -1,9 +1,7 @@
-﻿using System;
-
-namespace LoquatMegaStore.Enumerators
+﻿namespace LoquatMegaStore.Enumerators
 {
     public enum Color
     {
-        White,Black,Blue,Yellow,Green,Red,Cyan,Magenta,Orange,Gray
+        White, Black, Blue, Yellow, Green, Red, Cyan, Magenta, Orange, Gray
     }
 }

@@ -1,9 +1,8 @@
-﻿using System;
-using LoquatMegaStore.Interfaces;
-using LoquatMegaStore.Structures;
-
-namespace LoquatMegaStore.Items
+﻿namespace LoquatMegaStore.Items
 {
+    using System;
+    using LoquatMegaStore.Structures;
+
     public abstract class ComputerAppliance : Item
     {
         private Processor processor;

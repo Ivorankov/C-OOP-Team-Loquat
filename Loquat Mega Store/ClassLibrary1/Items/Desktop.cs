@@ -1,9 +1,9 @@
-﻿using System;
-using LoquatMegaStore.Enumerators;
-using LoquatMegaStore.Structures;
-
-namespace LoquatMegaStore.Items
+﻿namespace LoquatMegaStore.Items
 {
+    using System;
+    using LoquatMegaStore.Enumerators;
+    using LoquatMegaStore.Structures;
+
     public class Desktop : ComputerAppliance
     {
         private Color color;

@@ -1,8 +1,8 @@
-﻿using System;
-using LoquatMegaStore.Enumerators;
-
-namespace LoquatMegaStore.Structures
+﻿namespace LoquatMegaStore.Structures
 {
+    using System;
+    using LoquatMegaStore.Enumerators;
+
     public struct Display
     {
         private double size;

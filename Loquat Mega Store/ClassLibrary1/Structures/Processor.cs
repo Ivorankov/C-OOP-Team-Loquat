@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LoquatMegaStore.Structures
+﻿namespace LoquatMegaStore.Structures
 {
+    using System;
+    using System.Linq;
+
     public struct Processor
     {
         private int amountOfCores;

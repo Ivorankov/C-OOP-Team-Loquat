@@ -2,7 +2,6 @@
 using System.Linq;
 using LoquatMegaStore.ShoppingSystem;
 
-    //hello from Alex
 namespace Program
 {
     class Program

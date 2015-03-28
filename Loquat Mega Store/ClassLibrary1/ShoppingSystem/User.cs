@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Security.Cryptography;
-using LoquatMegaStore.Interfaces;
-using System.Text.RegularExpressions;
-
-namespace LoquatMegaStore.ShoppingSystem
+﻿namespace LoquatMegaStore.ShoppingSystem
 {
+    using System;
+    using System.Linq;
+    using LoquatMegaStore.Interfaces;
+    using System.Text.RegularExpressions;
+
     public abstract class User : IPayable, IOrderable
     {
         private string userId;

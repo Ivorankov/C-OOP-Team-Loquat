@@ -1,9 +1,7 @@
-﻿using System;
-
-namespace LoquatMegaStore
+﻿namespace LoquatMegaStore
 {
     public enum DisplayType
     {
-        LCD,TFT,LED,OLED,Plasma
+        LCD, TFT, LED, OLED, Plasma
     }
 }

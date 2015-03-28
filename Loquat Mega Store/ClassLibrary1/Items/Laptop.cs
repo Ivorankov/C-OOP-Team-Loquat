@@ -1,10 +1,10 @@
-﻿using System;
-using LoquatMegaStore.Enumerators;
-using LoquatMegaStore.Structures;
-using LoquatMegaStore.Interfaces;
-
-namespace LoquatMegaStore.Items
+﻿namespace LoquatMegaStore.Items
 {
+    using System;
+    using LoquatMegaStore.Enumerators;
+    using LoquatMegaStore.Structures;
+    using LoquatMegaStore.Interfaces;
+
     public class Laptop : ComputerAppliance,IVideoPlayable,ISoundable
     {
         private Color color;

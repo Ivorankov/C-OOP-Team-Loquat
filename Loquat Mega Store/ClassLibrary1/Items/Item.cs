@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using LoquatMegaStore.Interfaces;
-using LoquatMegaStore.Structures;
-using LoquatMegaStore.ShoppingSystem;
-
-namespace LoquatMegaStore.Items
+﻿namespace LoquatMegaStore.Items
 {
+    using System;
+    using System.Linq;
+    using LoquatMegaStore.Interfaces;
+    using LoquatMegaStore.Structures;
+
     public abstract class Item : ICartAddable
     {
         private string manufacturer;
