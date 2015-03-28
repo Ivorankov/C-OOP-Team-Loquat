@@ -10,9 +10,9 @@
             : base(userId, password, email)
         {
             this.UserCart = new Cart();
-            
+
         }
 
-        
+
     }
 }

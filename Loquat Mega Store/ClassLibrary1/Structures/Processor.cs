@@ -12,7 +12,7 @@
         public int AmountOfCores
         {
             get { return this.amountOfCores; }
-            set 
+            set
             {
                 if (value <= 0)
                 {
@@ -26,7 +26,7 @@
             get { return this.clockSpeed; }
             set
             {
-                if(value <= 0)
+                if (value <= 0)
                 {
                     throw new ArgumentOutOfRangeException("Processor frequency cannot be less then or equal to 0");
                 }
@@ -45,7 +45,7 @@
             }
         }
         public Processor(int cores, double frequency, int cache)
-            :this()
+            : this()
         {
             this.AmountOfCores = cores;
             this.ClockSpeed = frequency;

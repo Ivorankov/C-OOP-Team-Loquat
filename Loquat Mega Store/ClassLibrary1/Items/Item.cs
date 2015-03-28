@@ -91,20 +91,20 @@
         {
 
         }
-        public Item(string manufacturer, string model, decimal price,decimal weight,int powerConsumption, int amountInStock,Dimensions dimensions)
+        public Item(string manufacturer, string model, decimal price, decimal weight, int powerConsumption, int amountInStock, Dimensions dimensions)
         {
             this.Manufacturer = manufacturer;
             this.Model = model;
             this.Price = price;
             this.Weight = weight;
             this.PowerConsumption = powerConsumption;
-            this.AmountInStock = ammountInStock;
+            this.AmountInStock = amountInStock;
             this.dimensions = dimensions;
         }
 
         public void AddToCart()
         {
-			throw new NotImplementedException();
+            throw new NotImplementedException();
         }
-	}
+    }
 }

@@ -14,7 +14,7 @@
         }
         public Desktop(string manufacturer, string model, decimal weight, decimal price, int powerConsumption,
             int amountInStock, Dimensions dimensions, Processor processor, int ramMemory, int diskMemoery, Color color)
-            :base(manufacturer,model,price,weight,powerConsumption,amountInStock,dimensions,processor, ramMemory,diskMemoery) 
+            : base(manufacturer, model, price, weight, powerConsumption, amountInStock, dimensions, processor, ramMemory, diskMemoery)
         {
             this.Color = color;
         }

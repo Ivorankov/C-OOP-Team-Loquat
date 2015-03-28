@@ -6,6 +6,6 @@
 
     public class MobilePhone : CommunicationAppliance, ICommunicational
     {
-		// Bezpolezen komentar
+		
     }
 }

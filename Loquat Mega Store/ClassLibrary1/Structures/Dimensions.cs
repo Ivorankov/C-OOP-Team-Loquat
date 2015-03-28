@@ -46,7 +46,7 @@
             }
         }
         public Dimensions(int x, int y, int z)
-            :this()
+            : this()
         {
             this.X = x;
             this.Y = y;

@@ -1,14 +1,14 @@
-﻿using System;
-using System.Linq;
-using LoquatMegaStore.ShoppingSystem;
-
-namespace Program
+﻿namespace Program
 {
+    using System;
+    using System.Linq;
+    using LoquatMegaStore.ShoppingSystem;
+
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Customer user = new Customer("pesho5","2a","az5@abv.bg");
+            Customer user = new Customer("pesho5", "2a", "az5@abv.bg");
 
             //Authentication.CreateUser(user);
             DateTime date = DateTime.Now;
@@ -16,12 +16,12 @@ namespace Program
 
             //Authentication.LoginUser(user);
 
-            Administrator admin = new Administrator("pesho5","2");
+            Administrator admin = new Administrator("pesho5", "2");
 
             //user.UserCart.Items.Add() //Here we add Items to the cart of the user
             Authentication.LoginUser(admin);
 
-           
+
         }
     }
 }

@@ -11,7 +11,7 @@
         public static string GenerateSaltedHash(string plainText, string salt)
         {
             HashAlgorithm algorithm = new SHA384Managed();
-            
+
             byte[] plainTextWithSaltBytes =
               new byte[plainText.Length + salt.Length];
 

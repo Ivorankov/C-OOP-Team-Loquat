@@ -17,13 +17,13 @@
 
         public void ViewCartDetails()
         {
-            if (this.Items.Count==0)
+            if (this.Items.Count == 0)
             {
                 Console.WriteLine("The cart is empty");
             }
             else
             {
-                Console.WriteLine("The cart has {0} items in it",this.Items.Count); //TODO show the items or make a method for this. Трябва да се помисли
+                Console.WriteLine("The cart has {0} items in it", this.Items.Count); //TODO show the items or make a method for this. Трябва да се помисли
             }
         }
 

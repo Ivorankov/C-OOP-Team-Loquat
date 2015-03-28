@@ -30,8 +30,8 @@
             get { return this.displayRes; }
             set { this.displayRes = value; }
         }
-        public Display(double size, DisplayType displayType,DisplayResolution displayRes)
-            :this()
+        public Display(double size, DisplayType displayType, DisplayResolution displayRes)
+            : this()
         {
             this.DisplayType = displayType;
             this.DisplayRes = displayRes;

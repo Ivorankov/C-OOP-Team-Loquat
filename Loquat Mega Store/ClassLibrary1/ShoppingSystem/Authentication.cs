@@ -44,8 +44,6 @@
             }
         }
 
-        
-
         public static void CreateUser(Customer user)
         {
             bool checkUser = false;
@@ -68,7 +66,7 @@
             {
                 string[] str = CreateDBInput(user);
                 Console.WriteLine("User created successfully");
-                
+
                 File.AppendAllText("../../DB/UsersDB.txt", String.Join(" ", str) + Environment.NewLine);
             }
         }
