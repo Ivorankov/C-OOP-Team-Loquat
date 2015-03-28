@@ -8,5 +8,6 @@ namespace LoquatMegaStore.Items
 {
     public class MobilePhone : CommunicationAppliance, ICommunicational
     {
+		// Bezpolezen komentar
     }
 }

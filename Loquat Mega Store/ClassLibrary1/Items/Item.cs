@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using LoquatMegaStore.Interfaces;
 using LoquatMegaStore.Structures;
+using LoquatMegaStore.ShoppingSystem;
 
 namespace LoquatMegaStore.Items
 {
@@ -106,7 +107,7 @@ namespace LoquatMegaStore.Items
 
         public void AddToCart()
         {
-            throw new NotImplementedException();
+			throw new NotImplementedException();
         }
-    }
+	}
 }
