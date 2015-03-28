@@ -9,6 +9,14 @@
         private int ramMemory;//in mb's
         private int diskMemory;
 
+        public ComputerAppliance(string manufacturer, string model, decimal price, decimal weight,
+            int powerConsumption, int amountInStock, Dimensions dimensions, Processor processor, int ramMemory, int diskMemory)
+            : base(manufacturer, model, price, weight, powerConsumption, amountInStock, dimensions)
+        {
+            this.Processor = processor;
+            this.RamMemory = ramMemory;
+            this.DiskMemory = diskMemory;
+        }
         public Processor Processor
         {
             get { return this.processor; }
@@ -37,14 +45,6 @@
                 }
                 this.diskMemory = value;
             }
-        }
-        public ComputerAppliance(string manufacturer, string model, decimal price, decimal weight,
-            int powerConsumption, int amountInStock, Dimensions dimensions, Processor processor, int ramMemory, int diskMemory)
-            : base(manufacturer, model, price, weight, powerConsumption, amountInStock, dimensions)
-        {
-            this.Processor = processor;
-            this.RamMemory = ramMemory;
-            this.DiskMemory = diskMemory;
         }
     }
 }

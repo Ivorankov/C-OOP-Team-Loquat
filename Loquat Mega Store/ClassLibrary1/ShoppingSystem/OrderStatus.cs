@@ -3,7 +3,7 @@
     using System;
     using System.Linq;
 
-    public enum OrderStatus
+    public enum OrderStatus     //Shouldn't this be in enums?Alex
     {
         New,
         OnHold,

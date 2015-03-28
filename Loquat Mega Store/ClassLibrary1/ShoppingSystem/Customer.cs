@@ -5,14 +5,13 @@
 
     public class Customer : User
     {
-        public Cart UserCart { get; set; }//TODO: Validation
-        public Customer(string userId, string password, string email)
+         public Customer(string userId, string password, string email)
             : base(userId, password, email)
         {
             this.UserCart = new Cart();
 
         }
-
+         public Cart UserCart { get; set; }//TODO: Validation
 
     }
 }

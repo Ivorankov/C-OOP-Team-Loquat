@@ -9,6 +9,13 @@
         private double clockSpeed;
         private int cache;
 
+        public Processor(int cores, double frequency, int cache)
+            : this()
+        {
+            this.AmountOfCores = cores;
+            this.ClockSpeed = frequency;
+            this.Cache = cache;
+        }
         public int AmountOfCores
         {
             get { return this.amountOfCores; }
@@ -43,13 +50,6 @@
                     throw new ArgumentOutOfRangeException("Processor cache cannot be less then or equal to 0");
                 }
             }
-        }
-        public Processor(int cores, double frequency, int cache)
-            : this()
-        {
-            this.AmountOfCores = cores;
-            this.ClockSpeed = frequency;
-            this.Cache = cache;
         }
     }
 }

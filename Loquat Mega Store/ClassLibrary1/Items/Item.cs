@@ -15,6 +15,20 @@
         private int ammountInStock;
         private Dimensions dimensions;
 
+        public Item() //MAKES THE PROGRAM BUILD ( TO BE DELETED )
+        {
+
+        }
+        public Item(string manufacturer, string model, decimal price, decimal weight, int powerConsumption, int amountInStock, Dimensions dimensions)
+        {
+            this.Manufacturer = manufacturer;
+            this.Model = model;
+            this.Price = price;
+            this.Weight = weight;
+            this.PowerConsumption = powerConsumption;
+            this.AmountInStock = amountInStock;
+            this.dimensions = dimensions;
+        }
         public string Manufacturer
         {
             get { return this.manufacturer; }
@@ -87,21 +101,6 @@
                 this.powerConsumption = value;
             }
         }
-        public Item() //MAKES THE PROGRAM BUILD ( TO BE DELETED )
-        {
-
-        }
-        public Item(string manufacturer, string model, decimal price, decimal weight, int powerConsumption, int amountInStock, Dimensions dimensions)
-        {
-            this.Manufacturer = manufacturer;
-            this.Model = model;
-            this.Price = price;
-            this.Weight = weight;
-            this.PowerConsumption = powerConsumption;
-            this.AmountInStock = amountInStock;
-            this.dimensions = dimensions;
-        }
-
         public void AddToCart()
         {
             throw new NotImplementedException();

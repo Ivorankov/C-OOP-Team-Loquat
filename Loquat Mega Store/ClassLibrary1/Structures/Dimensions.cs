@@ -9,6 +9,13 @@
         private int y;
         private int z;
 
+        public Dimensions(int x, int y, int z)
+            : this()
+        {
+            this.X = x;
+            this.Y = y;
+            this.Z = z;
+        }
         public int X
         {
             get { return this.x; }
@@ -44,13 +51,6 @@
                 }
                 this.z = value;
             }
-        }
-        public Dimensions(int x, int y, int z)
-            : this()
-        {
-            this.X = x;
-            this.Y = y;
-            this.Z = z;
         }
     }
 }

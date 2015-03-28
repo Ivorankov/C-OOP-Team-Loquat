@@ -11,28 +11,23 @@
         private string password;
         private string email;
 
-
         protected User(string userId, string password, string email)
         {
             this.UserId = userId;
             this.Password = password;
             this.Email = email;
         }
-
-
         //TODO Validation of the properties
         public string UserId
         {
             get { return userId; }
             set { userId = value; }
         }
-
         public string Password
         {
             internal get { return password; }
             set { password = value; }
         }
-
         public string Email
         {
             get
