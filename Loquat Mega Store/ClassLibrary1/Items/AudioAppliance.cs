@@ -25,24 +25,9 @@ namespace LoquatMegaStore.Items
 
         public AudioAppliance(string manufacturer, string model, decimal price, decimal weight,
             int powerConsumption, int amountInStock, Dimensions dimensions, int outputPower, Color color, AudioFormat playModes)
-            : base(manufacturer, model, price, weight, powerConsumption, amountInStock, dimensions,color)
+            : base(manufacturer, model, price, weight, powerConsumption, amountInStock, dimensions, color)
         {
             this.OutputPower = outputPower;
         }
-
-        public AudioAppliance(string manufacturer, string model, decimal price, decimal weight, int powerConsumption, int amountInStock, Dimensions dimensions, int outputPower, Enumerators.Color color)
-        {
-            this.Manufacturer = manufacturer;
-            this.Model = model;
-            this.Price = price;
-            this.Weight = weight;
-            this.PowerConsumption = powerConsumption;
-            this.AmountInStock = amountInStock;
-            this.Dimensions = dimensions;
-            this.OutputPower = outputPower;
-            this.Color = color;
-        }
-
-        public Dimensions Dimensions { get; set; }
     }
 }
