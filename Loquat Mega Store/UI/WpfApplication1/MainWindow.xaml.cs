@@ -48,5 +48,53 @@ namespace WpfApplication1
             Aboutwindow aboutWindow = new Aboutwindow();
             aboutWindow.Show();
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            LoudSpeakerWindow loudSpeakr = new LoudSpeakerWindow();
+            loudSpeakr.Show();
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            AudioPlayerWindow audioPlayer = new AudioPlayerWindow();
+            audioPlayer.Show();
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            TVWindow tV = new TVWindow();
+            tV.Show();
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            ProjectorWindow projector = new ProjectorWindow();
+            projector.Show();
+        }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            DesktopWindow desktop = new DesktopWindow();
+            desktop.Show();
+        }
+
+        private void Button_Click_8(object sender, RoutedEventArgs e)
+        {
+            LaptopWindow laptop = new LaptopWindow();
+            laptop.Show();
+        }
+
+        private void Button_Click_9(object sender, RoutedEventArgs e)
+        {
+            GSMWindow gSM = new GSMWindow();
+            gSM.Show();
+        }
+
+        private void Button_Click_10(object sender, RoutedEventArgs e)
+        {
+            RadioStationWindow radioSt = new RadioStationWindow();
+            radioSt.Show();
+        }
     }
 }

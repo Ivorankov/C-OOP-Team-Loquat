@@ -10,22 +10,21 @@
             <Button.ContextMenu>
                 <ContextMenu >
                     <MenuItem Header="Audio" FontFamily="Lucida Calligraphy" Background="Orange">
-                        <Button Content="Loud Speaker" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="Orange" Margin="10,10,0,0" FontSize="12" FontFamily="Lucida Calligraphy"/>
-                        <Button Content="Audio player" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="Orange" Margin="10,10,0,0" FontSize="12" FontFamily="Lucida Calligraphy"/>
+                        <Button Content="Loud Speaker" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="Orange" Margin="10,10,0,0" FontSize="12" FontFamily="Lucida Calligraphy" Click="Button_Click_3"/>
+                        <Button Content="Audio player" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="Orange" Margin="10,10,0,0" FontSize="12" FontFamily="Lucida Calligraphy" Click="Button_Click_4"/>
                     </MenuItem>
                     <MenuItem Header="Video" FontFamily="Lucida Calligraphy" Background="Orange">
-                        <StackPanel>
-                        <Button Content="TV" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="Orange" Margin="10,10,0,0" FontSize="12" FontFamily="Lucida Calligraphy"/>
-                        <Button Content="Projector" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="Orange" Margin="10,10,0,0" FontSize="12" FontFamily="Lucida Calligraphy"/>
-                        </StackPanel>
+                        <Button Content="TV" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="Orange" Margin="10,10,0,0" FontSize="12" FontFamily="Lucida Calligraphy" Click="Button_Click_5"/>
+                        <Button Content="Projector" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="Orange" Margin="10,10,0,0" FontSize="12" FontFamily="Lucida Calligraphy" Click="Button_Click_6"/>
+
                     </MenuItem>
                     <MenuItem Header="Computer" FontFamily="Lucida Calligraphy" Background="Orange">
-                        <Button Content="Desktop" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="Orange" Margin="10,10,0,0" FontSize="12" FontFamily="Lucida Calligraphy"/>
-                        <Button Content="Laptop" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="Orange" Margin="10,10,0,0" FontSize="12" FontFamily="Lucida Calligraphy"/>
+                        <Button Content="Desktop" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="Orange" Margin="10,10,0,0" FontSize="12" FontFamily="Lucida Calligraphy" Click="Button_Click_7"/>
+                        <Button Content="Laptop" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="Orange" Margin="10,10,0,0" FontSize="12" FontFamily="Lucida Calligraphy" Click="Button_Click_8"/>
                     </MenuItem>
                     <MenuItem Header="Comunication" FontFamily="Lucida Calligraphy" Background="Orange">
-                        <Button Content="GSM" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="Orange" Margin="10,10,0,0" FontSize="12" FontFamily="Lucida Calligraphy"/>
-                        <Button Content="Radio station" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="Orange" Margin="10,10,0,0" FontSize="12" FontFamily="Lucida Calligraphy"/>
+                        <Button Content="GSM" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="Orange" Margin="10,10,0,0" FontSize="12" FontFamily="Lucida Calligraphy" Click="Button_Click_9"/>
+                        <Button Content="Radio station" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="Orange" Margin="10,10,0,0" FontSize="12" FontFamily="Lucida Calligraphy" Click="Button_Click_10"/>
                     </MenuItem>
                 </ContextMenu>
             </Button.ContextMenu>

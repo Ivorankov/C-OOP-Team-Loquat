@@ -53,7 +53,51 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AudioPlayer.xaml.cs">
+      <DependentUpon>AudioPlayer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DesktopWindow.xaml.cs">
+      <DependentUpon>DesktopWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GSMWindow.xaml.cs">
+      <DependentUpon>GSMWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LaptopWindow.xaml.cs">
+      <DependentUpon>LaptopWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoudSpeakerWindow.xaml.cs">
+      <DependentUpon>LoudSpeakerWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectorWindow.xaml.cs">
+      <DependentUpon>ProjectorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RadioStationWindow.xaml.cs">
+      <DependentUpon>RadioStationWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TVWindow.xaml.cs">
+      <DependentUpon>TVWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="AboutWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AudioPlayer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DesktopWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GSMWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LaptopWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoudSpeakerWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -72,6 +116,18 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="ProjectorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RadioStationWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TVWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
