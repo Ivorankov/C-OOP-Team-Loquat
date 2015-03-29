@@ -8,13 +8,15 @@ namespace LoquatMegaStore.Items
     {
 
         private int radioStationMemory;
+        private AudioFormat audioFormat;
 
        public SoundPlayer(string manufacturer, string model, decimal weight, decimal price, int powerConsumption,
-             int amountInStock, Dimensions dimensions, Speaker speaker, int outputPower ,Color color, int stations)
+             int amountInStock, Dimensions dimensions, Speaker speaker, int outputPower ,Color color, int stations, AudioFormat playModes)
            : base(manufacturer, model, price, weight, powerConsumption, amountInStock, dimensions,outputPower,color)
        {
            this.RadioStationMemory = stations;
            this.Speaker = speaker;
+           this.AudioFormat = playModes;
        }
 
         public int RadioStationMemory
@@ -28,6 +30,11 @@ namespace LoquatMegaStore.Items
                 }
                 this.radioStationMemory = value;
             }
+        }
+        public AudioFormat AudioFormat
+        {
+            get { return this.audioFormat; }
+            private set { this.audioFormat = value; }
         }
         public Speaker Speaker { get; set; }
         public void PlaySound()

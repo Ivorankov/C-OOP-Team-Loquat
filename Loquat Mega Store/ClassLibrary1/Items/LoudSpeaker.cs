@@ -38,10 +38,11 @@ namespace LoquatMegaStore.Items
 
         public LoudSpeaker(string manufacturer, string model, decimal weight, decimal price, int powerConsumption,
               int amountInStock, Dimensions dimensions, Speaker speaker, int outputPower , Color color, int impedance, int sensitivity)
-            : base(manufacturer, model, price, weight, powerConsumption, amountInStock, dimensions,outputPower,color)
+            : base(manufacturer,model,price,weight,powerConsumption,amountInStock,dimensions,outputPower,color)
         {
             this.Impedance = impedance;
             this.Sensitivity = sensitivity;
+            this.Speaker = speaker;
         }
 
         public Speaker Speaker { get; set; }

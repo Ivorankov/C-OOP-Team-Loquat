@@ -24,7 +24,7 @@ namespace LoquatMegaStore.Items
         }
 
         public AudioAppliance(string manufacturer, string model, decimal price, decimal weight,
-            int powerConsumption, int amountInStock, Dimensions dimensions, int outputPower, Color color, AudioFormat playModes)
+            int powerConsumption, int amountInStock, Dimensions dimensions, int outputPower, Color color)
             : base(manufacturer, model, price, weight, powerConsumption, amountInStock, dimensions, color)
         {
             this.OutputPower = outputPower;
