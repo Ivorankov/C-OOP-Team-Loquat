@@ -42,5 +42,11 @@ namespace WpfApplication1
         {
             System.Diagnostics.Process.Start("https://github.com/Ivorankov/C-OOP-Team-Loquat");
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Aboutwindow aboutWindow = new Aboutwindow();
+            aboutWindow.Show();
+        }
     }
 }

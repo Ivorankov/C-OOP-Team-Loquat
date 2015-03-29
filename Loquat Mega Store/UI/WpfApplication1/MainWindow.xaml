@@ -4,7 +4,7 @@
         Title="MainWindow" Height="400" Width="490" Background="Ivory">
     <Grid>
         <Button Content="Home" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="30" Margin="10,10,0,0" FontSize="16" Background="Orange" FontFamily="Lucida Calligraphy" Click="Button_Click_1"/>
-        <Button Content="About Us" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="30" Margin="10,58,0,0" FontSize="16" Background="Orange" FontFamily="Lucida Calligraphy"/>
+        <Button Content="About Us" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="30" Margin="10,58,0,0" FontSize="16" Background="Orange" FontFamily="Lucida Calligraphy" Click="Button_Click_2"/>
         <Button Content="Log in/Register" HorizontalAlignment="Left" VerticalAlignment="Top" Width="141" Height="30" Margin="10,163,0,0" FontSize="16" Background="Orange" FontFamily="Lucida Calligraphy"/>
         <Button Content="Category" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="10,110,0,0" Click="Button_Click" Height="30" FontSize="16" Background="Orange" FontFamily="Lucida Calligraphy">
             <Button.ContextMenu>

@@ -1,0 +1,9 @@
+﻿<Window x:Class="WpfApplication1.Aboutwindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About_window" Height="400" Width="490" Background="Ivory">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Team Loquat - a Telerik Academy team" FontFamily="Lucida Calligraphy" FontSize="16" VerticalAlignment="Top" Width="462" Margin="10,0,0,0"/>
+
+    </Grid>
+</Window>
