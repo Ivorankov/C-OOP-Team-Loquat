@@ -53,51 +53,54 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AudioPlayer.xaml.cs">
+    <Compile Include="ItemWindows\AudioPlayer.xaml.cs">
       <DependentUpon>AudioPlayer.xaml</DependentUpon>
     </Compile>
-    <Compile Include="DesktopWindow.xaml.cs">
+    <Compile Include="ItemWindows\DesktopWindow.xaml.cs">
       <DependentUpon>DesktopWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GSMWindow.xaml.cs">
+    <Compile Include="ItemWindows\GSMWindow.xaml.cs">
       <DependentUpon>GSMWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="LaptopWindow.xaml.cs">
+    <Compile Include="ItemWindows\LaptopWindow.xaml.cs">
       <DependentUpon>LaptopWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="LoudSpeakerWindow.xaml.cs">
+    <Compile Include="ItemWindows\LoudSpeakerWindow.xaml.cs">
       <DependentUpon>LoudSpeakerWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ProjectorWindow.xaml.cs">
+    <Compile Include="ItemWindows\ProjectorWindow.xaml.cs">
       <DependentUpon>ProjectorWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="RadioStationWindow.xaml.cs">
+    <Compile Include="ItemWindows\RadioStationWindow.xaml.cs">
       <DependentUpon>RadioStationWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="TVWindow.xaml.cs">
+    <Compile Include="ItemWindows\TVWindow.xaml.cs">
       <DependentUpon>TVWindow.xaml</DependentUpon>
     </Compile>
-    <Page Include="AboutWindow.xaml">
+    <Compile Include="SideWindows\UserWindow.xaml.cs">
+      <DependentUpon>UserWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="SideWindows\AboutWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AudioPlayer.xaml">
+    <Page Include="ItemWindows\AudioPlayer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DesktopWindow.xaml">
+    <Page Include="ItemWindows\DesktopWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GSMWindow.xaml">
+    <Page Include="ItemWindows\GSMWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="LaptopWindow.xaml">
+    <Page Include="ItemWindows\LaptopWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="LoudSpeakerWindow.xaml">
+    <Page Include="ItemWindows\LoudSpeakerWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -105,7 +108,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="AboutWindow.xaml.cs">
+    <Compile Include="SideWindows\AboutWindow.xaml.cs">
       <DependentUpon>AboutWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
@@ -116,15 +119,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="ProjectorWindow.xaml">
+    <Page Include="ItemWindows\ProjectorWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="RadioStationWindow.xaml">
+    <Page Include="ItemWindows\RadioStationWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="TVWindow.xaml">
+    <Page Include="ItemWindows\TVWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SideWindows\UserWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

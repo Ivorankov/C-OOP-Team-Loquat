@@ -5,7 +5,18 @@
     <Grid>
         <Button Content="Home" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="30" Margin="10,10,0,0" FontSize="16" Background="Orange" FontFamily="Lucida Calligraphy" Click="Button_Click_1"/>
         <Button Content="About Us" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Height="30" Margin="10,58,0,0" FontSize="16" Background="Orange" FontFamily="Lucida Calligraphy" Click="Button_Click_2"/>
-        <Button Content="Log in/Register" HorizontalAlignment="Left" VerticalAlignment="Top" Width="141" Height="30" Margin="10,163,0,0" FontSize="16" Background="Orange" FontFamily="Lucida Calligraphy"/>
+        <Button Content="Log in/Register" HorizontalAlignment="Left" VerticalAlignment="Top" Width="141" Height="30" Margin="10,163,0,0" FontSize="16" Background="Orange" FontFamily="Lucida Calligraphy" Click="Button_Click_11">
+            <Button.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Login" FontFamily="Lucida Calligraphy" Background="Orange">
+                        <Button Content="Login" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="Orange" Margin="10,10,0,0" FontSize="12" FontFamily="Lucida Calligraphy" Click="Button_Click_12"/>
+                    </MenuItem>
+                    <MenuItem Header="Register" FontFamily="Lucida Calligraphy" Background="Orange">
+                        <Button Content="Register" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="Orange" Margin="10,10,0,0" FontSize="12" FontFamily="Lucida Calligraphy"/>
+                    </MenuItem>
+                </ContextMenu>
+            </Button.ContextMenu>
+        </Button>
         <Button Content="Category" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="10,110,0,0" Click="Button_Click" Height="30" FontSize="16" Background="Orange" FontFamily="Lucida Calligraphy">
             <Button.ContextMenu>
                 <ContextMenu >
@@ -28,7 +39,7 @@
                     </MenuItem>
                 </ContextMenu>
             </Button.ContextMenu>
-            </Button>
+        </Button>
         <Button Content="Shopping cart" HorizontalAlignment="Left" VerticalAlignment="Top" Width="127" Height="30" Margin="10,215,0,0" FontSize="16" Background="Orange" FontFamily="Lucida Calligraphy"/>
         <Calendar HorizontalAlignment="Left" Margin="257,10,0,0" VerticalAlignment="Top" Background="Orange" BorderBrush="Black"/>
     </Grid>
