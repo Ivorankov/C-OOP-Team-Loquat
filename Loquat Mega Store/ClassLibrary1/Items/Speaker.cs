@@ -3,7 +3,7 @@
     using System;
     using System.Linq;
 
-    public class Speaker : AudioAppliance
+    public class LoudSpeaker : AudioAppliance
     {
     }
 }

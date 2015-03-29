@@ -34,13 +34,6 @@
       <FileName>Items\AudioAppliance.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LoquatMegaStore.Items.Speaker">
-    <Position X="0.5" Y="5.75" Width="1.25" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Items\Speaker.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="LoquatMegaStore.Items.SoundPlayer">
     <Position X="2" Y="5.75" Width="1.25" />
     <TypeIdentifier>
@@ -99,6 +92,13 @@
       <FileName>Items\Laptop.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="1.05" />
+  </Class>
+  <Class Name="LoquatMegaStore.Items.LoudSpeaker">
+    <Position X="0.5" Y="5.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Items\Speaker.cs</FileName>
+    </TypeIdentifier>
   </Class>
   <Enum Name="LoquatMegaStore.Enumerators.DisplayType">
     <Position X="15" Y="1.75" Width="1.5" />
