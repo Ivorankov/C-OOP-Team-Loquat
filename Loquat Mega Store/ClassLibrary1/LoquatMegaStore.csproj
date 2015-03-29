@@ -72,13 +72,14 @@
     <Compile Include="ShoppingSystem\ShippingInfo.cs" />
     <Compile Include="ShoppingSystem\User.cs" />
     <Compile Include="Items\SoundPlayer.cs" />
-    <Compile Include="Items\Speaker.cs" />
+    <Compile Include="Items\LoudSpeaker.cs" />
     <Compile Include="Items\TV.cs" />
     <Compile Include="Items\VideoAppliance.cs" />
     <Compile Include="ShoppingSystem\UserState.cs" />
     <Compile Include="Structures\Dimensions.cs" />
     <Compile Include="Structures\Display.cs" />
     <Compile Include="Structures\Processor.cs" />
+    <Compile Include="Structures\Speaker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />

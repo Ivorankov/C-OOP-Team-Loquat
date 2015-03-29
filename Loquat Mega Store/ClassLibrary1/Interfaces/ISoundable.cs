@@ -1,9 +1,9 @@
 ﻿namespace LoquatMegaStore.Interfaces
 {
+    using LoquatMegaStore.Structures;
     interface ISoundable
     {
-        double PorweOutput { get; set; }
-        double Resistance { get; set; }
+        Speaker Speaker  { get; set; }
         void PlaySound();
     }
 }

@@ -88,7 +88,7 @@
   <Class Name="LoquatMegaStore.Items.Laptop">
     <Position X="8.75" Y="5.75" Width="1.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAIAQgAAAAABAAAAAAAAAAIAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQgAAAgABAAAAAAAAAAAAAA=</HashCode>
       <FileName>Items\Laptop.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="1.05" />
@@ -97,7 +97,7 @@
     <Position X="0.5" Y="5.75" Width="1.25" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Items\Speaker.cs</FileName>
+      <FileName>Items\LoudSpeaker.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="LoquatMegaStore.Enumerators.DisplayType">

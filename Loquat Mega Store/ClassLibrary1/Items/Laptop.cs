@@ -13,8 +13,6 @@
             : base(manufacturer, model, price, weight, powerConsumption, amountInStock, dimensions, processor, color, ramMemory, diskMemory)
         {
             this.Display = display;
-            this.PorweOutput = powerOutput;
-            this.Resistance = resistance;
         }
         public void PlaySound()
         {
@@ -25,6 +23,7 @@
         {
             throw new NotImplementedException();
         }
+
 
         public Display Display
         {
@@ -38,19 +37,7 @@
             }
         }
 
-        public double PorweOutput
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
-
-        public double Resistance
+        public Speaker Speaker
         {
             get
             {
