@@ -10,6 +10,10 @@
     {
         private List<VideoFeatures> videoFeatures;
 
+        public VideoAppliance(string manufacturer, string model, decimal price, int amountInStock)
+            : base(manufacturer, model, price, amountInStock)
+        {
+        }
         public VideoAppliance(string manufacturer, string model, decimal price, decimal weight, int powerConsumption,
             int amountInStock, Dimensions dimensions, Color color, DisplayResolution displayResolution, DisplayType displayType)
             : base(manufacturer, model, price, weight, powerConsumption, amountInStock, dimensions, color)

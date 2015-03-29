@@ -19,16 +19,19 @@
 
         public Item() //MAKES THE PROGRAM BUILD ( TO BE DELETED )
         {
-
         }
-        public Item(string manufacturer, string model, decimal price, decimal weight, int powerConsumption, int amountInStock, Dimensions dimensions, Color color)
+        public Item(string manufacturer, string model, decimal price, int amountInStock)
         {
             this.Manufacturer = manufacturer;
             this.Model = model;
             this.Price = price;
+            this.AmountInStock = amountInStock;
+        }
+        public Item(string manufacturer, string model, decimal price, decimal weight, int powerConsumption, int amountInStock, Dimensions dimensions, Color color)
+            : this(manufacturer, model, price, amountInStock)
+        {
             this.Weight = weight;
             this.PowerConsumption = powerConsumption;
-            this.AmountInStock = amountInStock;
             this.dimensions = dimensions;
             this.Color = color;
         }

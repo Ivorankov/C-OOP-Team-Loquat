@@ -12,6 +12,10 @@
         private uint ansiLumens;
         private uint lampLife;
 
+        public Projector(string manufacturer, string model, decimal price, int amountInStock)
+            : base(manufacturer, model, price, amountInStock)
+        {
+        }
         public Projector(string manufacturer, string model, decimal price, decimal weight, int powerConsumption, int amountInStock,
             Dimensions dimensions, Color color, DisplayResolution displayResolution, DisplayType displayType, ProjectorType projectorType,
             uint ansiLumens = 1000, uint lampLife = 2000)
