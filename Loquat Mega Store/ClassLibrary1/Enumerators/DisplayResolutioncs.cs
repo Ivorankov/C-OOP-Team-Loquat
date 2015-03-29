@@ -2,6 +2,6 @@
 {
     public enum DisplayResolution
     {
-        p480, p720, p1024, p1920
+        p480, p720, p1024, p1920 , UHD
     }
 }

@@ -2,6 +2,6 @@
 {
     public enum DisplayType
     {
-        LCD, TFT, LED, OLED, Plasma
+        LCD, TFT, LED, OLED, Plasma, SUHD
     }
 }
