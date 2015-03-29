@@ -3,7 +3,7 @@
   <Class Name="LoquatMegaStore.Items.Item">
     <Position X="6.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAgBAAAIAQAAAAAAAgBAAAAAACAABAAkAAgAAAAIACA=</HashCode>
+      <HashCode>AAgBAAAIAQAAAAAAAgBAAAAAACAABACkAAgAgAAIACA=</HashCode>
       <FileName>Items\Item.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -58,7 +58,7 @@
   <Class Name="LoquatMegaStore.Items.Projector">
     <Position X="5.5" Y="5.75" Width="1.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>CQAAAAEABAAAAAAgAAAAAAAABCAAAAAgCAAAAAgAAAA=</HashCode>
       <FileName>Items\Projector.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -85,29 +85,29 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="LoquatMegaStore.Items.Desktop" Collapsed="true">
+  <Class Name="LoquatMegaStore.Items.Desktop">
     <Position X="7.25" Y="5.75" Width="1.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Items\Desktop.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LoquatMegaStore.Items.Laptop" Collapsed="true">
+  <Class Name="LoquatMegaStore.Items.Laptop">
     <Position X="8.75" Y="5.75" Width="1.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAIAQgAAAAABACAAAAAgAAIAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAQgAAAAABAAAAAAAAAAIAAA=</HashCode>
       <FileName>Items\Laptop.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="1.05" />
   </Class>
-  <Enum Name="LoquatMegaStore.DisplayType">
+  <Enum Name="LoquatMegaStore.Enumerators.DisplayType">
     <Position X="15" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QAAAAAAAAAAAAgACAAAAAAEAAAAgAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Enumerators\DisplayType.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="LoquatMegaStore.BatteryType">
+  <Enum Name="LoquatMegaStore.Enumerators.BatteryType">
     <Position X="16.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAIAgAAgAAIAACAAAAAAAABAAAAAAQ=</HashCode>

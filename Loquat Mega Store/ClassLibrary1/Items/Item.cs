@@ -4,6 +4,7 @@
     using System.Linq;
     using LoquatMegaStore.Interfaces;
     using LoquatMegaStore.Structures;
+    using LoquatMegaStore.Enumerators;
 
     public abstract class Item : ICartAddable
     {
@@ -14,12 +15,13 @@
         private int powerConsumption;
         private int ammountInStock;
         private Dimensions dimensions;
+        private Color color;
 
         public Item() //MAKES THE PROGRAM BUILD ( TO BE DELETED )
         {
 
         }
-        public Item(string manufacturer, string model, decimal price, decimal weight, int powerConsumption, int amountInStock, Dimensions dimensions)
+        public Item(string manufacturer, string model, decimal price, decimal weight, int powerConsumption, int amountInStock, Dimensions dimensions, Color color)
         {
             this.Manufacturer = manufacturer;
             this.Model = model;
@@ -28,6 +30,7 @@
             this.PowerConsumption = powerConsumption;
             this.AmountInStock = amountInStock;
             this.dimensions = dimensions;
+            this.Color = color;
         }
         public string Manufacturer
         {
@@ -100,6 +103,11 @@
                 }
                 this.powerConsumption = value;
             }
+        }
+        public Color Color
+        {
+            get { return this.color; }
+            set { this.color = value; }
         }
         public void AddToCart()
         {

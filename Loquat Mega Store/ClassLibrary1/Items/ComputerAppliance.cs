@@ -2,6 +2,7 @@
 {
     using System;
     using LoquatMegaStore.Structures;
+    using LoquatMegaStore.Enumerators;
 
     public abstract class ComputerAppliance : Item
     {
@@ -10,8 +11,8 @@
         private int diskMemory;
 
         public ComputerAppliance(string manufacturer, string model, decimal price, decimal weight,
-            int powerConsumption, int amountInStock, Dimensions dimensions, Processor processor, int ramMemory, int diskMemory)
-            : base(manufacturer, model, price, weight, powerConsumption, amountInStock, dimensions)
+            int powerConsumption, int amountInStock, Dimensions dimensions, Processor processor,Color color, int ramMemory, int diskMemory)
+            : base(manufacturer, model, price, weight, powerConsumption, amountInStock, dimensions,color)
         {
             this.Processor = processor;
             this.RamMemory = ramMemory;
