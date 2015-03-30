@@ -11,7 +11,7 @@
   <Class Name="LoquatMegaStore.Items.VideoAppliance">
     <Position X="4.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAABAACAgAAAAIAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Items\VideoAppliance.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -30,28 +30,29 @@
   <Class Name="LoquatMegaStore.Items.AudioAppliance">
     <Position X="0.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAIAAAAA=</HashCode>
       <FileName>Items\AudioAppliance.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LoquatMegaStore.Items.SoundPlayer">
     <Position X="2" Y="5.75" Width="1.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAgAAAAIAAAAAAgAAAgBAAAAAQAAAAAAAAA=</HashCode>
       <FileName>Items\SoundPlayer.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="LoquatMegaStore.Items.TV">
     <Position X="3.75" Y="5.75" Width="1.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAABAAAAAAAQAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Items\TV.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LoquatMegaStore.Items.Projector">
     <Position X="5.5" Y="5.75" Width="1.25" />
     <TypeIdentifier>
-      <HashCode>CQAAAAEABAAAAAAgAAAAAAAABCAAAAAgCAAAAAgAAAA=</HashCode>
+      <HashCode>CQAAAAEABAAAAAAAAAAgAAAABAAAAAAACAAAAAgAAAA=</HashCode>
       <FileName>Items\Projector.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -88,22 +89,22 @@
   <Class Name="LoquatMegaStore.Items.Laptop">
     <Position X="8.75" Y="5.75" Width="1.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAQgAAAgABAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Items\Laptop.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="1.05" />
   </Class>
   <Class Name="LoquatMegaStore.Items.LoudSpeaker">
     <Position X="0.5" Y="5.75" Width="1.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAEAAAABAQAAAAEAAgAAAgAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Items\LoudSpeaker.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Enum Name="LoquatMegaStore.Enumerators.DisplayType">
     <Position X="15" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>QAAAAAAAAAAAAgACAAAAAAEAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>QAAAAAAAAAAAAgACAAAAAAEAAAAkAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Enumerators\DisplayType.cs</FileName>
     </TypeIdentifier>
   </Enum>
