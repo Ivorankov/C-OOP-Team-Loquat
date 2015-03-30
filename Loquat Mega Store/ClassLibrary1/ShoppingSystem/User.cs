@@ -21,52 +21,92 @@
         public string UserId
         {
             get { return userId; }
-            set { userId = value; }
+            private set
+            {
+                if (ValidUserId(value))
+                {
+                    this.userId = value;
+                }
+                else
+                {
+                    throw new ArgumentException("Invalid userID.");
+                }
+            }
         }
-        public string Password
+        internal string Password
         {
-            internal get { return password; }
-            set { password = value; }
+            get { return this.password; }
+            set
+            {
+                if (ValidPassword(value))
+                {
+                    this.password = value;
+                }
+                else
+                {
+                    throw new ArgumentException("Invalid password.");
+                }
+            }
         }
         public string Email
         {
             get
             {
-                return email;
+                return this.email;
             }
 
-            set
+            protected set
             {
-                if (ValidString(value))
+                if (ValidEmail(value))
                 {
-                    if (ValidEmail(value))
-                    {
-                        email = value;
-                    }
-                    else
-                    {
-                        throw new ArgumentException("Invalid e-mail address.");
-                    }
+                    this.email = value;
+                }
+                else
+                {
+                    throw new ArgumentException("Invalid e-mail address.");
                 }
             }
         }
 
-        private bool ValidEmail(string email)
+        private bool ValidUserId(string inputId)
         {
-            string patternStrict = @"^(([^<>()[\]\\.,;:\s@\""]+"
+            string userIdPattern = @"^[a-z0-9_]{3,16}$"; // 3 to 16 chars - letters, numbers or underscore
+
+            var regex = new Regex(userIdPattern);
+
+            return regex.IsMatch(inputId);
+        }
+
+        private bool ValidEmail(string inputEmail)
+        {
+            string emailPattern = @"^(([^<>()[\]\\.,;:\s@\""]+"
                                   + @"(\.[^<>()[\]\\.,;:\s@\""]+)*)|(\"".+\""))@"
                                   + @"((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}"
                                   + @"\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+"
                                   + @"[a-zA-Z]{2,}))$";
-            Regex regexStrict = new Regex(patternStrict);
-            bool emailValid = regexStrict.IsMatch(email); ;
-            return emailValid;
+
+            var regex = new Regex(emailPattern);
+
+            return regex.IsMatch(inputEmail);
         }
 
-        private bool ValidString(string input)
+        private bool ValidPassword(string inputPassword)
         {
-            bool stringValid = !(string.IsNullOrEmpty(input));
-            return stringValid;
+            string passwordPattern = @"((?=.*\d)" // must contain one digit from 0-9
+                + @"(?=.*[a-z])" // must contain one lowercase character
+                + @"(?=.*[A-Z])" // must contain one uppercase character
+                //+ @"(?=.*[@#$%])" // must contain one special symbol in the list "@#$%"
+                + "." // match anything with previous condition checking
+                + "{6,20})"; // length at least 6 characters and maximum of 20	
+
+            var regex = new Regex(passwordPattern);
+
+            return regex.IsMatch(inputPassword);
+        }
+
+        private bool StringNotEmpty(string input)
+        {
+            return !(string.IsNullOrEmpty(input));
         }
 
         public void MakePayment()

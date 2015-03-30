@@ -5,8 +5,8 @@
 
     public class Administrator : User
     {
-        public Administrator(string userId, string password)
-            : base(userId, password, null)
+        public Administrator(string userId, string password, string email)
+            : base(userId, password, email)
         {
 
         }
