@@ -7,7 +7,7 @@
     public static class Authentication
     {
 
-        public static void LoginUser(User user)
+        public static bool LoginUser(User user)
         {
             bool checkUser = false;
             var path = GetPath(user);
@@ -24,23 +24,20 @@
 
                         if (Hashing.CheckHash(hashedPass, arrayLine[1]))
                         {
-                            Console.WriteLine("Login successful");
+
                             checkUser = true;
                             break;
                         }
                         else
                         {
-                            Console.WriteLine("Login failed");
+
                         }
                     }
 
                     line = read.ReadLine();
 
                 } while ((line != null));
-                if (checkUser == false)
-                {
-                    Console.WriteLine("There is no user with these credentials");
-                }
+                return checkUser;
             }
         }
 

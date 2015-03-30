@@ -12,7 +12,7 @@
                         <Button Content="Login" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="Orange" Margin="10,10,0,0" FontSize="12" FontFamily="Lucida Calligraphy" Click="Button_Click_12"/>
                     </MenuItem>
                     <MenuItem Header="Register" FontFamily="Lucida Calligraphy" Background="Orange">
-                        <Button Content="Register" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="Orange" Margin="10,10,0,0" FontSize="12" FontFamily="Lucida Calligraphy"/>
+                        <Button Content="Register" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="Orange" Margin="10,10,0,0" FontSize="12" FontFamily="Lucida Calligraphy" Click="Button_Click_13"/>
                     </MenuItem>
                 </ContextMenu>
             </Button.ContextMenu>

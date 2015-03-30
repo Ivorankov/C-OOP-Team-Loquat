@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using LoquatMegaStore.ShoppingSystem;
 
-namespace WpfApplication1
+namespace WpfApplication1.SideWindows
 {
     /// <summary>
-    /// Interaction logic for UserWindow.xaml
+    /// Interaction logic for RegisterWindow.xaml
     /// </summary>
-    public partial class UserWindow : Window
+    public partial class RegisterWindow : Window
     {
-        public UserWindow()
+        public RegisterWindow()
         {
             InitializeComponent();
         }
@@ -29,24 +29,15 @@ namespace WpfApplication1
             get { return TextBox.Text; }
             set { TextBox.Text = value; }
         }
-        public string Password
-        {
+        public string Password {
             get { return TextBox1.Text; }
-            set { TextBox1.Text = value; }
+            set { TextBox1.Text = value; } 
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Customer user = new Customer(UserName, Password, "test@mail.bg");
-            bool isValid = Authentication.LoginUser(user);
-            if (isValid)
-            {
-                MessageBox.Show("You sucsessfully loged it :)");
-            }
-            else
-            {
-                MessageBox.Show("Loging failed :(");
-            }
-            
+            Customer user = new Customer(UserName, Password, "testt@mail.bg");
+            Authentication.CreateUser(user);
+            MessageBox.Show("You successfully registrated :)");
         }
     }
 }
