@@ -130,7 +130,7 @@ namespace LoquatMegaStore.Items
             }
 
             var result = new StringBuilder();
-            result.AppendLine(new string('-', 43));
+
 
             foreach (var info in properties)
             {
@@ -151,8 +151,8 @@ namespace LoquatMegaStore.Items
                     valueAsString = value.ToString();
                 }
 
-                result.AppendLine(String.Format("{0, -20} | {1, 20}", info.Name, valueAsString));
-                result.AppendLine(new string('-', 43));
+                result.AppendLine(String.Format("{0, -20} : {1, 20}", info.Name, valueAsString));
+
             }
 
             return result.ToString().Trim();
