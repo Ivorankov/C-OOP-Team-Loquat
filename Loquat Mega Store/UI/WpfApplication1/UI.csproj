@@ -53,28 +53,28 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="ItemWindows\AudioPlayer.xaml.cs">
+    <Compile Include="ItemWindows\Audio\AudioPlayer.xaml.cs">
       <DependentUpon>AudioPlayer.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ItemWindows\DesktopWindow.xaml.cs">
+    <Compile Include="ItemWindows\Computers\DesktopWindow.xaml.cs">
       <DependentUpon>DesktopWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ItemWindows\GSMWindow.xaml.cs">
+    <Compile Include="ItemWindows\GSM\GSMWindow.xaml.cs">
       <DependentUpon>GSMWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ItemWindows\LaptopWindow.xaml.cs">
+    <Compile Include="ItemWindows\Computers\LaptopWindow.xaml.cs">
       <DependentUpon>LaptopWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ItemWindows\LoudSpeakerWindow.xaml.cs">
+    <Compile Include="ItemWindows\Audio\LoudSpeakerWindow.xaml.cs">
       <DependentUpon>LoudSpeakerWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ItemWindows\ProjectorWindow.xaml.cs">
+    <Compile Include="ItemWindows\Video\ProjectorWindow.xaml.cs">
       <DependentUpon>ProjectorWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ItemWindows\RadioStationWindow.xaml.cs">
+    <Compile Include="ItemWindows\GSM\RadioStationWindow.xaml.cs">
       <DependentUpon>RadioStationWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ItemWindows\TVWindow.xaml.cs">
+    <Compile Include="ItemWindows\Video\TVWindow.xaml.cs">
       <DependentUpon>TVWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="SideWindows\RegisterWindow.xaml.cs">
@@ -87,23 +87,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ItemWindows\AudioPlayer.xaml">
+    <Page Include="ItemWindows\Audio\AudioPlayer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ItemWindows\DesktopWindow.xaml">
+    <Page Include="ItemWindows\Computers\DesktopWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ItemWindows\GSMWindow.xaml">
+    <Page Include="ItemWindows\GSM\GSMWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ItemWindows\LaptopWindow.xaml">
+    <Page Include="ItemWindows\Computers\LaptopWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ItemWindows\LoudSpeakerWindow.xaml">
+    <Page Include="ItemWindows\Audio\LoudSpeakerWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -122,15 +122,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="ItemWindows\ProjectorWindow.xaml">
+    <Page Include="ItemWindows\Video\ProjectorWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ItemWindows\RadioStationWindow.xaml">
+    <Page Include="ItemWindows\GSM\RadioStationWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ItemWindows\TVWindow.xaml">
+    <Page Include="ItemWindows\Video\TVWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -176,6 +176,7 @@
       <Name>LoquatMegaStore</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
