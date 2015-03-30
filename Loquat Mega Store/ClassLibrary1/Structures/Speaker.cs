@@ -37,5 +37,9 @@
                 this.resistance = value;
             }
         }
+        public override string ToString()
+        {
+            return string.Format("Power output: {0} Resistance: {1}", PorweOutput, Resistance);
+        }
     }
 }

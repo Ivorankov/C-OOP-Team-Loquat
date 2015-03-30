@@ -38,5 +38,9 @@
             get { return this.displayRes; }
             set { this.displayRes = value; }
         }
+        public override string ToString()
+        {
+            return string.Format("Display size: {0} Display type: {1} Display resolution: {2}", Size, DisplayType, DisplayRes);
+        }
     }
 }

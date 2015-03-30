@@ -19,7 +19,7 @@
         public int AmountOfCores
         {
             get { return this.amountOfCores; }
-            set
+           private set
             {
                 if (value <= 0)
                 {
@@ -31,7 +31,7 @@
         public double ClockSpeed
         {
             get { return this.clockSpeed; }
-            set
+           private set
             {
                 if (value <= 0)
                 {
@@ -43,13 +43,17 @@
         public int Cache
         {
             get { return this.cache; }
-            set
+           private set
             {
                 if (value <= 0)
                 {
                     throw new ArgumentOutOfRangeException("Processor cache cannot be less then or equal to 0");
                 }
             }
+        }
+        public override string ToString()
+        {
+            return string.Format("Cores: {0} Clock speed: {1} Cache: {2}", AmountOfCores, ClockSpeed, Cache);
         }
     }
 }

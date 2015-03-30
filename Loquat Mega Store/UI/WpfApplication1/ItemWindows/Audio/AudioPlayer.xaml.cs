@@ -18,7 +18,7 @@ using LoquatMegaStore.Enumerators;
 namespace WpfApplication1
 {
     /// <summary>
-    /// Interaction logic for AudioPlayer.xaml
+    /// Interaction logic for AudioPlayer.xaml 
     /// </summary>
     public partial class AudioPlayerWindow : Window
     {
@@ -29,9 +29,9 @@ namespace WpfApplication1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            SoundPlayer soundPlayer = new SoundPlayer("Testt", "MOdel", 1.12m, 23.21m, 120, 2, new Dimensions(2, 2, 2),
-                 new Processor(4, 25.2, 6), new Display(12.2, DisplayType.TFT, DisplayResolution.p1024),
-                 12.5, 14.2, 256, 1000, LoquatMegaStore.Enumerators.Color.Gray);
+            //SoundPlayer soundPlayer = new SoundPlayer("Testt", "MOdel", 1.12m, 23.21m, 120, 2, new Dimensions(2, 2, 2),
+            //     new Processor(4, 25.2, 6), new Display(12.2, DisplayType.TFT, DisplayResolution.p1024),
+            //     12.5, 14.2, 256, 1000, LoquatMegaStore.Enumerators.Color.Gray);
         }
     }
 }

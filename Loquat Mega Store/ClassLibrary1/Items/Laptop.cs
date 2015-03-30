@@ -15,29 +15,24 @@
             this.Display = display;
             this.Speaker = speaker;
         }
-        public Display Display { get; set; }
+        public Display Display { get;  set; }
 
 
         public void PlayVideo()
         {
-            throw new NotImplementedException();
+           
         }
 
-        public Speaker Speaker
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
+        public Speaker Speaker{get;set;}
+
 
         public void PlaySound()
         {
-            throw new NotImplementedException();
+            
         }
+        //public override string ToString()
+        //{
+        //    return String.Format("Manufacturer: {0}\nModel: {1}\nWeight: {2}\nPrice: {3}\nPower consumption: {4}\nAmount in Stock: {5}\nDimentions: {6}\nProcessor: {7},");
+        //}
     }
 }

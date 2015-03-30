@@ -27,16 +27,16 @@ namespace WpfApplication1
             InitializeComponent();
             Laptop laptop = new Laptop("Testt", "MOdel", 1.12m, 23.21m, 120, 2, new Dimensions(2, 2, 2),
                 new Processor(4, 25.2, 6), new Display(12.2, DisplayType.TFT, DisplayResolution.p1024),
-                12.5, 14.2, 256, 1000, LoquatMegaStore.Enumerators.Color.Gray);
+                new Speaker(50.5,4.5), 256, 1000, LoquatMegaStore.Enumerators.Color.Gray);
             MessageBox.Show(laptop.ToString());
         }
 
         private void Button_Click_12(object sender, RoutedEventArgs e)
         {
-            Laptop laptop = new Laptop("Testt", "MOdel", 1.12m, 23.21m, 120, 2, new Dimensions(2, 2, 2),
-                new Processor(4, 25.2, 6), new Display(12.2, DisplayType.TFT, DisplayResolution.p1024),
-                12.5, 14.2, 256, 1000, LoquatMegaStore.Enumerators.Color.Gray);
-            laptop.AddToCart();
+            //Laptop laptop = new Laptop("Testt", "MOdel", 1.12m, 23.21m, 120, 2, new Dimensions(2, 2, 2),
+            //    new Processor(4, 25.2, 6), new Display(12.2, DisplayType.TFT, DisplayResolution.p1024),
+            //    12.5, 14.2, 256, 1000, LoquatMegaStore.Enumerators.Color.Gray);
+            //laptop.AddToCart();
         }
 
     }
