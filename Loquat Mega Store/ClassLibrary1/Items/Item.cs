@@ -1,4 +1,9 @@
-﻿namespace LoquatMegaStore.Items
+﻿using System.Collections;
+using System.Collections.Generic;
+using System.Reflection;
+using System.Text;
+
+namespace LoquatMegaStore.Items
 {
     using System;
     using System.Linq;
@@ -16,6 +21,7 @@
         private int ammountInStock;
         private Dimensions dimensions;
         private Color color;
+        private PropertyInfo[] properties = null;
 
         public Item() //MAKES THE PROGRAM BUILD ( TO BE DELETED )
         {
@@ -115,6 +121,41 @@
         public void AddToCart()
         {
             throw new NotImplementedException();
+        }
+        public override string ToString()
+        {
+            if (properties == null)
+            {
+                properties = this.GetType().GetProperties();
+            }
+
+            var result = new StringBuilder();
+            result.AppendLine(new string('-', 43));
+
+            foreach (var info in properties)
+            {
+                var value = info.GetValue(this, null) ?? "";
+                var valueAsString = String.Empty;
+
+                if (value is IEnumerable && !(value is String))
+                {
+                    var items = new List<string>();
+                    foreach (var item in (value as IEnumerable))
+                    {
+                        items.Add(item.ToString());
+                    }
+                    valueAsString = String.Join(", ", items);
+                }
+                else
+                {
+                    valueAsString = value.ToString();
+                }
+
+                result.AppendLine(String.Format("{0, -20} | {1, 20}", info.Name, valueAsString));
+                result.AppendLine(new string('-', 43));
+            }
+
+            return result.ToString().Trim();
         }
     }
 }
