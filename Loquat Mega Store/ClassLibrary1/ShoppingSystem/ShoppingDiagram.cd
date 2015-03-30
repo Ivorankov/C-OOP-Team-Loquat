@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="LoquatMegaStore.ShoppingSystem.Administrator">
+    <Position X="0.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ShoppingSystem\Administrator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoquatMegaStore.ShoppingSystem.Authentication">
+    <Position X="8" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABQAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>ShoppingSystem\Authentication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoquatMegaStore.ShoppingSystem.Cart">
+    <Position X="7.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAADAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ShoppingSystem\Cart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoquatMegaStore.ShoppingSystem.Customer">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ShoppingSystem\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoquatMegaStore.ShoppingSystem.Hashing">
+    <Position X="6.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ShoppingSystem\Hashing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoquatMegaStore.ShoppingSystem.Order">
+    <Position X="9.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ShoppingSystem\Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoquatMegaStore.ShoppingSystem.Payment">
+    <Position X="11" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ShoppingSystem\Payment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoquatMegaStore.ShoppingSystem.ShippingInfo">
+    <Position X="12.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ShoppingSystem\ShippingInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoquatMegaStore.ShoppingSystem.User">
+    <Position X="3.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACABAAAgCAAAAAgAAAAAAIAKAIAAAgAAAAA=</HashCode>
+      <FileName>ShoppingSystem\User.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Enum Name="LoquatMegaStore.ShoppingSystem.OrderStatus" Collapsed="true">
+    <Position X="9.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACgAAAAAAAAAAAIAAAABAAAAAACAAAA=</HashCode>
+      <FileName>ShoppingSystem\OrderStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="LoquatMegaStore.ShoppingSystem.UserState" Collapsed="true">
+    <Position X="9.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACQAAABAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>ShoppingSystem\UserState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
