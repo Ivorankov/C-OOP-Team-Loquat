@@ -4,5 +4,6 @@
         Title="Desktop" Height="300" Width="600" Background="Ivory">
     <Grid>
         <Button Content="Add to cart" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="Orange" Margin="463,43,0,0" FontSize="12" FontFamily="Lucida Calligraphy"/>
+        <TextBox HorizontalAlignment="Left" Height="66" x:Name="TextBox" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="438"/>
     </Grid>
 </Window>
