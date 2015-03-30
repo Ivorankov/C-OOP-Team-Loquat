@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WpfApplication1.SideWindows;
 
 namespace WpfApplication1
 {
@@ -109,6 +110,12 @@ namespace WpfApplication1
         {
             UserWindow user = new UserWindow();
             user.Show();
+        }
+
+        private void Button_Click_13(object sender, RoutedEventArgs e)
+        {
+            RegisterWindow regWindow = new RegisterWindow();
+            regWindow.Show();
         }
     }
 }
