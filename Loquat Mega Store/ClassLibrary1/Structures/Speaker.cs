@@ -15,7 +15,7 @@
         public double PorweOutput
         {
             get { return this.powerOutput; }
-            set
+            private set
             {
                 if (value <= 0)
                 {

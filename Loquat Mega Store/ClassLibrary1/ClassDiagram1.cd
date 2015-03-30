@@ -3,7 +3,7 @@
   <Class Name="LoquatMegaStore.Items.Item">
     <Position X="6.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAgBAAAIAQAAAAAAAgBAAAAAACAABACkAAgAgAAIACA=</HashCode>
+      <HashCode>AAoBAAAIAQAAAAAEAgBAAAAAACAABACkAAgAgAAIACA=</HashCode>
       <FileName>Items\Item.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -89,9 +89,10 @@
   <Class Name="LoquatMegaStore.Items.Laptop">
     <Position X="8.75" Y="5.75" Width="1.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQgAAAgABAAAAAAAAAAAAAA=</HashCode>
       <FileName>Items\Laptop.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="LoquatMegaStore.Items.LoudSpeaker">
     <Position X="0.5" Y="5.75" Width="1.25" />
