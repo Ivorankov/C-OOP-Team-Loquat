@@ -30,7 +30,7 @@
                         }
                         else
                         {
-
+                            checkUser = false;
                         }
                     }
 

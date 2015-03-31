@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using LoquatMegaStore.ShoppingSystem;
+using System.IO;
 
 namespace WpfApplication1
 {
@@ -36,10 +37,12 @@ namespace WpfApplication1
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Customer user = new Customer(UserName, Password, "test@mail.bg");
-            bool isValid = Authentication.LoginUser(user);
+            string email = GetUserEmail();
+            Customer customer = new Customer(UserName, Password,email);
+            bool isValid = Authentication.LoginUser(customer);
             if (isValid)
             {
+                MainWindow.customer = customer;
                 MessageBox.Show("You sucsessfully loged it :)");
             }
             else
@@ -47,6 +50,26 @@ namespace WpfApplication1
                 MessageBox.Show("Loging failed :(");
             }
             
+        }
+
+        private string GetUserEmail()
+        {
+            string email = string.Empty;
+            using (StreamReader reader = new StreamReader("../../DB/UsersDB.txt"))
+            {
+                string line = reader.ReadLine();
+                do
+                {
+                    string[] arr = line.Split(' ');
+                    if (arr[0] == UserName)
+                    {
+                        email = arr[2];
+                        break;
+                    }
+                    line = reader.ReadLine();
+                } while (line != null);
+            }
+            return email;
         }
     }
 }

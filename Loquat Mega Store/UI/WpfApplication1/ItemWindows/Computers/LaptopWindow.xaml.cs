@@ -36,8 +36,8 @@ namespace WpfApplication1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Cart cart = new Cart();
-            cart.AddItem(laptop);
+            MainWindow.customer.UserCart.Items.Add(laptop);
+            MessageBox.Show(MainWindow.customer.UserCart.Items.Count.ToString());
         }
 
     }

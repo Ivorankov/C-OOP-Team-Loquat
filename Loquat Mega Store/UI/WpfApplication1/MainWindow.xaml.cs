@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WpfApplication1.SideWindows;
+using LoquatMegaStore.ShoppingSystem;
 
 namespace WpfApplication1
 {
@@ -21,6 +22,7 @@ namespace WpfApplication1
     /// </summary>
     public partial class MainWindow : Window
     {
+        public static Customer customer;
         public MainWindow()
         {
             InitializeComponent();

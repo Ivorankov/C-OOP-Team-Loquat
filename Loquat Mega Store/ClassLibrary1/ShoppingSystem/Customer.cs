@@ -11,6 +11,12 @@
             this.UserCart = new Cart();
 
         }
+         public Customer(string userId, string password)
+             : base(userId, password, null)
+         {
+             this.UserCart = new Cart();
+
+         }
          public Cart UserCart { get; set; }//TODO: Validation
 
     }

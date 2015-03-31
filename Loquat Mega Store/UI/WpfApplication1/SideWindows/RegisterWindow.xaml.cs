@@ -35,8 +35,8 @@ namespace WpfApplication1.SideWindows
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Customer user = new Customer(UserName, Password, "testt@mail.bg");
-            Authentication.CreateUser(user);
+            MainWindow.customer = new Customer(UserName, Password, "ttttt@mail.bg");
+            Authentication.CreateUser(MainWindow.customer);
             MessageBox.Show("You successfully registrated :)");
         }
     }
