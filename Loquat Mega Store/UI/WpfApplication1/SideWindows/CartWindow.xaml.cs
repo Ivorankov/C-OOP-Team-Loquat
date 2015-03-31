@@ -12,21 +12,16 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace WpfApplication1
+namespace WpfApplication1.SideWindows
 {
     /// <summary>
-    /// Interaction logic for LoudSpeaker.xaml
+    /// Interaction logic for CartWindow.xaml
     /// </summary>
-    public partial class LoudSpeakerWindow : Window
+    public partial class CartWindow : Window
     {
-        public LoudSpeakerWindow()
+        public CartWindow()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

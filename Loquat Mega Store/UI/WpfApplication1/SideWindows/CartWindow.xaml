@@ -1,0 +1,9 @@
+﻿<Window x:Class="WpfApplication1.SideWindows.CartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CartWindow" Height="300" Width="600" Background="Ivory">
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="132" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="336" TextChanged="TextBox_TextChanged"/>
+
+    </Grid>
+</Window>
