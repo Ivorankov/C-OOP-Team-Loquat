@@ -1,3 +1,4 @@
+
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,7 +26,7 @@ namespace WpfApplication1
     {
         public Laptop laptop = new Laptop("Testt", "Mod", 1.12m, 23.21m, 120, 2, new Dimensions(2, 2, 2),
                 new Processor(4, 25.2, 6), new Display(12.2, DisplayType.TFT, DisplayResolution.p1024),
-                new Speaker(50.5, 4.5), 256, 1000, LoquatMegaStore.Enumerators.Color.Gray);
+                new Speaker(50.5, 4.5), 256, 1000, LoquatMegaStore.Items.Color.Gray);
         public LaptopWindow()
         {
             InitializeComponent();
@@ -33,10 +34,10 @@ namespace WpfApplication1
             TextBox.Text = laptop.ToString();
         }
 
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            Cart cart = new Cart();
+            cart.AddItem(laptop);
         }
 
     }
