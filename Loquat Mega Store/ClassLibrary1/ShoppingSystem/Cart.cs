@@ -28,5 +28,9 @@
         {
 
         }
+        public void AddItem(Item item)
+        {
+            Items.Add(item);
+        }
     }
 }
