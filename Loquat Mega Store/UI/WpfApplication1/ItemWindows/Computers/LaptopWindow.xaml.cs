@@ -33,10 +33,10 @@ namespace WpfApplication1
             TextBox.Text = laptop.ToString();
         }
 
-        private void Button_Click_12(object sender, RoutedEventArgs e)
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Cart cart = new Cart();
-            cart.AddItem(laptop);
+
         }
 
     }
