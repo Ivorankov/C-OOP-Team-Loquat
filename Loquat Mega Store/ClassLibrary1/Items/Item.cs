@@ -11,6 +11,11 @@ namespace LoquatMegaStore.Items
     using LoquatMegaStore.Structures;
     using LoquatMegaStore.Enumerators;
 
+	public enum Color
+		{
+		White, Black, Blue, Yellow, Green, Red, Cyan, Magenta, Orange, Gray
+		}
+
     public abstract class Item : ICartAddable
     {
         private string manufacturer;
