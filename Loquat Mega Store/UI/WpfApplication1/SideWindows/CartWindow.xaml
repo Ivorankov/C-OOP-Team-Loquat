@@ -3,7 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="CartWindow" Height="300" Width="600" Background="Ivory">
     <Grid>
-        
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" x:Name="TextBox" VerticalAlignment="Top" Height="99" Width="316"/>
+        <Button Content="Checkout" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="Orange" Margin="426,55,0,0" FontSize="12" FontFamily="Lucida Calligraphy" Click="Button_Click"/>
+
 
     </Grid>
 </Window>

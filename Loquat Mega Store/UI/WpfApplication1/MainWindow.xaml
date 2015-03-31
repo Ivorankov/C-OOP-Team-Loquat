@@ -40,7 +40,7 @@
                 </ContextMenu>
             </Button.ContextMenu>
         </Button>
-        <Button Content="Shopping cart" HorizontalAlignment="Left" VerticalAlignment="Top" Width="127" Height="30" Margin="10,215,0,0" FontSize="16" Background="Orange" FontFamily="Lucida Calligraphy"/>
+        <Button Content="Shopping cart" HorizontalAlignment="Left" VerticalAlignment="Top" Width="127" Height="30" Margin="10,215,0,0" FontSize="16" Background="Orange" FontFamily="Lucida Calligraphy" Click="Button_Click_14"/>
         <Calendar HorizontalAlignment="Left" Margin="257,10,0,0" VerticalAlignment="Top" Background="Orange" BorderBrush="Black"/>
         <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Margin="257,201,0,0"/>
     </Grid>

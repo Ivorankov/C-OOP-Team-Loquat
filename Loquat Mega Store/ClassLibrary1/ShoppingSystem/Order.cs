@@ -2,15 +2,24 @@
 {
     using System;
     using System.Linq;
+    using LoquatMegaStore.ShoppingSystem.Enumerators;
 
-    class Order
+    public class Order
     {
-        public Customer Customer { get; set; }
-        public Payment PaymentMethod { get; set; }
+        public Order(PaymentType payment, int orderId, OrderStatus orderStatus, double shippingFee,int itemCount,decimal totPrice)
+        {
+            this.PaymentMethod = payment;
+            this.OrderID = orderId;
+            this.Status = orderStatus;
+            this.ShippingFee = shippingFee;
+            this.Items = itemCount;
+            this.TotalPrice = itemCount;
+        }
+        public PaymentType PaymentMethod { get; set; }
         public int OrderID { get; set; }
         public OrderStatus Status { get; set; }
-        public double ShippingFee { get; set; } // based on customer address 
-        // --> new Address class to store shipping and billing addresses?
-
+        public double ShippingFee { get; set; }
+        public int Items { get; private set; }
+        public decimal TotalPrice { get; private set; }
     }
 }

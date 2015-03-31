@@ -36,8 +36,17 @@ namespace WpfApplication1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow.customer.UserCart.Items.Add(laptop);
-            MessageBox.Show(MainWindow.customer.UserCart.Items.Count.ToString());
+            if (MainWindow.customer == null)
+            {
+                MessageBox.Show("Please login first!");
+                var userWindow = new UserWindow();
+                userWindow.Show();
+            }
+            else
+            {
+                MainWindow.customer.UserCart.Items.Add(laptop);
+                MessageBox.Show(MainWindow.customer.UserCart.Items.Count.ToString());
+            }
         }
 
     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LoquatMegaStore.ShoppingSystem;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,15 @@ namespace WpfApplication1.SideWindows
         public CartWindow()
         {
             InitializeComponent();
+            TextBox.Text = MainWindow.customer.UserCart.ToString();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Order order = new Order()
+            MainWindow.customer.OrderList.Add();
+            MainWindow.customer.UserCart.CheckOut();
+            
         }
     }
 }

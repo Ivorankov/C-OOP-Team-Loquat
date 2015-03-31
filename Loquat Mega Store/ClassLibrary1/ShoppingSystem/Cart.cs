@@ -26,11 +26,15 @@
         }
         public void CheckOut()
         {
-
+            Items.Clear();
         }
-        public void AddItem(Item item)
+        public override string ToString()
         {
-            Items.Add(item);
+            var list = this.Items as List<Item>;
+
+            var str = string.Join(Environment.NewLine,list);
+
+            return str;
         }
     }
 }

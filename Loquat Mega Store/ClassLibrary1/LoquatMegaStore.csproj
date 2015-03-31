@@ -68,9 +68,8 @@
     <Compile Include="ShoppingSystem\OrderStatus.cs" />
     <Compile Include="ShoppingSystem\Customer.cs" />
     <Compile Include="ShoppingSystem\Order.cs" />
-    <Compile Include="ShoppingSystem\Payment.cs" />
+    <Compile Include="Enumerators\PaymentType.cs" />
     <Compile Include="ShoppingSystem\Hashing.cs" />
-    <Compile Include="ShoppingSystem\ShippingInfo.cs" />
     <Compile Include="ShoppingSystem\User.cs" />
     <Compile Include="Items\SoundPlayer.cs" />
     <Compile Include="Items\LoudSpeaker.cs" />
@@ -80,6 +79,7 @@
     <Compile Include="Structures\Dimensions.cs" />
     <Compile Include="Structures\Display.cs" />
     <Compile Include="Structures\Processor.cs" />
+    <Compile Include="Structures\ShippingAddress.cs" />
     <Compile Include="Structures\Speaker.cs" />
   </ItemGroup>
   <ItemGroup>

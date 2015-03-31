@@ -2,6 +2,8 @@
 {
     using System;
     using System.Linq;
+    using System.Collections;
+    using System.Collections.Generic;
 
     public class Customer : User
     {
@@ -9,15 +11,11 @@
             : base(userId, password, email)
         {
             this.UserCart = new Cart();
-
+            this.OrderList = new List<Order>();
         }
-         public Customer(string userId, string password)
-             : base(userId, password, null)
-         {
-             this.UserCart = new Cart();
 
-         }
-         public Cart UserCart { get; set; }//TODO: Validation
+         public Cart UserCart { get; private set; }
+         public IList<Order> OrderList { get; set; }
 
     }
 }

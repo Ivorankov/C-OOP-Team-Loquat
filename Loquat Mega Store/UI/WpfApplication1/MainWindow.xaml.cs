@@ -119,5 +119,11 @@ namespace WpfApplication1
             RegisterWindow regWindow = new RegisterWindow();
             regWindow.Show();
         }
+
+        private void Button_Click_14(object sender, RoutedEventArgs e)
+        {
+            CartWindow cartWindow = new CartWindow();
+            cartWindow.Show();
+        }
     }
 }
