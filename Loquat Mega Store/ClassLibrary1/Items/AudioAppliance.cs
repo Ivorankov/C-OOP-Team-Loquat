@@ -17,7 +17,7 @@ namespace LoquatMegaStore.Items
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentOutOfRangeException("The output power must be bigger than 0!");
+                    throw new NegativeValueException("The output power must be bigger than 0!");
                 }
                 this.outputPower = value;
             }

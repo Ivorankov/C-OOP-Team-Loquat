@@ -1,17 +1,17 @@
 ﻿namespace LoquatMegaStore.Items
 {
-    using LoquatMegaStore.Interfaces;
-    using LoquatMegaStore.Structures;
     using System;
     using System.Collections;
     using System.Collections.Generic;
     using System.Reflection;
     using System.Text;
+    using LoquatMegaStore.Interfaces;
+    using LoquatMegaStore.Structures;
 
     public enum Color
-		{
-		White, Black, Blue, Yellow, Green, Red, Cyan, Magenta, Orange, Gray
-		}
+    {
+        White, Black, Blue, Yellow, Green, Red, Cyan, Magenta, Orange, Gray
+    }
 
     public abstract class Item : ICartAddable
     {
@@ -74,7 +74,7 @@
             {
                 if (value < 0)
                 {
-                    throw new ArgumentOutOfRangeException("Price must have a non negative value");
+                    throw new NegativeValueException("Price must have a non negative value", true);
                 }
                 this.price = value;
             }
@@ -86,7 +86,7 @@
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentOutOfRangeException("Weight cannot be a negative or 0 value");
+                    throw new NegativeValueException("Weight cannot be a negative or 0 value");
                 }
                 this.weight = value;
             }
@@ -98,7 +98,7 @@
             {
                 if (value < 0)
                 {
-                    throw new ArgumentOutOfRangeException("Amount of items cannot be less then 0");
+                    throw new NegativeValueException("Amount of items cannot be less then 0.", true);
                 }
                 this.ammountInStock = value;
             }
@@ -110,7 +110,7 @@
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentOutOfRangeException("Apliances cannot consume negative or 0 amount of energy");
+                    throw new NegativeValueException("Apliances cannot consume negative or 0 amount of energy", false);
                 }
                 this.powerConsumption = value;
             }

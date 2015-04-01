@@ -5,7 +5,7 @@
     using LoquatMegaStore.Structures;
     using LoquatMegaStore.Interfaces;
 
-    public class Laptop : ComputerAppliance,ISoundable,IVideoPlayable
+    public class Laptop : ComputerAppliance, ISoundable, IVideoPlayable
     {
         public Laptop(string manufacturer, string model, decimal weight, decimal price, int powerConsumption,
               int amountInStock, Dimensions dimensions, Processor processor, Display display, Speaker speaker,
@@ -15,20 +15,20 @@
             this.Display = display;
             this.Speaker = speaker;
         }
-        public Display Display { get;  set; }
+        public Display Display { get; set; }
 
 
         public void PlayVideo()
         {
-           
+
         }
 
-        public Speaker Speaker{get;set;}
+        public Speaker Speaker { get; set; }
 
 
         public void PlaySound()
         {
-            
+
         }
         //public override string ToString()
         //{

@@ -17,7 +17,7 @@ namespace LoquatMegaStore.Items
             {
                 if (value <=0)
                 {
-                    throw new ArgumentException("The impedance cannot be 0 or negative!");
+                    throw new NegativeValueException("The impedance cannot be 0 or negative!");
                 }
                 this.impedance = value;
             }
@@ -30,7 +30,7 @@ namespace LoquatMegaStore.Items
             {
                 if (value <=0)
                 {
-                    throw new ArgumentException("The sensitivity cannot be 0 or negative!");
+                    throw new NegativeValueException("The sensitivity cannot be 0 or negative!");
                 }
                 this.sensitivity = value;
             }

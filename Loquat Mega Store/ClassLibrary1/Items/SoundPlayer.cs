@@ -5,20 +5,20 @@ namespace LoquatMegaStore.Items
     using LoquatMegaStore.Structures;
     using System;
 
-    public class SoundPlayer : AudioAppliance,ISoundable
+    public class SoundPlayer : AudioAppliance, ISoundable
     {
 
         private int radioStationMemory;
         private AudioFormat audioFormat;
 
-       public SoundPlayer(string manufacturer, string model, decimal weight, decimal price, int powerConsumption,
-             int amountInStock, Dimensions dimensions, Speaker speaker, int outputPower ,Color color, int stations, AudioFormat playModes)
-           : base(manufacturer, model, price, weight, powerConsumption, amountInStock, dimensions,outputPower,color)
-       {
-           this.RadioStationMemory = stations;
-           this.Speaker = speaker;
-           this.AudioFormat = playModes;
-       }
+        public SoundPlayer(string manufacturer, string model, decimal weight, decimal price, int powerConsumption,
+              int amountInStock, Dimensions dimensions, Speaker speaker, int outputPower, Color color, int stations, AudioFormat playModes)
+            : base(manufacturer, model, price, weight, powerConsumption, amountInStock, dimensions, outputPower, color)
+        {
+            this.RadioStationMemory = stations;
+            this.Speaker = speaker;
+            this.AudioFormat = playModes;
+        }
 
         public int RadioStationMemory
         {
@@ -27,7 +27,7 @@ namespace LoquatMegaStore.Items
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentOutOfRangeException("The stations memorizable from the system have to be more than 0!");
+                    throw new NegativeValueException("The stations memorizable from the system have to be more than 0!");
                 }
                 this.radioStationMemory = value;
             }

@@ -59,6 +59,7 @@
     <Compile Include="Items\Desktop.cs" />
     <Compile Include="Items\MobilePhone.cs" />
     <Compile Include="Items\Projector.cs" />
+    <Compile Include="Exceptions\NegativeValueException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ShoppingSystem\Administrator.cs" />
     <Compile Include="ShoppingSystem\Authentication.cs" />

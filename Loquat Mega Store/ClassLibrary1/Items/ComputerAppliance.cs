@@ -30,7 +30,7 @@
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentOutOfRangeException("Ram memory cannot have a negative or 0 value!");
+                    throw new NegativeValueException("Ram memory cannot have a negative or 0 value!");
                 }
                 this.ramMemory = value;
             }
@@ -42,7 +42,7 @@
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentOutOfRangeException("Disk memory cannot have a negative or 0 value");
+                    throw new NegativeValueException("Disk memory cannot have a negative or 0 value.");
                 }
                 this.diskMemory = value;
             }
