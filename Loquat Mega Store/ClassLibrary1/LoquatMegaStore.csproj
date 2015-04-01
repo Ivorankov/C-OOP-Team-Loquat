@@ -84,7 +84,7 @@
     <Compile Include="Structures\Speaker.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ClassDiagram1.cd" />
+    <None Include="ItemDiagram.cd" />
     <None Include="ShoppingSystem\ShoppingDiagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -28,12 +28,9 @@ namespace WpfApplication1
             InitializeComponent();
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
 
-        }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Category_Click(object sender, RoutedEventArgs e)
         {
             (sender as Button).ContextMenu.IsEnabled = true;
             (sender as Button).ContextMenu.PlacementTarget = (sender as Button);
@@ -41,66 +38,66 @@ namespace WpfApplication1
             (sender as Button).ContextMenu.IsOpen = true;
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Home_Click(object sender, RoutedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/Ivorankov/C-OOP-Team-Loquat");
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void About_Click(object sender, RoutedEventArgs e)
         {
             Aboutwindow aboutWindow = new Aboutwindow();
             aboutWindow.Show();
         }
 
-        private void Button_Click_3(object sender, RoutedEventArgs e)
+        private void LoudSpeaker_Click(object sender, RoutedEventArgs e)
         {
             LoudSpeakerWindow loudSpeakr = new LoudSpeakerWindow();
             loudSpeakr.Show();
         }
 
-        private void Button_Click_4(object sender, RoutedEventArgs e)
+        private void AudioPlayer_Click(object sender, RoutedEventArgs e)
         {
             AudioPlayerWindow audioPlayer = new AudioPlayerWindow();
             audioPlayer.Show();
         }
 
-        private void Button_Click_5(object sender, RoutedEventArgs e)
+        private void TV_Click(object sender, RoutedEventArgs e)
         {
             TVWindow tV = new TVWindow();
             tV.Show();
         }
 
-        private void Button_Click_6(object sender, RoutedEventArgs e)
+        private void Projector_Click(object sender, RoutedEventArgs e)
         {
             ProjectorWindow projector = new ProjectorWindow();
             projector.Show();
         }
 
-        private void Button_Click_7(object sender, RoutedEventArgs e)
+        private void Desktop_Click(object sender, RoutedEventArgs e)
         {
             DesktopWindow desktop = new DesktopWindow();
             desktop.Show();
         }
 
-        private void Button_Click_8(object sender, RoutedEventArgs e)
+        private void Laptop_Click(object sender, RoutedEventArgs e)
         {
             LaptopWindow laptop = new LaptopWindow();
             laptop.Show();
         }
 
-        private void Button_Click_9(object sender, RoutedEventArgs e)
+        private void GSM_Click(object sender, RoutedEventArgs e)
         {
             GSMWindow gSM = new GSMWindow();
             gSM.Show();
         }
 
-        private void Button_Click_10(object sender, RoutedEventArgs e)
+        private void RadioSt_Click(object sender, RoutedEventArgs e)
         {
             RadioStationWindow radioSt = new RadioStationWindow();
             radioSt.Show();
         }
 
-        private void Button_Click_11(object sender, RoutedEventArgs e)
+        private void LogReg_Click(object sender, RoutedEventArgs e)
         {
             (sender as Button).ContextMenu.IsEnabled = true;
             (sender as Button).ContextMenu.PlacementTarget = (sender as Button);
@@ -108,19 +105,19 @@ namespace WpfApplication1
             (sender as Button).ContextMenu.IsOpen = true;
         }
 
-        private void Button_Click_12(object sender, RoutedEventArgs e)
+        private void User_Click(object sender, RoutedEventArgs e)
         {
             UserWindow user = new UserWindow();
             user.Show();
         }
 
-        private void Button_Click_13(object sender, RoutedEventArgs e)
+        private void Register_Click(object sender, RoutedEventArgs e)
         {
             RegisterWindow regWindow = new RegisterWindow();
             regWindow.Show();
         }
 
-        private void Button_Click_14(object sender, RoutedEventArgs e)
+        private void Cart_Click(object sender, RoutedEventArgs e)
         {
             CartWindow cartWindow = new CartWindow();
             cartWindow.Show();

@@ -33,9 +33,14 @@ namespace WpfApplication1.SideWindows
             get { return TextBox1.Text; }
             set { TextBox1.Text = value; } 
         }
+        public string Email
+        {
+            get { return TextBox2.Text; }
+            set { TextBox2.Text = value; }
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow.customer = new Customer(UserName, Password, "ttttt@mail.bg");
+            MainWindow.customer = new Customer(UserName, Password, Email);
             Authentication.CreateUser(MainWindow.customer);
             MessageBox.Show("You successfully registrated :)");
         }

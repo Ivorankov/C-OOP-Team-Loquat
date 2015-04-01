@@ -24,9 +24,18 @@ namespace WpfApplication1
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void AddToCart_Click(object sender, RoutedEventArgs e)
         {
-
+            if (MainWindow.customer == null)
+            {
+                MessageBox.Show("Please login first!");
+                var userWindow = new UserWindow();
+                userWindow.Show();
+            }
+            else
+            {
+                MessageBox.Show("Item added to shopping cart!");
+            }
         }
     }
 }

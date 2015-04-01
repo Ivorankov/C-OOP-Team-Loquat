@@ -31,10 +31,10 @@ namespace WpfApplication1
         {
             InitializeComponent();
 
-            TextBox.Text = laptop.ToString();
+            TextBlock.Text = laptop.ToString();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void AddToCart_Click(object sender, RoutedEventArgs e)
         {
             if (MainWindow.customer == null)
             {
@@ -45,7 +45,7 @@ namespace WpfApplication1
             else
             {
                 MainWindow.customer.UserCart.Items.Add(laptop);
-                MessageBox.Show(MainWindow.customer.UserCart.Items.Count.ToString());
+                MessageBox.Show("Item added to shopping cart!");
             }
         }
 

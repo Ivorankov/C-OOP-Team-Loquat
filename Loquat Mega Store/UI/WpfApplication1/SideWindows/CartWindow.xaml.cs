@@ -28,9 +28,9 @@ namespace WpfApplication1.SideWindows
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Order order = new Order()
-            MainWindow.customer.OrderList.Add();
-            MainWindow.customer.UserCart.CheckOut();
+            //Order order = new Order();
+            //MainWindow.customer.OrderList.Add();
+            //MainWindow.customer.UserCart.CheckOut();
             
         }
     }

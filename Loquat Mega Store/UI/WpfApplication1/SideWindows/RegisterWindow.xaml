@@ -5,7 +5,9 @@
     <Grid>
         <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" x:Name="TextBox" Text="User Name" VerticalAlignment="Top" Width="120" Margin="10,19,0,0"/>
         <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" x:Name="TextBox1" Text="Password" VerticalAlignment="Top" Width="120" Margin="10,47,0,0"/>
-        <Button Content="Register" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="Orange" Margin="10,92,0,0" FontSize="12" FontFamily="Lucida Calligraphy" Click="Button_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" x:Name="TextBox2" Text="Email" VerticalAlignment="Top" Width="120" Margin="10,75,0,0"/>
+        <Button Content="Register" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="Orange" Margin="10,120,0,0" FontSize="12" FontFamily="Lucida Calligraphy" Click="Button_Click"/>
+
 
     </Grid>
 </Window>
