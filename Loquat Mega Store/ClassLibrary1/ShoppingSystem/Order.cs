@@ -6,15 +6,18 @@
 
     public class Order
     {
-        public Order(PaymentType payment, int orderId, OrderStatus orderStatus, double shippingFee,int itemCount,decimal totPrice)
+        public Order(PaymentType payment, int orderId, OrderStatus orderStatus, double shippingFee,
+            int itemCount, decimal totPrice, string contactName,string address)
         {
             this.PaymentMethod = payment;
             this.OrderID = orderId;
             this.Status = orderStatus;
             this.ShippingFee = shippingFee;
             this.Items = itemCount;
-            this.TotalPrice = itemCount;
+            this.TotalPrice = totPrice;
             this.OrderDate = DateTime.Now;
+            this.ContactName = contactName;
+
         }
 
         public PaymentType PaymentMethod { get; set; }
@@ -24,6 +27,8 @@
         public int Items { get; private set; }
         public decimal TotalPrice { get; private set; }
         public DateTime OrderDate { get; private set; }
+        public string ContactName { get; private set; }
+        public string Address { get; private set; }
 
         public void PlaceOrder()
         {

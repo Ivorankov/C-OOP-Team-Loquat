@@ -124,10 +124,10 @@
             throw new NotImplementedException();
         }
 
-        public void MakeOrder()
+        public void MakeOrder(string contactName,string address)
         {
             var ran = new Random();
-            var newOrder = new Order(PaymentType.CreditCard, ran.Next(009987, 13498787), OrderStatus.New, DefaultShippingFee, this.Cart.Items.Count, this.Cart.CartPrice);
+            var newOrder = new Order(PaymentType.CreditCard, ran.Next(009987, 13498787), OrderStatus.New, DefaultShippingFee, this.Cart.Items.Count, this.Cart.CartPrice,contactName,address);
             this.Cart.CheckOut();
         }
     }

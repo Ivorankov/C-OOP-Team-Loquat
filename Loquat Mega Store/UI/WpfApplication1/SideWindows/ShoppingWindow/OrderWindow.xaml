@@ -1,0 +1,11 @@
+﻿<Window x:Class="WpfApplication1.SideWindows.ShoppingWindow.OrderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="OrderWindow" Height="300" Width="300" Background="Ivory">
+    <Grid>
+        <Button Content="Checkout" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="MediumSeaGreen" Margin="169,214,0,0" FontSize="12" FontFamily="Lucida Calligraphy" Click="Checkout_Click"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="23" Background="IndianRed" Margin="24,214,0,0" FontSize="12" FontFamily="Lucida Calligraphy" Click="Cancel_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" x:Name="TextBox" Text="Address" VerticalAlignment="Top" Width="120" Margin="10,52,0,0"/>
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" x:Name="TextBox1" Text="Contact Name" VerticalAlignment="Top" Width="120" Margin="10,80,0,0"/>
+    </Grid>
+</Window>

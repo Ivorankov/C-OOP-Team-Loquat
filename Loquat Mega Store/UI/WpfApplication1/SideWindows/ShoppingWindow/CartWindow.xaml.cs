@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfApplication1.SideWindows.ShoppingWindow;
 
 namespace WpfApplication1.SideWindows
 {
@@ -20,17 +21,16 @@ namespace WpfApplication1.SideWindows
     /// </summary>
     public partial class CartWindow : Window
     {
+        public static OrderWindow order = new OrderWindow();
         public CartWindow()
         {
             InitializeComponent();
-            TextBox.Text = MainWindow.customer.UserCart.ToString();
+            //TextBox.Text = MainWindow.customer.UserCart.ToString();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Checkout_Click(object sender, RoutedEventArgs e)
         {
-            //Order order = new Order();
-            //MainWindow.customer.OrderList.Add();
-            //MainWindow.customer.UserCart.CheckOut();
+            order.Show();
             
         }
     }

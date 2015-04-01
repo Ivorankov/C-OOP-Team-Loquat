@@ -2,6 +2,6 @@
 {
     public interface IOrder
     {
-        void MakeOrder();
+        void MakeOrder(string contactName,string address);
     }
 }

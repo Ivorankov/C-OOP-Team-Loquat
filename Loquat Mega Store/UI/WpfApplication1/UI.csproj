@@ -77,14 +77,17 @@
     <Compile Include="ItemWindows\Video\TVWindow.xaml.cs">
       <DependentUpon>TVWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SideWindows\CartWindow.xaml.cs">
+    <Compile Include="SideWindows\ShoppingWindow\CartWindow.xaml.cs">
       <DependentUpon>CartWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SideWindows\RegisterWindow.xaml.cs">
+    <Compile Include="SideWindows\Login Register win\RegisterWindow.xaml.cs">
       <DependentUpon>RegisterWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SideWindows\UserWindow.xaml.cs">
+    <Compile Include="SideWindows\Login Register win\UserWindow.xaml.cs">
       <DependentUpon>UserWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SideWindows\ShoppingWindow\OrderWindow.xaml.cs">
+      <DependentUpon>OrderWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="SideWindows\AboutWindow.xaml">
       <SubType>Designer</SubType>
@@ -137,15 +140,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SideWindows\CartWindow.xaml">
+    <Page Include="SideWindows\ShoppingWindow\CartWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SideWindows\RegisterWindow.xaml">
+    <Page Include="SideWindows\Login Register win\RegisterWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="SideWindows\UserWindow.xaml">
+    <Page Include="SideWindows\Login Register win\UserWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SideWindows\ShoppingWindow\OrderWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
