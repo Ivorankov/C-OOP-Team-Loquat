@@ -30,8 +30,15 @@ namespace WpfApplication1.SideWindows
 
         private void Checkout_Click(object sender, RoutedEventArgs e)
         {
-            order.Show();
-            
+            if (order.IsActive == false)
+            {
+                order = new OrderWindow();
+                order.Show();
+            }
+            else
+            {
+                order.Show(); 
+            }     
         }
     }
 }

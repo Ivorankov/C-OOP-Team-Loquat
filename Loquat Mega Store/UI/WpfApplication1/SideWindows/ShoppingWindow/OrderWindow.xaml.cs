@@ -41,19 +41,18 @@ namespace WpfApplication1.SideWindows.ShoppingWindow
             try
             {
                 MainWindow.customer.MakeOrder(this.ContactName, this.Address);
+                MessageBox.Show("Order successfull!\nThank you for shopping in Loquat :) ");
+                CartWindow.order.Close();
             }
-            catch
+            catch (NullReferenceException)
             {
                 MessageBox.Show("You must be logged in to make orders!");
-                throw new NullReferenceException("User is null");
             }
-            MessageBox.Show("Order successfull!\nThank you for shopping in Loquat :) ");
-            CartWindow.order.Hide();
         }
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
-            CartWindow.order.Hide();
+            CartWindow.order.Close();
         }
     }
 }
