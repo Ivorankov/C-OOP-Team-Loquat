@@ -14,7 +14,9 @@
             this.ShippingFee = shippingFee;
             this.Items = itemCount;
             this.TotalPrice = itemCount;
+            this.OrderDate = DateTime.Now;
         }
+
         public PaymentType PaymentMethod { get; set; }
         public int OrderID { get; set; }
         public OrderStatus Status { get; private set; }
