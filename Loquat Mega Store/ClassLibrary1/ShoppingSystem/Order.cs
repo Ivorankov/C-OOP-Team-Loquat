@@ -17,9 +17,20 @@
         }
         public PaymentType PaymentMethod { get; set; }
         public int OrderID { get; set; }
-        public OrderStatus Status { get; set; }
-        public double ShippingFee { get; set; }
+        public OrderStatus Status { get; private set; }
+        public double ShippingFee { get; private set; }
         public int Items { get; private set; }
         public decimal TotalPrice { get; private set; }
+        public DateTime OrderDate { get; private set; }
+
+        public void PlaceOrder()
+        {
+            this.Status = OrderStatus.New;
+        }
+        
+        public void Cancel()
+        {
+            this.Status = OrderStatus.Cancelled;
+        }
     }
 }

@@ -4,12 +4,16 @@
     using System.Linq;
     using LoquatMegaStore.Interfaces;
     using System.Text.RegularExpressions;
+    using LoquatMegaStore.ShoppingSystem.Enumerators;
 
     public abstract class User : IPayable, IOrder
     {
+        public const double DefaultShippingFee = 4.5;
+
         private string userId;
         private string password;
         private string email;
+        private Cart cart;
 
         protected User(string userId, string password, string email)
         {
@@ -68,6 +72,12 @@
             }
         }
 
+        public Cart Cart
+        {
+            get { return this.cart; }
+            private set { this.cart = value; }
+        }
+
         private bool ValidUserId(string inputId)
         {
             string userIdPattern = @"^[a-z0-9_]{3,16}$"; // 3 to 16 chars - letters, numbers or underscore
@@ -116,7 +126,9 @@
 
         public void MakeOrder()
         {
-            throw new NotImplementedException();
+            var ran = new Random();
+            var newOrder = new Order(PaymentType.CreditCard, ran.Next(009987, 13498787), OrderStatus.New, DefaultShippingFee, this.Cart.Items.Count, this.Cart.CartPrice);
+            this.Cart.CheckOut();
         }
     }
 }

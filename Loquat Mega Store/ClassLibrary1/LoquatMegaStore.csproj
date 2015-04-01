@@ -63,7 +63,7 @@
     <Compile Include="ShoppingSystem\Administrator.cs" />
     <Compile Include="ShoppingSystem\Authentication.cs" />
     <Compile Include="ShoppingSystem\Cart.cs" />
-    <Compile Include="Interfaces\IOrderable.cs" />
+    <Compile Include="Interfaces\IOrder.cs" />
     <Compile Include="Interfaces\IPayable.cs" />
     <Compile Include="Enumerators\OrderStatus.cs" />
     <Compile Include="ShoppingSystem\Customer.cs" />

@@ -9,6 +9,7 @@
         OnHold,
         Shipped,
         Delivered,
-        Closed
+        Closed, 
+        Cancelled
     }
 }
