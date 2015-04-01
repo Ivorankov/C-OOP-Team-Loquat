@@ -49,6 +49,7 @@
                 {
                     throw new ArgumentOutOfRangeException("Processor cache cannot be less then or equal to 0");
                 }
+                this.cache = value;
             }
         }
         public override string ToString()

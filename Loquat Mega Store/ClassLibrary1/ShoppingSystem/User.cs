@@ -5,7 +5,7 @@
     using LoquatMegaStore.Interfaces;
     using System.Text.RegularExpressions;
 
-    public abstract class User : IPayable, IOrderable
+    public abstract class User : IPayable, IOrder
     {
         private string userId;
         private string password;

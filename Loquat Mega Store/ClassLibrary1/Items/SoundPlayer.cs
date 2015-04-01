@@ -4,6 +4,7 @@ namespace LoquatMegaStore.Items
     using LoquatMegaStore.Interfaces;
     using LoquatMegaStore.Structures;
     using System;
+
     public class SoundPlayer : AudioAppliance,ISoundable
     {
 

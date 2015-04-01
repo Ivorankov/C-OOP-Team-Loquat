@@ -1,14 +1,12 @@
 ﻿namespace LoquatMegaStore.Items
 {
     using System;
-    using System.Linq;
     using LoquatMegaStore.Enumerators;
     using LoquatMegaStore.Structures;
-
+    
     public class Projector : VideoAppliance
     {
         private ProjectorType projectorType;
-        private DisplayResolution projectorResolution;
         private uint ansiLumens;
         private uint lampLife;
 
@@ -16,6 +14,7 @@
             : base(manufacturer, model, price, amountInStock)
         {
         }
+
         public Projector(string manufacturer, string model, decimal price, decimal weight, int powerConsumption, int amountInStock,
             Dimensions dimensions, Color color, DisplayResolution displayResolution, DisplayType displayType, ProjectorType projectorType,
             uint ansiLumens = 1000, uint lampLife = 2000)
@@ -25,10 +24,12 @@
             this.ANSILumens = ansiLumens;
             this.LampLife = lampLife;
         }
+
         public override void AddVideoFeature(VideoFeatures videoFeature)
         {
             this.VideoFeatures.Add(videoFeature);
         }
+
         public uint LampLife
         {
             get { return lampLife; }
@@ -41,6 +42,7 @@
                 this.lampLife = value;
             }
         }
+
         public uint ANSILumens
         {
             get { return ansiLumens; }
@@ -53,6 +55,7 @@
                 this.ansiLumens = value;
             }
         }
+
         public ProjectorType ProjectorType
         {
             get { return projectorType; }

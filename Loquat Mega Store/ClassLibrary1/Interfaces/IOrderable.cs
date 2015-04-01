@@ -1,6 +1,6 @@
 ﻿namespace LoquatMegaStore.Interfaces
 {
-    public interface IOrderable
+    public interface IOrder
     {
         void MakeOrder();
     }

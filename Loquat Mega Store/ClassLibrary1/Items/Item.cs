@@ -1,17 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Reflection;
-using System.Text;
-
-namespace LoquatMegaStore.Items
+﻿namespace LoquatMegaStore.Items
 {
-    using System;
-    using System.Linq;
     using LoquatMegaStore.Interfaces;
     using LoquatMegaStore.Structures;
-    using LoquatMegaStore.Enumerators;
+    using System;
+    using System.Collections;
+    using System.Collections.Generic;
+    using System.Reflection;
+    using System.Text;
 
-	public enum Color
+    public enum Color
 		{
 		White, Black, Blue, Yellow, Green, Red, Cyan, Magenta, Orange, Gray
 		}
@@ -67,7 +64,7 @@ namespace LoquatMegaStore.Items
                 {
                     throw new ArgumentOutOfRangeException("Model name must contain at least 2 symbols");
                 }
-                this.manufacturer = value;
+                this.model = value;
             }
         }
         public decimal Price
