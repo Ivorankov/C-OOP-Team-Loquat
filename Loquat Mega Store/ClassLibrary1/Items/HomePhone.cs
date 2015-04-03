@@ -34,7 +34,7 @@
 				{
 				if (value <= 0)
 					{
-					throw new ArgumentOutOfRangeException("The phone's camera in Megapixels cannot be zero or negative");
+					throw new NegativeValueException("The phone's camera in Megapixels cannot be zero or negative");
 					}
 				cableLength = value;
 				}
@@ -50,7 +50,7 @@
 				{
 				if (value <= 0)
 					{
-					throw new ArgumentOutOfRangeException("The phone's camera in Megapixels cannot be zero or negative");
+					throw new NegativeValueException("The phone's camera in Megapixels cannot be zero or negative");
 					}
 				batteryDocked = value;
 				}
@@ -66,7 +66,7 @@
 				{
 				if (value <= 0)
 					{
-					throw new ArgumentOutOfRangeException("The phone's camera in Megapixels cannot be zero or negative");
+					throw new NegativeValueException("The phone's camera in Megapixels cannot be zero or negative");
 					}
 				batteryUndocked = value;
 				}

@@ -27,7 +27,7 @@
 				{
 				if (value <= 0)
 					{
-					throw new ArgumentOutOfRangeException("The display size of a mobile phone cannot be zero or negative");
+					throw new NegativeValueException("The display size of a mobile phone cannot be zero or negative");
 					}
 				displaySize = value;
 				}

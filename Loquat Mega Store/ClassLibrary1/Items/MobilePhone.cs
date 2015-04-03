@@ -32,7 +32,7 @@
 				{
 				if (value <= 0)
 					{
-					throw new ArgumentOutOfRangeException("The phone's camera in Megapixels cannot be zero or negative");
+					throw new NegativeValueException("The phone's camera in Megapixels cannot be zero or negative");
 					}
 				camera = value;
 				}
@@ -60,7 +60,7 @@
 				{
 				if (value <= 0)
 					{
-					throw new ArgumentOutOfRangeException("The phone's memory cannot be zero or negative");
+					throw new NegativeValueException("The phone's memory cannot be zero or negative");
 					}
 				memory = value;
 				}
