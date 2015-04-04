@@ -1,11 +1,14 @@
 ﻿<Window x:Class="WpfApplication1.UserWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="UserWindow" Height="300" Width="300" Background="Ivory">
-    <Grid>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" x:Name="TextBox" Text="User Name" VerticalAlignment="Top" Width="120" Margin="10,24,0,0"/>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" x:Name="TextBox1" Text="Password" VerticalAlignment="Top" Width="120" Margin="10,52,0,0"/>
-        <Button Content="Submt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Background="Orange" Margin="10,89,0,0" Click="Button_Click"/>
-
-    </Grid>
+        Title="UserWindow" Height="300" Width="300">
+    <Window.Resources>
+        <ResourceDictionary Source="../../Styles.xaml" />
+    </Window.Resources>
+    <StackPanel>
+        <TextBlock Text="User Login"></TextBlock>
+        <TextBox x:Name="TextBox" Text="User Name" />
+        <TextBox x:Name="TextBox1" Text="Password" />
+        <Button Content="Submit" Click="Button_Click"/>
+    </StackPanel>
 </Window>

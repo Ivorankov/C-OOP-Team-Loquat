@@ -31,7 +31,7 @@ namespace WpfApplication1
         {
             InitializeComponent();
 
-            TextBlock.Text = laptop.ToString();
+            LaptopInformation.Text = laptop.ToString();
         }
 
         private void AddToCart_Click(object sender, RoutedEventArgs e)

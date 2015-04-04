@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using LoquatMegaStore.Items;
 
 namespace WpfApplication1
 {
@@ -22,6 +23,8 @@ namespace WpfApplication1
         public DesktopWindow()
         {
             InitializeComponent();
+
+            // TODO: Display Desktop Details
         }
 
         private void AddToCart_Click(object sender, RoutedEventArgs e)
