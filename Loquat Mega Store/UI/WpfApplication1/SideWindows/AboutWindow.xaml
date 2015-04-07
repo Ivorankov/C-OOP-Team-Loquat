@@ -6,6 +6,12 @@
         <ResourceDictionary Source="../Styles.xaml" />
     </Window.Resources>
     <StackPanel>
-        <TextBlock Text="Team Loquat - a Telerik Academy team"/>
+        <TextBlock FontSize="15" Margin="98,5,97.2,20"><Run Text="Te"/><Run Text="am Loquat - a Telerik Academy team"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" 
+    		Height="164" 
+    		Margin="120,0,0,0" 
+    		FontSize="11" FontWeight="Medium" Foreground="DarkGreen"
+    		TextWrapping="Wrap" 
+    		Width="223"><Run Text="Members:"/><Span><Run/></Span><LineBreak/><Span><Run Text="[Alex_H] - Aleksandrina Hadjigenova"/></Span><LineBreak/><Run Text="[dilyantraykov] - Dilyan Traykov"/><LineBreak/><Span><Run Text="[ivo.rankov.7] - Ivaylo Rankov"/></Span><LineBreak/><Span><Run Text="[plamenvt] - Plamen Todorov"/></Span><LineBreak/><Span><Run Text="[pliok] - Lyuba Gerassimova"/></Span><LineBreak/><Span><Run Text="[vesheff] - Martin Veshev"/></Span><LineBreak/><Span><Run Text="[The.Bager] - Dimitar Panayotov"/></Span><LineBreak/><Span><Run Text="[ze3rax] - Todor Chamurliyski"/></Span><LineBreak/><Span><Run Text="[Fonzky] - Dimitar Troyanov"/></Span><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
     </StackPanel>
 </Window>
