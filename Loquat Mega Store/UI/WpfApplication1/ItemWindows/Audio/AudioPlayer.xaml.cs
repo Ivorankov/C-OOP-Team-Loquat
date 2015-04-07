@@ -22,9 +22,12 @@ namespace WpfApplication1
     /// </summary>
     public partial class AudioPlayerWindow : Window
     {
+        public LoudSpeaker loudPlayer = new LoudSpeaker("Best", "MegaSounder", 1.12m, 890.21m, 120, 2, new Dimensions(50, 10, 60),
+           new Speaker(6.45, 1.8), 600, LoquatMegaStore.Enumerators.Color.Gray, 12, 24);
         public AudioPlayerWindow()
         {
             InitializeComponent();
+            TextBlock.Text = loudPlayer.ToString();
         }
 
         private void AddToCart_Click(object sender, RoutedEventArgs e)
@@ -37,6 +40,7 @@ namespace WpfApplication1
             }
             else
             {
+                MainWindow.customer.UserCart.Items.Add(loudPlayer);
                 MessageBox.Show("Item added to shopping cart!");
             }
         }

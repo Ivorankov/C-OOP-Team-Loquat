@@ -1,4 +1,7 @@
-﻿using System;
+﻿using LoquatMegaStore.Enumerators;
+using LoquatMegaStore.Items;
+using LoquatMegaStore.Structures;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +22,13 @@ namespace WpfApplication1
     /// </summary>
     public partial class LoudSpeakerWindow : Window
     {
+        public SoundPlayer soundPlayer = new SoundPlayer("Best", "MegaPlayer", 1.12m, 890.21m, 120, 2, new Dimensions(50, 10, 60),
+        new Speaker(6.45, 1.8), new Display(13.2, DisplayType.TFT, DisplayResolution.p1024), 600, LoquatMegaStore.Enumerators.Color.Gray,
+        12, AudioFormat.МP3);
         public LoudSpeakerWindow()
         {
             InitializeComponent();
+            TextBlock.Text = soundPlayer.ToString();
         }
 
         private void AddToCart_Click(object sender, RoutedEventArgs e)
@@ -34,6 +41,7 @@ namespace WpfApplication1
             }
             else
             {
+                MainWindow.customer.UserCart.Items.Add(soundPlayer);
                 MessageBox.Show("Item added to shopping cart!");
             }
         }
