@@ -88,6 +88,7 @@
     <Compile Include="Visitors\SaleVisitor.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ShopDiagram.cd" />
     <None Include="Items\ItemDiagram.cd" />
     <None Include="ShoppingSystem\ShoppingDiagram.cd" />
   </ItemGroup>
