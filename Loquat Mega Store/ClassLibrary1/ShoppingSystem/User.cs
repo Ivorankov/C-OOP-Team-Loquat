@@ -5,8 +5,9 @@
     using LoquatMegaStore.Interfaces;
     using System.Text.RegularExpressions;
     using LoquatMegaStore.ShoppingSystem.Enumerators;
+    using System.Runtime.Serialization;
 
-    public abstract class User : IPayable, IOrder
+    public abstract class User : IPayable, IOrder, ISerializable
     {
         public const double DefaultShippingFee = 4.5;
 
@@ -21,6 +22,13 @@
             this.Password = password;
             this.Email = email;
         }
+           public User(SerializationInfo info, StreamingContext ctxt)
+   {
+      this.UserId = (string)info.GetValue("UserId", typeof(string));
+      this.Password = (string)info.GetValue("Password",typeof(string));
+      this.Email = (string)info.GetValue("Email", typeof(int));
+      this.Cart = (Cart)info.GetValue("Cart", typeof(Cart));
+   }
         //TODO Validation of the properties
         public string UserId
         {
@@ -129,6 +137,14 @@
             var ran = new Random();
             var newOrder = new Order(PaymentType.CreditCard, ran.Next(009987, 13498787), OrderStatus.New, DefaultShippingFee, this.Cart.Items.Count, this.Cart.CartPrice,contactName,address);
             this.Cart.CheckOut();
+        }
+
+        public void GetObjectData(SerializationInfo info, StreamingContext context)
+        {
+            info.AddValue("UserId", this.UserId);
+            info.AddValue("Password", this.Password);
+            info.AddValue("Email", this.Email);
+            info.AddValue("Cart", this.Cart);
         }
     }
 }
