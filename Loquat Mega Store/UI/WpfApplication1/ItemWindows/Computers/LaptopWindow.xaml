@@ -2,13 +2,13 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:system="clr-namespace:System;assembly=mscorlib"
-        Title="Laptop" MinHeight="300" MaxHeight="450" Width="400">
+        Title="Laptop" MinHeight="300" MaxHeight="450" MinWidth="700" MaxWidth="700">
     <Window.Resources>
         <ResourceDictionary Source="../../Styles.xaml" />
     </Window.Resources>
     <StackPanel>
         <TextBlock Text="Laptop"></TextBlock>
-        <TextBox Text="" x:Name="LaptopInformation" TextAlignment="Left"/>
+        <TextBlock Text="" x:Name="LaptopInformation" TextAlignment="Left"/>
         <Button Content="Checkout" Click="AddToCart_Click"/>
     </StackPanel>
 </Window>

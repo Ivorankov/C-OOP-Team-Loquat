@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using LoquatMegaStore.Items;
+using LoquatMegaStore.Structures;
 
 namespace WpfApplication1
 {
@@ -20,11 +21,13 @@ namespace WpfApplication1
     /// </summary>
     public partial class DesktopWindow : Window
     {
+        public Desktop desktop = new Desktop("Best", "MegaDesk", 3.12m, 1200m, 250, 5, new Dimensions(30, 80, 60),
+                new Processor(8, 4.8, 6),16, 2256, LoquatMegaStore.Enumerators.Color.Black);
         public DesktopWindow()
         {
             InitializeComponent();
 
-            // TODO: Display Desktop Details
+            TextBlock.Text = desktop.ToString();
         }
 
         private void AddToCart_Click(object sender, RoutedEventArgs e)
@@ -37,6 +40,7 @@ namespace WpfApplication1
             }
             else
             {
+                MainWindow.customer.UserCart.Items.Add(desktop);
                 MessageBox.Show("Item added to shopping cart!");
             }
         }
