@@ -5,7 +5,7 @@
     using LoquatMegaStore.Structures;
     using LoquatMegaStore.Interfaces;
 
-    public class Laptop : ComputerAppliance, ISoundable, IVideoPlayable
+    public class Laptop : ComputerAppliance, ISoundable, IVideoPlayable, ICartAddable
     {
         public Laptop(string manufacturer, string model, decimal weight, decimal price, int powerConsumption,
               int amountInStock, Dimensions dimensions, Processor processor, Display display, Speaker speaker,
@@ -30,9 +30,11 @@
         {
 
         }
-        //public override string ToString()
-        //{
-        //    return String.Format("Manufacturer: {0}\nModel: {1}\nWeight: {2}\nPrice: {3}\nPower consumption: {4}\nAmount in Stock: {5}\nDimentions: {6}\nProcessor: {7},");
-        //}
+
+        void AddToCart()
+        {
+            bool inStock = true;
+            // Logic to check if item can be added to cart can be implemented here
+        }
     }
 }
