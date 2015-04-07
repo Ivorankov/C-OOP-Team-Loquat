@@ -122,5 +122,12 @@ namespace WpfApplication1
             CartWindow cartWindow = new CartWindow();
             cartWindow.Show();
         }
+
+        private void Sale_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("You are now entering sale mode. Enjoy.");
+            var saleModeWindow = new MainWindow();
+            saleModeWindow.Show();
+        }
     }
 }

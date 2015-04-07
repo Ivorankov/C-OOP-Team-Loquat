@@ -7,7 +7,7 @@
         <ResourceDictionary Source="../../Styles.xaml" />
     </Window.Resources>
     <StackPanel>
-        <TextBlock Text="Laptop Player"></TextBlock>
+        <TextBlock Text="Laptop"></TextBlock>
         <TextBox Text="" x:Name="LaptopInformation"/>
         <Button Content="Checkout" Click="AddToCart_Click"/>
     </StackPanel>

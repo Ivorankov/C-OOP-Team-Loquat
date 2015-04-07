@@ -34,6 +34,14 @@
             </MenuItem>
         </Menu>
         <Image Height="200" Margin="0,100,0,0" Source="images/Loquat.png" Stretch="Fill"/>
+        <Button Content="Easter Sale!" 
+                Margin="0,0,0.4,0" 
+                Width="140" 
+                Background="DarkOrange"
+                Height="28" 
+                Foreground="Navy"
+                FontSize="18"
+                Click="Sale_Click"/>
     </StackPanel>
 </Window>
 
