@@ -5,6 +5,7 @@
     ﻿using LoquatMegaStore.Items;
     using System.Collections.Generic;
     using System.Linq;
+    using LoquatMegaStore.Visitors;
 
     public class Cart
     {
@@ -15,6 +16,8 @@
             this.Items = new List<Item>();
         }
 
+        //TODO: Sale logic can be implemented through the constructor -> better connection to UI
+
         public decimal CartPrice
         {
             get { return this.cartPrice; }
@@ -22,6 +25,7 @@
             {
                 foreach (Item item in Items)
                 {
+                    item.Accept(new SaleVisitor()); //To be removed after our Easter Sale :)
                     this.cartPrice += item.Price;
                 }
             }

@@ -5,12 +5,15 @@
     using System.Collections.Generic;
     using System.Reflection;
     using System.Text;
+
     using LoquatMegaStore.Interfaces;
     using LoquatMegaStore.Structures;
     using LoquatMegaStore.Enumerators;
+    using LoquatMegaStore.Visitors;
 
     public abstract class Item : ICartAddable
     {
+        #region Fields
         private string manufacturer;
         private string model;
         private decimal price;
@@ -20,7 +23,9 @@
         private Dimensions dimensions;
         private Color color;
         private PropertyInfo[] properties = null;
+        # endregion
 
+        #region Constructors
         public Item() //MAKES THE PROGRAM BUILD ( TO BE DELETED )
         {
         }
@@ -39,6 +44,9 @@
             this.dimensions = dimensions;
             this.Color = color;
         }
+        #endregion
+
+        #region Properties
         public string Manufacturer
         {
             get { return this.manufacturer; }
@@ -51,6 +59,7 @@
                 this.manufacturer = value;
             }
         }
+
         public string Model
         {
             get { return this.model; }
@@ -63,6 +72,7 @@
                 this.model = value;
             }
         }
+
         public decimal Price
         {
             get { return this.price; }
@@ -75,6 +85,7 @@
                 this.price = value;
             }
         }
+
         public decimal Weight
         {
             get { return this.weight; }
@@ -87,6 +98,7 @@
                 this.weight = value;
             }
         }
+
         public int AmountInStock
         {
             get { return this.ammountInStock; }
@@ -99,6 +111,7 @@
                 this.ammountInStock = value;
             }
         }
+
         public int PowerConsumption
         {
             get { return this.powerConsumption; }
@@ -111,15 +124,25 @@
                 this.powerConsumption = value;
             }
         }
+
         public Color Color
         {
             get { return this.color; }
             set { this.color = value; }
         }
+        #endregion
+
+        #region Methods
         public void AddToCart()
         {
             throw new NotImplementedException();
         }
+
+        public void Accept(IVisitor visitor)
+        {
+            visitor.Visit(this);
+        }
+
         public override string ToString()
         {
             if (properties == null)
@@ -155,5 +178,6 @@
 
             return result.ToString().Trim();
         }
+        #endregion
     }
 }

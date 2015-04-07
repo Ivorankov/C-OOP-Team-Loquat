@@ -82,6 +82,8 @@
     <Compile Include="Structures\Processor.cs" />
     <Compile Include="Structures\ShippingAddress.cs" />
     <Compile Include="Structures\Speaker.cs" />
+    <Compile Include="Visitors\IVisitor.cs" />
+    <Compile Include="Visitors\SaleVisitor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Items\ItemDiagram.cd" />
