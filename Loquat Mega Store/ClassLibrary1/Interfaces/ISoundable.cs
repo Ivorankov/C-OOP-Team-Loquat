@@ -3,7 +3,7 @@
     using LoquatMegaStore.Structures;
     interface ISoundable
     {
-        Speaker Speaker  { get; set; }
+        Speaker Speaker  { get; }
         void PlaySound();
     }
 }

@@ -4,7 +4,7 @@
 
     interface IVideoPlayable
     {
-        Display Display { get; set; }
+        Display Display { get; }
         void PlayVideo();
     }
 }

@@ -16,18 +16,13 @@
         }
 
         public Projector(string manufacturer, string model, decimal price, decimal weight, int powerConsumption, int amountInStock,
-            Dimensions dimensions, Color color, DisplayResolution displayResolution, DisplayType displayType, ProjectorType projectorType,
+            Dimensions dimensions, Color color, DisplayResolution displayResolution,
             uint ansiLumens = 1000, uint lampLife = 2000)
-            : base(manufacturer, model, price, weight, powerConsumption, amountInStock, dimensions, color, displayResolution, displayType)
+            : base(manufacturer, model, price, weight, powerConsumption, amountInStock, dimensions, color)
         {
             this.ProjectorType = projectorType;
             this.ANSILumens = ansiLumens;
             this.LampLife = lampLife;
-        }
-
-        public override void AddVideoFeature(VideoFeatures videoFeature)
-        {
-            this.VideoFeatures.Add(videoFeature);
         }
 
         public uint LampLife

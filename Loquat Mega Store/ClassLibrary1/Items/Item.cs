@@ -7,11 +7,7 @@
     using System.Text;
     using LoquatMegaStore.Interfaces;
     using LoquatMegaStore.Structures;
-
-    public enum Color
-    {
-        White, Black, Blue, Yellow, Green, Red, Cyan, Magenta, Orange, Gray
-    }
+    using LoquatMegaStore.Enumerators;
 
     public abstract class Item : ICartAddable
     {

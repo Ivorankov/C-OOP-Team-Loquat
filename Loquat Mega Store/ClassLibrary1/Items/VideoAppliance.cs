@@ -14,18 +14,17 @@
         }
 
         public VideoAppliance(string manufacturer, string model, decimal price, decimal weight, int powerConsumption,
-            int amountInStock, Dimensions dimensions, Color color, DisplayResolution displayResolution, DisplayType displayType)
+            int amountInStock, Dimensions dimensions, Color color)
             : base(manufacturer, model, price, weight, powerConsumption, amountInStock, dimensions, color)
         {
-            this.DisplayResolution = displayResolution;
-            this.DisplayType = displayType;
             this.VideoFeatures = new List<VideoFeatures>();
         }
 
         public List<VideoFeatures> VideoFeatures { get; set; }
-        public DisplayResolution DisplayResolution { get; set; }
-        public DisplayType DisplayType { get; set; }
 
-        public abstract void AddVideoFeature(VideoFeatures videoFeature);
+        public void AddVideoFeature(VideoFeatures videoFeature)
+        {
+            this.VideoFeatures.Add(videoFeature);
+        }
     }
 }

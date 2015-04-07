@@ -5,25 +5,25 @@
     using System.Collections.Generic;
     using LoquatMegaStore.Enumerators;
     using LoquatMegaStore.Structures;
+    using LoquatMegaStore.Interfaces;
 
-    public class TV : VideoAppliance
+    public class TV : VideoAppliance, IVideoPlayable, ISoundable
     {
-        private List<VideoFeatures> tvFeatures;
-
         public TV(string manufacturer, string model, decimal price, decimal weight, int powerConsumption,
-            int amountInStock, Dimensions dimensions, Color color, DisplayResolution displayResolution, DisplayType displayType)
-            : base (manufacturer, model, price, weight, powerConsumption, amountInStock, dimensions, color, displayResolution, displayType)
+            int amountInStock, Dimensions dimensions, Color color)
+            : base(manufacturer, model, price, weight, powerConsumption, amountInStock, dimensions, color)
         {
-            this.TVFeatures = new List<VideoFeatures>();
+
         }
-        public List<VideoFeatures> TVFeatures
+        public Display Display { get; private set; }
+        public void PlayVideo()
         {
-            get { return tvFeatures; }
-            set { tvFeatures = value; }
+            throw new NotImplementedException();
         }
-        public override void AddVideoFeature(VideoFeatures videofeature)
+        public Speaker Speaker { get; private set; }
+        public void PlaySound()
         {
-            this.TVFeatures.Add(videofeature);
+            throw new NotImplementedException();
         }
     }
 }

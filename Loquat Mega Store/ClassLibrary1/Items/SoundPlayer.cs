@@ -5,14 +5,14 @@ namespace LoquatMegaStore.Items
     using LoquatMegaStore.Structures;
     using System;
 
-    public class SoundPlayer : AudioAppliance, ISoundable
+    public class SoundPlayer : AudioAppliance, ISoundable, IVideoPlayable
     {
 
         private int radioStationMemory;
         private AudioFormat audioFormat;
 
         public SoundPlayer(string manufacturer, string model, decimal weight, decimal price, int powerConsumption,
-              int amountInStock, Dimensions dimensions, Speaker speaker, int outputPower, Color color, int stations, AudioFormat playModes)
+              int amountInStock, Dimensions dimensions, Speaker speaker, Display display, int outputPower, Color color, int stations, AudioFormat playModes)
             : base(manufacturer, model, price, weight, powerConsumption, amountInStock, dimensions, outputPower, color)
         {
             this.RadioStationMemory = stations;
@@ -39,6 +39,13 @@ namespace LoquatMegaStore.Items
         }
         public Speaker Speaker { get; set; }
         public void PlaySound()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Display Display { get; private set; }
+
+        public void PlayVideo()
         {
             throw new NotImplementedException();
         }

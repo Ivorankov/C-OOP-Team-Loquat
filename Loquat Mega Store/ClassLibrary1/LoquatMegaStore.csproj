@@ -40,7 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enumerators\AudioFormat.cs" />
-    <Compile Include="Enumerators\Colors.cs" />
+    <Compile Include="Enumerators\Color.cs" />
     <Compile Include="Enumerators\DisplayResolutioncs.cs" />
     <Compile Include="Enumerators\ProjectorType.cs" />
     <Compile Include="Enumerators\VideoFeatures.cs" />
@@ -84,7 +84,7 @@
     <Compile Include="Structures\Speaker.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ItemDiagram.cd" />
+    <None Include="Items\ItemDiagram.cd" />
     <None Include="ShoppingSystem\ShoppingDiagram.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
