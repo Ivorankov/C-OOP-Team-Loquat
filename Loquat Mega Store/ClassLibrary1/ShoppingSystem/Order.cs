@@ -3,11 +3,12 @@
     using System;
     using System.Linq;
     using LoquatMegaStore.ShoppingSystem.Enumerators;
+    using System.IO;
 
     public class Order
     {
         public Order(PaymentType payment, int orderId, OrderStatus orderStatus, double shippingFee,
-            int itemCount, decimal totPrice, string contactName,string address)
+            int itemCount, decimal totPrice, string contactName, string address)
         {
             this.PaymentMethod = payment;
             this.OrderID = orderId;
@@ -34,7 +35,22 @@
         {
             this.Status = OrderStatus.New;
         }
-        
+
+        public void SaveOrder()
+        {
+            if (this.Status == OrderStatus.New)
+            {
+                using (FileStream orderFileStream = new FileStream("order.txt", FileMode.OpenOrCreate,
+                    FileAccess.Write))
+                using (StreamWriter writer = new StreamWriter(orderFileStream))
+                {
+
+                    writer.WriteLine(string.Format("{0} {1} {2} {3} {4} {5} {6} {7} {8}", this.PaymentMethod, this.OrderID,
+                        this.Status, this.OrderDate, this.ShippingFee, this.Items, this.TotalPrice, this.ContactName, this.Address));
+                        writer.Close();
+                }
+            }
+        }
         public void Cancel()
         {
             this.Status = OrderStatus.Cancelled;
