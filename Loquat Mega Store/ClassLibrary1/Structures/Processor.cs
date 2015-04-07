@@ -16,6 +16,7 @@
             this.ClockSpeed = frequency;
             this.Cache = cache;
         }
+
         public int AmountOfCores
         {
             get { return this.amountOfCores; }
@@ -28,6 +29,7 @@
                 this.amountOfCores = value;
             }
         }
+
         public double ClockSpeed
         {
             get { return this.clockSpeed; }
@@ -40,6 +42,7 @@
                 this.clockSpeed = value;
             }
         }
+
         public int Cache
         {
             get { return this.cache; }
@@ -52,9 +55,10 @@
                 this.cache = value;
             }
         }
+
         public override string ToString()
         {
-            return string.Format("Cores: {0} Clock speed: {1} Cache: {2}", AmountOfCores, ClockSpeed, Cache);
+            return string.Format("Cores: {0} / Clock speed: / {1} Cache: {2}", AmountOfCores, ClockSpeed, Cache);
         }
     }
 }

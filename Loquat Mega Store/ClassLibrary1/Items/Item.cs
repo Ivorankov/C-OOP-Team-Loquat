@@ -152,7 +152,6 @@
 
             var result = new StringBuilder();
 
-
             foreach (var info in properties)
             {
                 var value = info.GetValue(this, null) ?? "";
@@ -172,7 +171,7 @@
                     valueAsString = value.ToString();
                 }
 
-                result.AppendLine(String.Format("{0, -20} : {1, 20}", info.Name, valueAsString));
+                result.AppendLine(String.Format("{0} -> {1}", info.Name, valueAsString));
 
             }
 

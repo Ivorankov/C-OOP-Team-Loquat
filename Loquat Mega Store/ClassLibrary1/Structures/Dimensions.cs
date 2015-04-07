@@ -16,6 +16,7 @@
             this.Y = y;
             this.Z = z;
         }
+
         public int X
         {
             get { return this.x; }
@@ -28,6 +29,7 @@
                 this.x = value;
             }
         }
+
         public int Y
         {
             get { return this.y; }
@@ -40,6 +42,7 @@
                 this.y = value;
             }
         }
+
         public int Z
         {
             get { return this.z; }
@@ -52,9 +55,10 @@
                 this.z = value;
             }
         }
+
         public override string ToString()
         {
-            return string.Format("X: {0} Y: {1} Z: {2}");
+            return string.Format("X: {0} / Y: {1} / Z: {2}");
         }
     }
 }

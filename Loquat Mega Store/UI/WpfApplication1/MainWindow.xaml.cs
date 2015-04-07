@@ -1,19 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using WpfApplication1.SideWindows;
+
 using LoquatMegaStore.ShoppingSystem;
+using WpfApplication1.SideWindows;
 
 namespace WpfApplication1
 {
@@ -23,12 +12,11 @@ namespace WpfApplication1
     public partial class MainWindow : Window
     {
         public static Customer customer;
+
         public MainWindow()
         {
             InitializeComponent();
         }
-
-
 
         private void Category_Click(object sender, RoutedEventArgs e)
         {
@@ -125,9 +113,11 @@ namespace WpfApplication1
 
         private void Sale_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("You are now entering sale mode. Enjoy.");
+            MessageBox.Show("You are now entering Easter Sale mode. Enjoy.");
             var saleModeWindow = new MainWindow();
+            this.WindowState = System.Windows.WindowState.Minimized;
             saleModeWindow.Show();
         }
+
     }
 }

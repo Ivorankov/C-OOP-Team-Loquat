@@ -8,7 +8,7 @@
     </Window.Resources>
     <StackPanel>
         <TextBlock Text="Laptop"></TextBlock>
-        <TextBox Text="" x:Name="LaptopInformation"/>
+        <TextBox Text="" x:Name="LaptopInformation" TextAlignment="Left"/>
         <Button Content="Checkout" Click="AddToCart_Click"/>
     </StackPanel>
 </Window>

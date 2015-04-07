@@ -1,6 +1,7 @@
 ﻿namespace LoquatMegaStore.Structures
 {
     using System;
+
     public struct ShippingAddress
     {
         public string Country { get; private set; }

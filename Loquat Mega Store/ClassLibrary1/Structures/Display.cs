@@ -16,6 +16,7 @@
             this.DisplayRes = displayRes;
             this.Size = size;
         }
+
         public double Size
         {
             get { return this.size; }
@@ -28,19 +29,22 @@
                 this.size = value;
             }
         }
+
         public DisplayType DisplayType
         {
             get { return this.displayType; }
             set { this.displayType = value; }
         }
+
         public DisplayResolution DisplayRes
         {
             get { return this.displayRes; }
             set { this.displayRes = value; }
         }
+
         public override string ToString()
         {
-            return string.Format("Display size: {0} Display type: {1} Display resolution: {2}", Size, DisplayType, DisplayRes);
+            return string.Format("Display size: {0} / Display type: {1} / Display resolution: {2}", Size, DisplayType, DisplayRes);
         }
     }
 }
