@@ -16,7 +16,7 @@
         }
 
         public Projector(string manufacturer, string model, decimal price, decimal weight, int powerConsumption, int amountInStock,
-            Dimensions dimensions, Color color, DisplayResolution displayResolution,
+            Dimensions dimensions, Color color,
             uint ansiLumens = 1000, uint lampLife = 2000)
             : base(manufacturer, model, price, weight, powerConsumption, amountInStock, dimensions, color)
         {

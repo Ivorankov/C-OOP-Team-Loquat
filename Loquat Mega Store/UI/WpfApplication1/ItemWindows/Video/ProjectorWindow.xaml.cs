@@ -1,4 +1,7 @@
-﻿using System;
+﻿using LoquatMegaStore.Enumerators;
+using LoquatMegaStore.Items;
+using LoquatMegaStore.Structures;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +22,12 @@ namespace WpfApplication1
     /// </summary>
     public partial class ProjectorWindow : Window
     {
+        public Projector projector = new Projector("Best", "ProLight", 0.600m, 890.21m, 100, 20,
+            new Dimensions(50, 10, 60), LoquatMegaStore.Enumerators.Color.Gray, 5000,4000);
         public ProjectorWindow()
         {
             InitializeComponent();
+            TextBlock.Text = projector.ToString();
         }
 
         private void AddToCart_Click(object sender, RoutedEventArgs e)
@@ -34,6 +40,7 @@ namespace WpfApplication1
             }
             else
             {
+                MainWindow.customer.UserCart.Items.Add(projector);
                 MessageBox.Show("Item added to shopping cart!");
             }
         }

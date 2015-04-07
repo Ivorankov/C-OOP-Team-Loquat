@@ -10,10 +10,11 @@
     public class TV : VideoAppliance, IVideoPlayable, ISoundable
     {
         public TV(string manufacturer, string model, decimal price, decimal weight, int powerConsumption,
-            int amountInStock, Dimensions dimensions, Color color)
+            int amountInStock, Dimensions dimensions, Color color, Speaker speaker, Display display)
             : base(manufacturer, model, price, weight, powerConsumption, amountInStock, dimensions, color)
         {
-
+            this.Speaker = speaker;
+            this.Display = display;
         }
         public Display Display { get; private set; }
         public void PlayVideo()

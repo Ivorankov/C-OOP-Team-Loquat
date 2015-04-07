@@ -22,8 +22,8 @@ namespace WpfApplication1
     /// </summary>
     public partial class RadioStationWindow : Window
     {
-        public HomePhone hPhone = new HomePhone("Fruty", "Pineapple", 3.12m, 1200m, 250, 5, new Dimensions(5, 3, 24),
-        LoquatMegaStore.Enumerators.Color.Black, new Display(7, DisplayType.LCD, DisplayResolution.p1024),
+        public HomePhone hPhone = new HomePhone("Fruty", "Orange", 3.12m, 65m, 56, 10, new Dimensions(10, 5, 20),
+        LoquatMegaStore.Enumerators.Color.Black, new Display(2, DisplayType.LED, DisplayResolution.p480),
         new Speaker(1.2, 1.8), 2.30, 5.65);
         public RadioStationWindow()
         {
