@@ -27,9 +27,7 @@ namespace WpfApplication1
         {
             InitializeComponent();
         }
-
-
-
+        
         private void Category_Click(object sender, RoutedEventArgs e)
         {
             (sender as Button).ContextMenu.IsEnabled = true;
@@ -121,6 +119,16 @@ namespace WpfApplication1
         {
             CartWindow cartWindow = new CartWindow();
             cartWindow.Show();
+        }
+
+        private void Sale_Click(object sender, RoutedEventArgs e)
+        {
+            var saleModeWindow = new MainWindow();
+            TextBox txt = new TextBox();
+            txt.Text = "You are now in sale mode";
+            //saleModeWindow.AddChild(txt);
+            MessageBox.Show("You are now entering sale mode. Enjoy.");
+            saleModeWindow.Show();
         }
     }
 }
