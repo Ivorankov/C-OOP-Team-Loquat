@@ -2,35 +2,38 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="502" Width="645" Background="White">
+    <Window.Resources>
+        <ResourceDictionary Source="Styles.xaml" />
+    </Window.Resources>
     <StackPanel>
-    <Menu IsMainMenu="True">
-        <MenuItem Header="Home" HorizontalAlignment="Center" VerticalAlignment="Top" Height="30" FontSize="15" Foreground="White" Background="Black" FontFamily="Verdana Bold" Click="Home_Click" Width="86"/>
-        <MenuItem Header="About Us" HorizontalAlignment="Stretch" VerticalAlignment="Top" Width="119" Height="30" FontSize="15" Foreground="White" Background="Black" FontFamily="Verdana Bold" Click="About_Click"/>
-        <MenuItem Header="Category" HorizontalAlignment="Stretch" VerticalAlignment="Top" Width="115" Height="30" FontSize="15" Foreground="White" Background="Black" FontFamily="Verdana Bold">
-            <MenuItem Header="Audio" FontFamily="Verdana Bold" Foreground="White" Background="Black">
-                <MenuItem Header="Loud Speaker" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="20" Background="Black" Margin="0,0,0,0" FontSize="12" FontFamily="Verdana Bold" Click="LoudSpeaker_Click"/>
-                <MenuItem Header="Audio player" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="20" Background="Black" Margin="0,0,0,0" FontSize="12" FontFamily="Verdana Bold" Click="AudioPlayer_Click"/>
+        <Menu IsMainMenu="True">
+            <MenuItem Header="Home" Click="Home_Click"/>
+            <MenuItem Header="About Us" Click="About_Click"/>
+            <MenuItem Header="Category">
+                <MenuItem Header="Audio">
+                    <MenuItem Header="Loud Speaker" Click="LoudSpeaker_Click"/>
+                    <MenuItem Header="Audio player" Click="AudioPlayer_Click"/>
+                </MenuItem>
+                <MenuItem Header="Video">
+                    <MenuItem Header="TV" Click="TV_Click"/>
+                    <MenuItem Header="Projector" Click="Projector_Click"/>
+                </MenuItem>
+                <MenuItem Header="Computer">
+                    <MenuItem Header="Desktop" Click="Desktop_Click"/>
+                    <MenuItem Header="Laptop" Click="Laptop_Click"/>
+                </MenuItem>
+                <MenuItem Header="Comunication">
+                    <MenuItem Header="GSM" Click="GSM_Click"/>
+                    <MenuItem Header="Radio station" Click="RadioSt_Click"/>
+                </MenuItem>
             </MenuItem>
-            <MenuItem Header="Video" FontFamily="Verdana Bold" Background="Black" Foreground="White">
-                <MenuItem Header="TV" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="23" Background="Black" Margin="0,0,0,0" FontSize="12" FontFamily="Verdana Bold" Click="TV_Click"/>
-                <MenuItem Header="Projector" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="23" Background="Black" Margin="0,0,0,0" FontSize="12" FontFamily="Verdana Bold" Click="Projector_Click"/>
+            <MenuItem Header="Shopping cart" Click="Cart_Click"/>
+            <MenuItem Header="Log in/Register">
+                <MenuItem Header="Login" Click="User_Click"/>
+                <MenuItem Header="Register" Click="Register_Click"/>
             </MenuItem>
-            <MenuItem Header="Computer" FontFamily="Verdana Bold" Background="Black" Foreground="White">
-                <MenuItem Header="Desktop" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="23" Background="Black" Margin="0,0,0,0" FontSize="12" FontFamily="Verdana Bold" Click="Desktop_Click"/>
-                <MenuItem Header="Laptop" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="23" Background="Black" Margin="0,0,0,0" FontSize="12" FontFamily="Verdana Bold" Click="Laptop_Click"/>
-            </MenuItem>
-            <MenuItem Header="Comunication" FontFamily="Verdana Bold" Background="Black" Foreground="White">
-                <MenuItem Header="GSM" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="23" Background="Black" Margin="0,0,0,0" FontSize="12" FontFamily="Verdana Bold" Click="GSM_Click"/>
-                <MenuItem Header="Radio station" VerticalAlignment="Top" Height="23" Background="Black" Margin="0,0,0,0" FontSize="12" FontFamily="Verdana Bold" Click="RadioSt_Click"/>
-            </MenuItem>
-        </MenuItem>
-        <MenuItem Header="Shopping cart" HorizontalAlignment="Center" VerticalAlignment="Top" Width="147" Height="30" FontSize="15" Foreground="White" Background="Black" FontFamily="Verdana Bold" Click="Cart_Click"/>
-        <MenuItem Header="Log in/Register" HorizontalAlignment="Stretch" VerticalAlignment="Top" Width="158" Height="30" FontSize="15" Foreground="White" Background="Black" FontFamily="Verdana Bold">
-            <MenuItem Header="Login"  HorizontalAlignment="Stretch" VerticalAlignment="Top" Width="140" Height="23" Foreground="White" Background="Black" Margin="0,0,0,0" FontSize="12" FontFamily="Verdana Bold" Click="User_Click"/>
-            <MenuItem Header="Register"  HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="23" Foreground="White" Background="Black" Margin="0,0,0,0" FontSize="12" FontFamily="Verdana Bold" Click="Register_Click"/>
-        </MenuItem>
-    </Menu>
-        <Image Source="./images/Loquat.png" Margin="0, 100, 0, 0" Height="200" />
+        </Menu>
+        <Image Height="200" Margin="0,100,0,0" Source="images/Loquat.png" Stretch="Fill"/>
     </StackPanel>
 </Window>
 
