@@ -9,6 +9,6 @@
     <StackPanel>
         <TextBlock Text="Laptop"></TextBlock>
         <TextBlock Text="" x:Name="LaptopInformation" TextAlignment="Left"/>
-        <Button Content="Checkout" Click="AddToCart_Click"/>
+        <Button Content="Add to cart" Click="AddToCart_Click"/>
     </StackPanel>
 </Window>

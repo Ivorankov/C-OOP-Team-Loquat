@@ -1,4 +1,7 @@
-﻿using System;
+﻿using LoquatMegaStore.Enumerators;
+using LoquatMegaStore.Items;
+using LoquatMegaStore.Structures;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +22,13 @@ namespace WpfApplication1
     /// </summary>
     public partial class GSMWindow : Window
     {
+        public MobilePhone GSM = new MobilePhone("Fruty", "Pineapple", 3.12m, 1200m, 250, 5, new Dimensions(5, 3, 24),
+                LoquatMegaStore.Enumerators.Color.Black, new Display(7, DisplayType.LCD, DisplayResolution.p1024),
+                new Speaker(1.2,1.8),true,5000,13.6);
         public GSMWindow()
         {
             InitializeComponent();
+            TextBlock.Text = GSM.ToString();
         }
 
         private void AddToCart_Click(object sender, RoutedEventArgs e)
@@ -34,11 +41,9 @@ namespace WpfApplication1
             }
             else
             {
+                MainWindow.customer.UserCart.Items.Add(GSM);
                 MessageBox.Show("Item added to shopping cart!");
             }
         }
-
-
-
     }
 }

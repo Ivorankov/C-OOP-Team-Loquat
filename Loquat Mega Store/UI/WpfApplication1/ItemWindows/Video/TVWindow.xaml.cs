@@ -1,4 +1,7 @@
-﻿using System;
+﻿using LoquatMegaStore.Enumerators;
+using LoquatMegaStore.Items;
+using LoquatMegaStore.Structures;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +22,12 @@ namespace WpfApplication1
     /// </summary>
     public partial class TVWindow : Window
     {
+        public TV TV = new TV("Best", "MegaLap", 1.12m, 890.21m, 120, 2, new Dimensions(50, 10, 60), LoquatMegaStore.Enumerators.Color.Gray,
+        new Speaker(60, 4.5), new Display(13.2, DisplayType.SUHD, DisplayResolution.UHD));
         public TVWindow()
         {
             InitializeComponent();
+            TextBlock.Text = TV.ToString();
         }
 
         private void AddToCart_Click(object sender, RoutedEventArgs e)
@@ -34,6 +40,7 @@ namespace WpfApplication1
             }
             else
             {
+                MainWindow.customer.UserCart.Items.Add(TV);
                 MessageBox.Show("Item added to shopping cart!");
             }
         }
