@@ -12,8 +12,8 @@
 
         public HomePhone(string manufacturer, string model, decimal price,
             decimal weight, int powerConsumption, int amountInStock, Dimensions dimensions,
-            double? displaySize, Color color, Display display, Speaker speaker,
-            double batteryDocked, double batteryStandbyTime = 0)
+            Color color, Display display, Speaker speaker,
+            double batteryChargeTime, double batteryStandbyTime)
             : base(manufacturer, model, price, weight, powerConsumption, amountInStock, dimensions, color, display, speaker)
         {
             this.BatteryDocked = batteryChargeTime;

@@ -1,4 +1,7 @@
-﻿using System;
+﻿using LoquatMegaStore.Enumerators;
+using LoquatMegaStore.Items;
+using LoquatMegaStore.Structures;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +22,13 @@ namespace WpfApplication1
     /// </summary>
     public partial class RadioStationWindow : Window
     {
+        public HomePhone hPhone = new HomePhone("Fruty", "Pineapple", 3.12m, 1200m, 250, 5, new Dimensions(5, 3, 24),
+        LoquatMegaStore.Enumerators.Color.Black, new Display(7, DisplayType.LCD, DisplayResolution.p1024),
+        new Speaker(1.2, 1.8), 2.30, 5.65);
         public RadioStationWindow()
         {
             InitializeComponent();
+            TextBlock.Text = hPhone.ToString();
         }
 
         private void AddToCart_Click(object sender, RoutedEventArgs e)
@@ -34,6 +41,7 @@ namespace WpfApplication1
             }
             else
             {
+                MainWindow.customer.UserCart.Items.Add(hPhone);
                 MessageBox.Show("Item added to shopping cart!");
             }
         }
