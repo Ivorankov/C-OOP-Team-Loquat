@@ -4,6 +4,7 @@
     using System.Linq;
     using LoquatMegaStore.ShoppingSystem.Enumerators;
     using System.IO;
+    using System.Text;
 
     public class Order
     {
@@ -49,6 +50,16 @@
                         this.Status, this.OrderDate, this.ShippingFee, this.Items, this.TotalPrice, this.ContactName, this.Address));
                         writer.Close();
                 }
+            }
+        }
+        public static void StoreOrder(Order order, string filename)
+        {
+            StreamWriter writer = new StreamWriter(filename, true, Encoding.ASCII);
+
+            using (writer)
+            {
+                writer.WriteLine(order.ToString());
+                writer.Close();
             }
         }
         public void Cancel()
