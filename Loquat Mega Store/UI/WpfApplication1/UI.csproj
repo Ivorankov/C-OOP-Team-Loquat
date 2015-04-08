@@ -198,7 +198,7 @@
     <Resource Include="images\Loquat.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Image1.png" />
+    <Resource Include="images\LoquatNinja.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

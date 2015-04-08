@@ -58,7 +58,7 @@
 
         public override string ToString()
         {
-            return string.Format("Cores: {0} / Clock speed: / {1} Cache: {2}", AmountOfCores, ClockSpeed, Cache);
+            return string.Format("Cores: {0} / Clock speed: {1} / Cache: {2}", AmountOfCores, ClockSpeed, Cache);
         }
     }
 }

@@ -38,7 +38,7 @@ namespace WpfApplication1
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             string email = GetUserEmail();
-            Customer customer = new Customer(UserName, Password,email);
+            Customer customer = new Customer(UserName, Password, email);
             bool isValid = Authentication.LoginUser(customer);
             if (isValid)
             {
@@ -49,7 +49,7 @@ namespace WpfApplication1
             {
                 MessageBox.Show("Loging failed :(");
             }
-            
+
         }
 
         private string GetUserEmail()

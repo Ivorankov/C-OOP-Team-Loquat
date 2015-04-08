@@ -26,9 +26,11 @@
         # endregion
 
         #region Constructors
-        public Item() //MAKES THE PROGRAM BUILD ( TO BE DELETED )
-        {
-        }
+
+        //public Item()
+        //{
+        //}
+
         public Item(string manufacturer, string model, decimal price, int amountInStock)
         {
             this.Manufacturer = manufacturer;
@@ -36,6 +38,7 @@
             this.Price = price;
             this.AmountInStock = amountInStock;
         }
+
         public Item(string manufacturer, string model, decimal price, decimal weight, int powerConsumption, int amountInStock, Dimensions dimensions, Color color)
             : this(manufacturer, model, price, amountInStock)
         {
@@ -172,7 +175,6 @@
                 }
 
                 result.AppendLine(String.Format("{0} -> {1}", info.Name, valueAsString));
-
             }
 
             return result.ToString().Trim();

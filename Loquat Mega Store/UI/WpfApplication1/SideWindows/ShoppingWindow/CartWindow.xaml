@@ -8,6 +8,6 @@
     <StackPanel>
         <TextBlock Text="Your Cart"></TextBlock>
         <TextBox Text="User Cart Information" x:Name="TextBox"/>
-        <Button Content="Checkout" Click="Checkout_Click"/>
+        <Button Content="Checkout" Background="ForestGreen" Click="Checkout_Click"/>
     </StackPanel>
 </Window>
