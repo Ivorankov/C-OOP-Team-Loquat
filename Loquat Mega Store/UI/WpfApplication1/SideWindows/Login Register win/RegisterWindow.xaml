@@ -9,7 +9,7 @@
     <StackPanel>
         <TextBlock Text="Registration"></TextBlock>
         <TextBox x:Name="TextBox" Text="Enter User Name..." />
-        <TextBox x:Name="TextBox1" Text="Enter Password..." />
+        <PasswordBox x:Name="TextBox1" PasswordChar="*" />
         <TextBox x:Name="TextBox2" Text="Enter Email..." />
         <Button Content="Register" Click="Button_Click"/>
     </StackPanel>

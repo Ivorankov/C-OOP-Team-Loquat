@@ -8,7 +8,7 @@
     <StackPanel>
         <TextBlock Text="User Login"></TextBlock>
         <TextBox x:Name="TextBox" Text="User Name" />
-        <TextBox x:Name="TextBox1" Text="Password" />
+        <PasswordBox x:Name="TextBox1" PasswordChar="*" />
         <Button Content="Submit" Click="Button_Click"/>
     </StackPanel>
 </Window>

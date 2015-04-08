@@ -32,8 +32,8 @@ namespace WpfApplication1
         }
         public string Password
         {
-            get { return TextBox1.Text; }
-            set { TextBox1.Text = value; }
+            get { return TextBox1.Password; }
+            set { TextBox1.Password = value; }
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {

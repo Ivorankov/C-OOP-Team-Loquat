@@ -25,7 +25,7 @@ namespace WpfApplication1.SideWindows
         public CartWindow()
         {
             InitializeComponent();
-            //TextBox.Text = MainWindow.customer.UserCart.ToString();
+            TextBox.Text = MainWindow.customer.UserCart.ToString();
         }
 
         private void Checkout_Click(object sender, RoutedEventArgs e)
