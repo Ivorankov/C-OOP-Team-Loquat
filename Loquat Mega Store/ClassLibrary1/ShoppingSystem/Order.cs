@@ -1,10 +1,10 @@
 ﻿namespace LoquatMegaStore.ShoppingSystem
 {
     using System;
-    using System.Linq;
-    using LoquatMegaStore.ShoppingSystem.Enumerators;
     using System.IO;
     using System.Text;
+
+    using LoquatMegaStore.ShoppingSystem.Enumerators;
 
     public class Order
     {
@@ -19,7 +19,6 @@
             this.TotalPrice = totPrice;
             this.OrderDate = DateTime.Now;
             this.ContactName = contactName;
-
         }
 
         public PaymentType PaymentMethod { get; set; }

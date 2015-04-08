@@ -10,7 +10,6 @@
         public Administrator(string userId, string password, string email)
             : base(userId, password, email)
         {
-
         }
     }
 }

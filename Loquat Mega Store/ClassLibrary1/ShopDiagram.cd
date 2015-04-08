@@ -17,7 +17,7 @@
   <Class Name="LoquatMegaStore.ShoppingSystem.Cart" Collapsed="true">
     <Position X="16.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAEAAAABAAADAAEAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AIAEAAAABAAADAAEAAoAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
       <FileName>ShoppingSystem\Cart.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -104,7 +104,7 @@
   <Class Name="LoquatMegaStore.Items.Laptop" Collapsed="true">
     <Position X="14.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAQgAAAgABAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQgAAAgABAAAAAAAAAAAACA=</HashCode>
       <FileName>Items\Laptop.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -169,11 +169,12 @@
       <FileName>Serialization\Serializer.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LoquatMegaStore.Visitors.SaleVisitor" Collapsed="true" BaseTypeListCollapsed="true">
+  <Class Name="LoquatMegaStore.Visitors.GiftVisitor" Collapsed="true" BaseTypeListCollapsed="true">
     <Position X="16.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Visitors\SaleVisitor.cs</FileName>
+      <FileName>Visitors\GiftVisitor.cs</FileName>
+      <NewMemberFileName>Visitors\SaleVisitor.cs</NewMemberFileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
