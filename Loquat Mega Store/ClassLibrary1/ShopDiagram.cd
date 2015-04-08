@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="LoquatMegaStore.ShoppingSystem.Administrator" Collapsed="true">
-    <Position X="0.5" Y="6.25" Width="1.5" />
+    <Position X="1" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>ShoppingSystem\Administrator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LoquatMegaStore.ShoppingSystem.Authentication" Collapsed="true">
-    <Position X="14.5" Y="6.25" Width="1.5" />
+    <Position X="14.25" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAABQAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAE=</HashCode>
       <FileName>ShoppingSystem\Authentication.cs</FileName>
@@ -22,28 +22,28 @@
     </TypeIdentifier>
   </Class>
   <Class Name="LoquatMegaStore.ShoppingSystem.Customer" Collapsed="true">
-    <Position X="2.25" Y="6.25" Width="1.5" />
+    <Position X="2.75" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
       <FileName>ShoppingSystem\Customer.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LoquatMegaStore.ShoppingSystem.Hashing" Collapsed="true">
-    <Position X="14.5" Y="5.5" Width="1.5" />
+    <Position X="14.25" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAACAAAABAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>ShoppingSystem\Hashing.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LoquatMegaStore.ShoppingSystem.Order" Collapsed="true">
-    <Position X="16.5" Y="6" Width="1.5" />
+    <Position X="16.5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>CAABABAEQEAACAAAAAAgAAAAAAAAQRACAAAAIAAAAAA=</HashCode>
       <FileName>ShoppingSystem\Order.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LoquatMegaStore.ShoppingSystem.User" Collapsed="true">
-    <Position X="1.25" Y="5" Width="1.5" />
+    <Position X="1.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAQAEAAACBBAAAgCAAAIAggAAAAABAKAIAAAgAAAAA=</HashCode>
       <FileName>ShoppingSystem\User.cs</FileName>
@@ -51,21 +51,21 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="LoquatMegaStore.NegativeValueException" Collapsed="true">
-    <Position X="14.5" Y="4.5" Width="1.5" />
+    <Position X="14.25" Y="4.5" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Exceptions\NegativeValueException.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LoquatMegaStore.Items.AudioAppliance" Collapsed="true">
-    <Position X="6.75" Y="1.75" Width="1.5" />
+    <Position X="7.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAIAAAAA=</HashCode>
       <FileName>Items\AudioAppliance.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LoquatMegaStore.Items.CommunicationAppliance" Collapsed="true">
-    <Position X="11.25" Y="1.75" Width="1.5" />
+    <Position X="10.75" Y="1.75" Width="2" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAQgAAAgABAAAAAAAAAAAAAA=</HashCode>
       <FileName>Items\CommunicationAppliance.cs</FileName>
@@ -73,21 +73,21 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="LoquatMegaStore.Items.ComputerAppliance" Collapsed="true">
-    <Position X="15.75" Y="1.75" Width="1.5" />
+    <Position X="15.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAQAAAAAAAAAAAAAAAQAAAQAAAAEAAAAAAEAAA=</HashCode>
       <FileName>Items\ComputerAppliance.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LoquatMegaStore.Items.Desktop" Collapsed="true">
-    <Position X="16.75" Y="3.25" Width="1.5" />
+    <Position X="16.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Items\Desktop.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LoquatMegaStore.Items.HomePhone" Collapsed="true">
-    <Position X="10.25" Y="3.25" Width="1.5" />
+    <Position X="10.25" Y="3.25" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAAAAAAgAAAAAQAAAAEAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Items\HomePhone.cs</FileName>
@@ -102,7 +102,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="LoquatMegaStore.Items.Laptop" Collapsed="true">
-    <Position X="14.75" Y="3.25" Width="1.5" />
+    <Position X="14.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAQgAAAgABAAAAAAAAAAAACA=</HashCode>
       <FileName>Items\Laptop.cs</FileName>
@@ -110,7 +110,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="LoquatMegaStore.Items.LoudSpeaker" Collapsed="true">
-    <Position X="5.75" Y="3.25" Width="1.5" />
+    <Position X="6" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAEAAAABAQAAAAEAAgAAAgAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Items\LoudSpeaker.cs</FileName>
@@ -118,21 +118,21 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="LoquatMegaStore.Items.MobilePhone" Collapsed="true">
-    <Position X="12.5" Y="3.25" Width="1.5" />
+    <Position X="12.25" Y="3.25" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAgAAAAAAAAAAAAAAAAAAAAAAAgCAAAIAgAA=</HashCode>
       <FileName>Items\MobilePhone.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LoquatMegaStore.Items.Projector" Collapsed="true">
-    <Position X="3.5" Y="3.25" Width="1.5" />
+    <Position X="4" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AQAAAAEABAAAAAAAAAAAAAAABAAAAAAACAAAAAgAAAA=</HashCode>
       <FileName>Items\Projector.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LoquatMegaStore.Items.SoundPlayer" Collapsed="true">
-    <Position X="8" Y="3.25" Width="1.5" />
+    <Position X="8.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAgAAAAIAAAAAQgAAAgBBAAAAQAAAAAAAAA=</HashCode>
       <FileName>Items\SoundPlayer.cs</FileName>
@@ -140,7 +140,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="LoquatMegaStore.Items.TV" Collapsed="true">
-    <Position X="1.25" Y="3.25" Width="1.5" />
+    <Position X="2" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAQgAAAgABAAAAAAAAAAAAAA=</HashCode>
       <FileName>Items\TV.cs</FileName>
@@ -148,14 +148,14 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="LoquatMegaStore.Items.VideoAppliance" Collapsed="true">
-    <Position X="2.25" Y="1.75" Width="1.5" />
+    <Position X="3" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAgAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Items\VideoAppliance.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="LoquatMegaStore.Serialization.ObjectToSerialize" Collapsed="true" BaseTypeListCollapsed="true">
-    <Position X="16.5" Y="5.25" Width="1.5" />
+    <Position X="16.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAAAACAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Serialization\ObjectToSerialize.cs</FileName>
@@ -163,7 +163,7 @@
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="LoquatMegaStore.Serialization.Serializer" Collapsed="true">
-    <Position X="16.5" Y="7.5" Width="1.5" />
+    <Position X="16.5" Y="6" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAEAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Serialization\Serializer.cs</FileName>
