@@ -7,7 +7,6 @@
 
     public static class Hashing
     {
-
         public static string GenerateSaltedHash(string plainText, string salt)
         {
             HashAlgorithm algorithm = new SHA384Managed();
@@ -32,7 +31,6 @@
 
         public static bool CheckHash(string hash1, string hash2)
         {
-
             if (hash1.Length != hash2.Length)
             {
                 return false;
@@ -47,7 +45,6 @@
             }
 
             return true;
-
         }
     }
 }

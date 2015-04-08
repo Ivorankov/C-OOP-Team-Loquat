@@ -55,19 +55,11 @@
             }
         }
 
-        public void CheckOut() // Add gift to order if sale is active
+        public void CheckOut()
         {
-            if (this.Items.Count > 0 && OnSale)
-            {
-                this.Accept(new GiftVisitor());
-            }
             Items.Clear();
         }
 
-        public void Accept(IVisitor visitor)
-        {
-            visitor.Visit(this);
-        }
 
         public override string ToString()
         {

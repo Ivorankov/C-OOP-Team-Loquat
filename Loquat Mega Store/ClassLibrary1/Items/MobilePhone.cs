@@ -1,13 +1,14 @@
 ﻿namespace LoquatMegaStore.Items
 {
     using System;
+
+    using LoquatMegaStore.Enumerators;
     using LoquatMegaStore.Interfaces;
     using LoquatMegaStore.Structures;
-    using LoquatMegaStore.Enumerators;
 
     public class MobilePhone : CommunicationAppliance
     {
-        private double? camera;//in Megapix
+        private double? camera; //in Megapixels
         private bool wifi;
         private int memory;
 
@@ -25,15 +26,16 @@
         {
             get
             {
-                return camera;
+                return this.camera;
             }
+
             private set
             {
                 if (value <= 0)
                 {
                     throw new NegativeValueException("The phone's camera in Megapixels cannot be zero or negative");
                 }
-                camera = value;
+                this.camera = value;
             }
         }
 
@@ -41,11 +43,12 @@
         {
             get
             {
-                return wifi;
+                return this.wifi;
             }
+
             private set
             {
-                wifi = value;
+                this.wifi = value;
             }
         }
 
@@ -53,15 +56,16 @@
         {
             get
             {
-                return memory;
+                return this.memory;
             }
+
             private set
             {
                 if (value <= 0)
                 {
                     throw new NegativeValueException("The phone's memory cannot be zero or negative");
                 }
-                memory = value;
+                this.memory = value;
             }
         }
     }

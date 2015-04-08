@@ -2,9 +2,10 @@
 {
     using LoquatMegaStore.Structures;
 
-    interface IVideoPlayable
+    public interface IVideoPlayable
     {
         Display Display { get; }
+
         void PlayVideo();
     }
 }

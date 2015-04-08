@@ -1,8 +1,5 @@
 ﻿namespace LoquatMegaStore.ShoppingSystem
 {
-    using System;
-    using System.Linq;
-    using System.Collections;
     using System.Collections.Generic;
 
     public class Customer : User
@@ -15,7 +12,7 @@
         }
 
          public Cart UserCart { get; private set; }
-         public IList<Order> OrderList { get; set; }
 
+         public IList<Order> OrderList { get; set; }
     }
 }

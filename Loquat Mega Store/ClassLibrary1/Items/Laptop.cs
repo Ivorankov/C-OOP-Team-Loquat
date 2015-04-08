@@ -1,9 +1,10 @@
 ﻿namespace LoquatMegaStore.Items
 {
     using System;
+
     using LoquatMegaStore.Enumerators;
-    using LoquatMegaStore.Structures;
     using LoquatMegaStore.Interfaces;
+    using LoquatMegaStore.Structures;
 
     public class Laptop : ComputerAppliance, ISoundable, IVideoPlayable, ICartAddable
     {
@@ -15,23 +16,18 @@
             this.Display = display;
             this.Speaker = speaker;
         }
+
         public Display Display { get; set; }
-
-
-        public void PlayVideo()
-        {
-
-        }
-
+        
         public Speaker Speaker { get; set; }
 
-
         public void PlaySound()
-        {
+        { }
 
-        }
+        public void PlayVideo()
+        { }
 
-        void AddToCart()
+        public void AddToCart()
         {
             bool inStock = true;
             // Logic to check if item can be added to cart can be implemented here

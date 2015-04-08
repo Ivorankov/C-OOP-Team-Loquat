@@ -1,9 +1,11 @@
 ﻿namespace LoquatMegaStore.Interfaces
 {
     using LoquatMegaStore.Structures;
-    interface ISoundable
+
+    public interface ISoundable
     {
         Speaker Speaker  { get; }
+
         void PlaySound();
     }
 }

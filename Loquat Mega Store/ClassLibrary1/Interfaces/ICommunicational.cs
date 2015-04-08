@@ -1,6 +1,6 @@
 ﻿namespace LoquatMegaStore.Interfaces
 {
-    interface ICommunicational
+    public interface ICommunicational
     {
     }
 }

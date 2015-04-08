@@ -6,7 +6,6 @@
 
     public static class Authentication
     {
-
         public static bool LoginUser(User user)
         {
             bool checkUser = false;
@@ -24,7 +23,6 @@
 
                         if (Hashing.CheckHash(hashedPass, arrayLine[1]))
                         {
-
                             checkUser = true;
                             break;
                         }
@@ -35,8 +33,8 @@
                     }
 
                     line = read.ReadLine();
-
                 } while ((line != null));
+
                 return checkUser;
             }
         }
@@ -81,19 +79,18 @@
             }
             return path;
         }
+
         private static string[] CreateDBInput(User user)
         {
             string[] strArray = new string[4];
             string[] salt = DateTime.Now.ToString().Split(new string[] { " " }, StringSplitOptions.RemoveEmptyEntries);
-            string test = Hashing.GenerateSaltedHash(user.Password, String.Join("", salt));
+            string test = Hashing.GenerateSaltedHash(user.Password, String.Join(String.Empty, salt));
 
             strArray[0] = user.UserId;
             strArray[1] = test;
             strArray[2] = user.Email;
-            strArray[3] = String.Join("", salt);
+            strArray[3] = String.Join(String.Empty, salt);
             return strArray;
         }
     }
 }
-
-

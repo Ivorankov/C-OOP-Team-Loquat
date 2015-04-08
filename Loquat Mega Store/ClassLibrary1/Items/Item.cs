@@ -6,9 +6,9 @@
     using System.Reflection;
     using System.Text;
 
+    using LoquatMegaStore.Enumerators;
     using LoquatMegaStore.Interfaces;
     using LoquatMegaStore.Structures;
-    using LoquatMegaStore.Enumerators;
     using LoquatMegaStore.Visitors;
 
     public abstract class Item : ICartAddable
@@ -28,8 +28,7 @@
         #region Constructors
 
         //public Item()
-        //{
-        //}
+        //{}
 
         public Item(string manufacturer, string model, decimal price, int amountInStock)
         {
@@ -157,7 +156,7 @@
 
             foreach (var info in properties)
             {
-                var value = info.GetValue(this, null) ?? "";
+                var value = info.GetValue(this, null) ?? String.Empty;
                 var valueAsString = String.Empty;
 
                 if (value is IEnumerable && !(value is String))

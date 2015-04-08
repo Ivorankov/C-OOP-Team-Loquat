@@ -27,7 +27,7 @@
 
         public uint LampLife
         {
-            get { return lampLife; }
+            get { return this.lampLife; }
             private set
             {
                 if (value < 1500 || value > 5000)
@@ -40,7 +40,7 @@
 
         public uint ANSILumens
         {
-            get { return ansiLumens; }
+            get { return this.ansiLumens; }
             private set
             {
                 if (value < 400 || value > 10000)
@@ -53,7 +53,7 @@
 
         public ProjectorType ProjectorType
         {
-            get { return projectorType; }
+            get { return this.projectorType; }
             private set { this.projectorType = value; }
         }
     }

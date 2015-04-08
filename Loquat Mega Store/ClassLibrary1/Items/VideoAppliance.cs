@@ -1,10 +1,9 @@
 ﻿namespace LoquatMegaStore.Items
 {
-    using System;
     using System.Collections.Generic;
-    using System.Linq;
-    using LoquatMegaStore.Structures;
+
     using LoquatMegaStore.Enumerators;
+    using LoquatMegaStore.Structures;
 
     public abstract class VideoAppliance : Item
     {

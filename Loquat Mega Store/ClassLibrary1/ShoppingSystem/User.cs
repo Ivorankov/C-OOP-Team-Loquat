@@ -1,11 +1,11 @@
 ﻿namespace LoquatMegaStore.ShoppingSystem
 {
     using System;
-    using System.Linq;
-    using LoquatMegaStore.Interfaces;
-    using System.Text.RegularExpressions;
-    using LoquatMegaStore.ShoppingSystem.Enumerators;
     using System.Runtime.Serialization;
+    using System.Text.RegularExpressions;
+
+    using LoquatMegaStore.Interfaces;
+    using LoquatMegaStore.ShoppingSystem.Enumerators;
 
     public abstract class User : IPayable, IOrder, ISerializable
     {
@@ -16,23 +16,24 @@
         private string email;
         private Cart cart;
 
+        public User(SerializationInfo info, StreamingContext ctxt)
+        {
+            this.UserId = (string)info.GetValue("UserId", typeof(string));
+            this.Password = (string)info.GetValue("Password", typeof(string));
+            this.Email = (string)info.GetValue("Email", typeof(int));
+            this.Cart = (Cart)info.GetValue("Cart", typeof(Cart));
+        }
+
         protected User(string userId, string password, string email)
         {
             this.UserId = userId;
             this.Password = password;
             this.Email = email;
         }
-           public User(SerializationInfo info, StreamingContext ctxt)
-   {
-      this.UserId = (string)info.GetValue("UserId", typeof(string));
-      this.Password = (string)info.GetValue("Password",typeof(string));
-      this.Email = (string)info.GetValue("Email", typeof(int));
-      this.Cart = (Cart)info.GetValue("Cart", typeof(Cart));
-   }
-        //TODO Validation of the properties
+
         public string UserId
         {
-            get { return userId; }
+            get { return this.userId; }
             private set
             {
                 if (ValidUserId(value))
@@ -45,6 +46,7 @@
                 }
             }
         }
+
         internal string Password
         {
             get { return this.password; }
@@ -60,6 +62,7 @@
                 }
             }
         }
+
         public string Email
         {
             get
@@ -122,20 +125,15 @@
             return regex.IsMatch(inputPassword);
         }
 
-        private bool StringNotEmpty(string input)
-        {
-            return !(string.IsNullOrEmpty(input));
-        }
-
         public void MakePayment()
         {
             throw new NotImplementedException();
         }
 
-        public void MakeOrder(string contactName,string address)
+        public void MakeOrder(string contactName, string address)
         {
             var ran = new Random();
-            var newOrder = new Order(PaymentType.CreditCard, ran.Next(009987, 13498787), OrderStatus.New, DefaultShippingFee, this.Cart.Items.Count, this.Cart.CartPrice,contactName,address);
+            var newOrder = new Order(PaymentType.CreditCard, ran.Next(009987, 13498787), OrderStatus.New, DefaultShippingFee, this.Cart.Items.Count, this.Cart.CartPrice, contactName, address);
             this.Cart.CheckOut();
         }
 
@@ -145,6 +143,11 @@
             info.AddValue("Password", this.Password);
             info.AddValue("Email", this.Email);
             info.AddValue("Cart", this.Cart);
+        }
+
+        private bool StringNotEmpty(string input)
+        {
+            return !(string.IsNullOrEmpty(input));
         }
     }
 }

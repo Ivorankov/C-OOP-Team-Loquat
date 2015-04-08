@@ -1,6 +1,7 @@
 ﻿namespace LoquatMegaStore.Items
 {
     using System;
+
     using LoquatMegaStore.Interfaces;
     using LoquatMegaStore.Structures;
     using LoquatMegaStore.Enumerators;
@@ -19,19 +20,21 @@
             this.BatteryDocked = batteryChargeTime;
             this.BatteryUndocked = batteryStandbyTime;
         }
+
         public double BatteryDocked
         {
             get
             {
-                return batteryChargeTime;
+                return this.batteryChargeTime;
             }
+
             private set
             {
                 if (value <= 0)
                 {
                     throw new NegativeValueException("Battery recharge time cannot be less then or equal to 0!");
                 }
-                batteryChargeTime = value;
+                this.batteryChargeTime = value;
             }
         }
 
@@ -39,15 +42,16 @@
         {
             get
             {
-                return batteryStandbyTime;
+                return this.batteryStandbyTime;
             }
+
             private set
             {
                 if (value <= 0)
                 {
                     throw new NegativeValueException("Battery standby time cannot be less then or equal to 0!");
                 }
-                batteryStandbyTime = value;
+                this.batteryStandbyTime = value;
             }
         }
     }

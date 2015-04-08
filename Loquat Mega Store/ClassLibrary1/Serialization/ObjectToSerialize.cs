@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LoquatMegaStore.Serialization
+﻿namespace LoquatMegaStore.Serialization
 {
-    using LoquatMegaStore.ShoppingSystem;
+    using System;
+    using System.Collections.Generic;
     using System.Runtime.Serialization;
-    using System.Runtime.Serialization.Formatters.Binary;
+
+    using LoquatMegaStore.ShoppingSystem;
 
     [Serializable()]
     public class ObjectToSerialize : ISerializable
@@ -22,8 +18,7 @@ namespace LoquatMegaStore.Serialization
         }
 
         public ObjectToSerialize()
-        {
-        }
+        { }
 
         public ObjectToSerialize(SerializationInfo info, StreamingContext ctxt)
         {

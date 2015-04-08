@@ -31,6 +31,17 @@
         public string ContactName { get; private set; }
         public string Address { get; private set; }
 
+        public static void StoreOrder(Order order, string filename)
+        {
+            StreamWriter writer = new StreamWriter(filename, true, Encoding.ASCII);
+
+            using (writer)
+            {
+                writer.WriteLine(order.ToString());
+                writer.Close();
+            }
+        }
+
         public void PlaceOrder()
         {
             this.Status = OrderStatus.New;
@@ -44,23 +55,13 @@
                     FileAccess.Write))
                 using (StreamWriter writer = new StreamWriter(orderFileStream))
                 {
-
                     writer.WriteLine(string.Format("{0} {1} {2} {3} {4} {5} {6} {7} {8}", this.PaymentMethod, this.OrderID,
                         this.Status, this.OrderDate, this.ShippingFee, this.Items, this.TotalPrice, this.ContactName, this.Address));
-                        writer.Close();
+                    writer.Close();
                 }
             }
         }
-        public static void StoreOrder(Order order, string filename)
-        {
-            StreamWriter writer = new StreamWriter(filename, true, Encoding.ASCII);
 
-            using (writer)
-            {
-                writer.WriteLine(order.ToString());
-                writer.Close();
-            }
-        }
         public void Cancel()
         {
             this.Status = OrderStatus.Cancelled;

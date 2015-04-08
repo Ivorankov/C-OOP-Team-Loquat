@@ -1,13 +1,13 @@
 namespace LoquatMegaStore.Items
 {
+    using System;
+
     using LoquatMegaStore.Enumerators;
     using LoquatMegaStore.Interfaces;
     using LoquatMegaStore.Structures;
-    using System;
 
     public class SoundPlayer : AudioAppliance, ISoundable, IVideoPlayable
     {
-
         private int radioStationMemory;
         private AudioFormat audioFormat;
 
@@ -32,18 +32,21 @@ namespace LoquatMegaStore.Items
                 this.radioStationMemory = value;
             }
         }
+
         public AudioFormat AudioFormat
         {
             get { return this.audioFormat; }
             private set { this.audioFormat = value; }
         }
+
         public Speaker Speaker { get; set; }
+
+        public Display Display { get; private set; }
+
         public void PlaySound()
         {
             throw new NotImplementedException();
         }
-
-        public Display Display { get; private set; }
 
         public void PlayVideo()
         {

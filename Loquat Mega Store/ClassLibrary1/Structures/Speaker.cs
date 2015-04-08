@@ -1,6 +1,7 @@
 ﻿namespace LoquatMegaStore.Structures
 {
     using System;
+
     public struct Speaker
     {
         private double powerOutput;
@@ -12,6 +13,7 @@
             this.PorweOutput = powerOutput;
             this.Resistance = resistance;
         }
+
         public double PorweOutput
         {
             get { return this.powerOutput; }
@@ -37,9 +39,10 @@
                 this.resistance = value;
             }
         }
+
         public override string ToString()
         {
-            return string.Format("Power output: {0} / Resistance: {1}", PorweOutput, Resistance);
+            return string.Format("Power output: {0} / Resistance: {1}", this.PorweOutput, this.Resistance);
         }
     }
 }

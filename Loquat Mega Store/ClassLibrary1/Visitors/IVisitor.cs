@@ -6,7 +6,5 @@
     public interface IVisitor
     {
         void Visit(Item product);
-
-        void Visit(Cart cart);
     }
 }

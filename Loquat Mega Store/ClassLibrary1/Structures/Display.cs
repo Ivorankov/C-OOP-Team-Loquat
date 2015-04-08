@@ -44,7 +44,7 @@
 
         public override string ToString()
         {
-            return string.Format("Display size: {0} / Display type: {1} / Display resolution: {2}", Size, DisplayType, DisplayRes);
+            return string.Format("Display size: {0} / Display type: {1} / Display resolution: {2}", this.Size, this.DisplayType, this.DisplayRes);
         }
     }
 }
