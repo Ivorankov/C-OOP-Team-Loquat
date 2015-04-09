@@ -3,7 +3,6 @@ TEAM "LOQUAT"
 LOQUAT MEGA TECH STORE
 ----------------------
 
-
 ### DEADLINE 08 APRIL 2015 ##
 ########################
 Legend: [R] - to be Reviewed/Requested
@@ -11,18 +10,6 @@ Legend: [R] - to be Reviewed/Requested
 		[C] - Completed/Coded /coded in project/
 #######################
 
-++++++++++ IDEAS SECTION ++++++++++++++
-
-+++++++++++++++++++++++++++++++++++++++
-
 TODO:
 --------
-1. Savable order with link to user.
-2. Fix on Items/generate objects/print them to Textblock.
-3. Main window to show user name when logged.
-4. Main window to display a button for order views.
-5. Extract methods from UI and place them in propper class(user).
-6. Final check on OOP principles in the whole project.
-7. Power point presentation?
-8. Documentation.
-9. Zipped folder containg all for upload in Telerik student syst.
+Sleep
